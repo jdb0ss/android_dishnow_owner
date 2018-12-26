@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignupActivity">
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="가게 이름"
+            android:id="@+id/signup_resname"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="가게 주소"
+            android:id="@+id/signup_resaddress"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="가게 전화번호"
+            android:id="@+id/signup_resphone"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="대표자 이름"
+            android:id="@+id/signup_ownername"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="영업 시작시간(Ex>09)"
+            android:id="@+id/signup_resstarttime"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="영업 마감시간(Ex>20)"
+            android:id="@+id/signup_resendtime"/>
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/signup_gps_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="gps 접근" />
+
+    <Button
+        android:id="@+id/signup_signup_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="신규 등록" />
+</LinearLayout>

@@ -1,0 +1,170 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:2:1-26:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c27b20caa8fe9ecef338e8db2ee3a86f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/spark/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/73b4c5522f4d3c151b49a9d0257cb7f2/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/d8014a8fc94d5e602f2c8e18d178784a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/65c6c7ee3add13f3b2e4f2d905cd31a8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/4f3d6176fc7f3479fb71ee7151776f3f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/9044f1cc7e441c57d847be2cecd290d7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/aa69000c1aa95f4afceeaaf362723e5d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/0b055d73dfe10be4955bcfb294d1f4a9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/9757704ac9774dc0d743b4b7980703ff/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/e25a29050b6ae50150a34e22ddf8e034/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/0e063ce13b264e12bc5a7d5928814580/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/af9008872115aff08ebdd7fe941fd6a1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/59f4565c80ee2c3ce4cf4bbefe7055f0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/370bdce8a06f5286a5dc1e7469fead12/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/03a8a5be31e4e7b16eaeed0b69088b25/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/7b97bf93e232d7c2d1d6587981e6b7bd/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/c26f68ceb4d41acab7f218d415b4c1d9/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/db475110bdff67d33bc52ae36f97f0fa/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/066813f6c18d8367a4d773200f017a97/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/30e3b2f69d677512e7ae13ae161fa4cb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/8ead8abc3b481d3f1c78f1386b242ddd/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/97a80ae5f7e9841cd58f6e7fd240a4a6/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/3a4b0242b1c32fae118e8c0b297e785b/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/08126ca90def4ff8fb1122a396e160bc/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/18f3b81bdf5677b62d44744454895b51/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/1048754d961a27e01a0006fb53486b14/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/220a7357f28bbb6c59a151e4f68be367/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:2:1-26:12
+	package
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:3:5-38
+		INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:2:1-26:12
+		INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:2:1-26:12
+		INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:4:22-64
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:5:5-79
+	android:name
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:5:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:6:5-80
+	android:name
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:6:22-78
+application
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:9:5-24:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/spark/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/73b4c5522f4d3c151b49a9d0257cb7f2/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/spark/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/73b4c5522f4d3c151b49a9d0257cb7f2/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/7b97bf93e232d7c2d1d6587981e6b7bd/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/7b97bf93e232d7c2d1d6587981e6b7bd/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/c26f68ceb4d41acab7f218d415b4c1d9/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/c26f68ceb4d41acab7f218d415b4c1d9/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/7b97bf93e232d7c2d1d6587981e6b7bd/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:14:9-35
+	android:label
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:12:9-41
+	android:roundIcon
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:13:9-54
+	android:icon
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:11:9-43
+	android:allowBackup
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:10:9-35
+	android:theme
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:15:9-40
+activity#com.picke.dishnow_owner.SignupActivity
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:16:9-22:20
+	android:name
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:16:19-49
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:17:13-21:29
+action#android.intent.action.MAIN
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:18:17-69
+	android:name
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:18:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:20:17-77
+	android:name
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:20:27-74
+activity#com.picke.dishnow_owner.MainActivity
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:23:9-59
+	android:name
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:23:19-47
+uses-sdk
+INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml
+INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c27b20caa8fe9ecef338e8db2ee3a86f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c27b20caa8fe9ecef338e8db2ee3a86f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/spark/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/73b4c5522f4d3c151b49a9d0257cb7f2/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/spark/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/73b4c5522f4d3c151b49a9d0257cb7f2/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/d8014a8fc94d5e602f2c8e18d178784a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/d8014a8fc94d5e602f2c8e18d178784a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/65c6c7ee3add13f3b2e4f2d905cd31a8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/65c6c7ee3add13f3b2e4f2d905cd31a8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/4f3d6176fc7f3479fb71ee7151776f3f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/4f3d6176fc7f3479fb71ee7151776f3f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/9044f1cc7e441c57d847be2cecd290d7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/9044f1cc7e441c57d847be2cecd290d7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/aa69000c1aa95f4afceeaaf362723e5d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/aa69000c1aa95f4afceeaaf362723e5d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/0b055d73dfe10be4955bcfb294d1f4a9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/0b055d73dfe10be4955bcfb294d1f4a9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/9757704ac9774dc0d743b4b7980703ff/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/9757704ac9774dc0d743b4b7980703ff/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/e25a29050b6ae50150a34e22ddf8e034/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/e25a29050b6ae50150a34e22ddf8e034/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/0e063ce13b264e12bc5a7d5928814580/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/0e063ce13b264e12bc5a7d5928814580/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/af9008872115aff08ebdd7fe941fd6a1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/af9008872115aff08ebdd7fe941fd6a1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/59f4565c80ee2c3ce4cf4bbefe7055f0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/59f4565c80ee2c3ce4cf4bbefe7055f0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/370bdce8a06f5286a5dc1e7469fead12/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/370bdce8a06f5286a5dc1e7469fead12/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/03a8a5be31e4e7b16eaeed0b69088b25/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/03a8a5be31e4e7b16eaeed0b69088b25/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/7b97bf93e232d7c2d1d6587981e6b7bd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/7b97bf93e232d7c2d1d6587981e6b7bd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/c26f68ceb4d41acab7f218d415b4c1d9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/c26f68ceb4d41acab7f218d415b4c1d9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/db475110bdff67d33bc52ae36f97f0fa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/db475110bdff67d33bc52ae36f97f0fa/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/066813f6c18d8367a4d773200f017a97/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/066813f6c18d8367a4d773200f017a97/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/30e3b2f69d677512e7ae13ae161fa4cb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/30e3b2f69d677512e7ae13ae161fa4cb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/8ead8abc3b481d3f1c78f1386b242ddd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/8ead8abc3b481d3f1c78f1386b242ddd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/97a80ae5f7e9841cd58f6e7fd240a4a6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/97a80ae5f7e9841cd58f6e7fd240a4a6/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/3a4b0242b1c32fae118e8c0b297e785b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/3a4b0242b1c32fae118e8c0b297e785b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/08126ca90def4ff8fb1122a396e160bc/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/08126ca90def4ff8fb1122a396e160bc/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/18f3b81bdf5677b62d44744454895b51/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/18f3b81bdf5677b62d44744454895b51/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/1048754d961a27e01a0006fb53486b14/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/1048754d961a27e01a0006fb53486b14/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/220a7357f28bbb6c59a151e4f68be367/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/220a7357f28bbb6c59a151e4f68be367/AndroidManifest.xml:20:5-44
+INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml
+INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml
