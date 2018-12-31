@@ -873,6 +873,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_kakao_webview
 layout activity_main
+layout activity_signin
 layout activity_signup
 layout kakao_login_layout
 layout layout_login_dialog
