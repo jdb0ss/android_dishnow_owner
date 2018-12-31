@@ -53,8 +53,8 @@ public class SignupActivity extends AppCompatActivity {
     private String ownername;
     private String starttime;
     private String endtime;
-    public String lat = "0";
-    public String lon = "0";
+    public String lat;
+    public String lon;
     private String ownerphone;
     private String password;
 

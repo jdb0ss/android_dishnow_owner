@@ -1,76 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_gravity="center"
     tools:context=".SignupActivity">
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:id="@+id/signup_third"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom">
+        <Button
+            android:id="@+id/signup_signup_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="가입 완료" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:gravity="center_vertical"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+            android:id="@+id/signup_first">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="필수 정보를 입력해주세요"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="10dp"
+                    />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="가게 이름"
-            android:id="@+id/signup_resname"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="가게 주소"
-            android:id="@+id/signup_resaddress"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="가게 전화번호"
-            android:id="@+id/signup_resphone"
+            android:id="@+id/signup_resid"
+            android:hint="아이디(4자~20자)"
             />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="대표자 휴대폰 번호"
-            android:id="@+id/signup_ownerphone"
+            android:id="@+id/signup_respassword"
+            android:hint="비밀번호(영문+숫자, 8-20자)"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signup_respassword_repeat"
+            android:hint="비밀번호 재확인"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signup_resemail"
+            android:hint="이메일"
             />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="대표자 이름"
+            android:hint="이름"
             android:id="@+id/signup_ownername"
             />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="비밀번호"
-            android:id="@+id/signup_password"
-            />
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:orientation="horizontal">
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="영업 시작시간(Ex>09)"
-            android:id="@+id/signup_resstarttime"/>
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:hint="영업 마감시간(Ex>20)"
-            android:id="@+id/signup_resendtime"/>
         </LinearLayout>
-    <Button
-        android:id="@+id/signup_gps_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="gps 접근" />
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_below="@+id/signup_first"
+          >
+              <EditText
+                  android:id="@+id/signup_ownerphone"
+                  android:layout_width="250dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginRight="10dp"
+                  android:hint="휴대폰 번호" />
+              <Button
+                  android:layout_marginLeft="10dp"
+                  android:layout_width="100dp"
+                  android:layout_height="wrap_content"
+                  android:text="인증 받기"
+                  android:id="@+id/signup_authphone"/>
+      </LinearLayout>
 
-    <Button
-        android:id="@+id/signup_signup_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="신규 등록" />
-</LinearLayout>
+
+</RelativeLayout>
