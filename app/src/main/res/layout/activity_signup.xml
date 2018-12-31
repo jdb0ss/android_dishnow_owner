@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".SignupActivity">
-    <LinearLayout
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -31,8 +30,20 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="대표자 휴대폰 번호"
+            android:id="@+id/signup_ownerphone"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:hint="대표자 이름"
             android:id="@+id/signup_ownername"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="비밀번호"
+            android:id="@+id/signup_password"
             />
         <LinearLayout
             android:layout_width="wrap_content"
@@ -51,7 +62,6 @@
             android:hint="영업 마감시간(Ex>20)"
             android:id="@+id/signup_resendtime"/>
         </LinearLayout>
-    </LinearLayout>
     <Button
         android:id="@+id/signup_gps_button"
         android:layout_width="match_parent"
