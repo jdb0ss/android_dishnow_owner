@@ -1,1 +1,1 @@
-* 사장님용 어플
+* APP FOR OWNER
