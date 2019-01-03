@@ -22,10 +22,9 @@
             android:text="가입 완료" />
         </LinearLayout>
 
-
         <LinearLayout
             android:gravity="center_vertical"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -42,24 +41,24 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/signup_resid"
+            android:id="@+id/signup_ownerid"
             android:hint="아이디(4자~20자)"
             />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/signup_respassword"
+            android:id="@+id/signup_ownerpassword"
             android:hint="비밀번호(영문+숫자, 8-20자)"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/signup_respassword_repeat"
+            android:id="@+id/signup_ownerpassword_repeat"
             android:hint="비밀번호 재확인"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/signup_resemail"
+            android:id="@+id/signup_owneremail"
             android:hint="이메일"
             />
         <EditText
@@ -80,7 +79,7 @@
                   android:layout_width="250dp"
                   android:layout_height="wrap_content"
                   android:layout_marginRight="10dp"
-                  android:hint="휴대폰 번호" />
+                  android:hint="휴대폰 번호(- 없이)" />
               <Button
                   android:layout_marginLeft="10dp"
                   android:layout_width="100dp"

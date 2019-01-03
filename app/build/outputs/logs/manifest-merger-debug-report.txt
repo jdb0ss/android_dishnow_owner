@@ -1,219 +1,219 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:2:1-33:12
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\cd5b2c903ca4779d21596b9ef6b2ba75\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\3011c8314f96b6540a3c3333a056b275\AndroidManifest.xml:2:1-11:12
-MERGED from [com.kakao.sdk:usermgmt:1.15.1] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\usermgmt-1.15.1.aar\89653179eb3777a913939d176cf4f650\AndroidManifest.xml:2:1-14:12
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\ab11ef7800e2318ca83174d4865aa24d\AndroidManifest.xml:17:1-22:12
-MERGED from [com.kakao.sdk:auth:1.15.1] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\auth-1.15.1.aar\ced499c78c66a6422923374e85e8b996\AndroidManifest.xml:2:1-22:12
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\1bbdac32492c4656d41743dd1df3966f\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\54696291231bacb22691733a21f77486\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\2d01a621d68e686c9ce159de9595c8cc\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\f69872e7b527fbe8b04c220c0ff6ab9f\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:loader:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\c528e8732249e49610d4e0b584b0aa38\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\36eee7265cc81f92273029c18133961b\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\4cf488c32318bb8bbb0c58357f353c40\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\6cef85e81c093c38d27e8d69d35ef453\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\47d886f726ed7de2909b81778259fb48\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:customview:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\3ed042f0c968ad1fefe9407634c6d0bc\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\8fd7da927ccaf58d744796307aaea674\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\215b52e7f5da9e0bdc49b7d88f5dd98d\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\c475d4fb8826173d5f4811b344fdbae3\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\da1e093fbbade220b364ad3cb9a5f6f8\AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\b495ef7443e55eee37b2359e90bcf99b\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\b6157f626ba4e905159478d932e4c79e\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\f3d49a6dc29293aab66f4b61d4245b0a\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\b68d10f5b73729ca0ef29a5f87d0d80e\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:print:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\83e3f2299d487b7972f71054d73d1f08\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\e3a51c3b23a231c02ebbe84d59b3cc5e\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\daac2cb2414a72730f8814562fe068c0\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\8541def763bf1b28ec8b1e54afc421fd\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\b876f05f8b3c6d70d78798da3b9b63aa\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\80a19ac5a4c9b7fc2eefae2239b5fcbe\AndroidManifest.xml:17:1-22:12
-MERGED from [com.kakao.sdk:network:1.15.1] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\network-1.15.1.aar\666d85977ee7414b59c9fbe79c2b3430\AndroidManifest.xml:2:1-11:12
-MERGED from [com.kakao.sdk:common:1.15.1] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\common-1.15.1.aar\42bf7ff37017b35bc2af4319c3857cbb\AndroidManifest.xml:2:1-11:12
-MERGED from [com.kakao.sdk:util:1.15.1] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\util-1.15.1.aar\755d5d07845f567b546b1bce94ccbb6f\AndroidManifest.xml:2:1-14:12
-INJECTED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:2:1-33:12
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:2:1-33:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/spark/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/536fe1f600573171681fa284abe8f911/AndroidManifest.xml:2:1-11:12
+MERGED from [com.kakao.sdk:usermgmt:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/usermgmt-1.15.1.aar/06be3be95d9df7c402cc06df2736580d/AndroidManifest.xml:2:1-14:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/9651072a8158813d3536ff032c598f55/AndroidManifest.xml:17:1-22:12
+MERGED from [com.kakao.sdk:auth:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/auth-1.15.1.aar/9ad754b0e174f438fd504127c9c067d1/AndroidManifest.xml:2:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/3e259f41a9e01d11f1a7427d32511618/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/63d73872f254471417dbb1413a2de1c1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/4923e21c53e9ce55b7f061d197afa1b4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/962ed279eba7e0c6cf7497fa17c4526c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/0b1b9a0d0ca199bd9dc215521fa5ca6c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/f072d678b0f25ddba8513f85143e5c9a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/f36858528220da81f741406d03b7c860/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/56c8dc7acb50eb6e6ced8a66b67068f4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/79ae86b96600486c6249a73ac79295a8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/ced3a3f5b8b933d45d09f83f44ed8fc1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/6e75159cf706fbc7918a416b87e5815c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/eb79fd531e218972057996e89d87d14b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/a5ca15ae7af273c89783c38ae921ab75/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/4f13217597fd145658de86e74529e88d/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/85f0a5d32c91407dc1434430b591a2bd/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/1fe0acda323eadc77f39ff3fb0c44cca/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/16075c79f29b67d1a429a31956ac9aba/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/121f279a36b469b97777209e69021b06/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/accc7de677b6655fd40c05ed2255132a/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/14af0a36bee4aa134576ce07ee1e57c2/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/fbc4f0eaeb5103c612ad26e7dc8cfe49/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/3286428a710a5ff8582c850083b1ffac/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/e5271b385e57dc71d0427a2df741b8ac/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/0fc937f4ec5210317fb4c8f531c6ace0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.kakao.sdk:network:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/network-1.15.1.aar/4407195218a7c1837aecf225621cb3d8/AndroidManifest.xml:2:1-11:12
+MERGED from [com.kakao.sdk:common:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/common-1.15.1.aar/b3440be687dc76d953cb8a13cdbe64a5/AndroidManifest.xml:2:1-11:12
+MERGED from [com.kakao.sdk:util:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/util-1.15.1.aar/aed82e16471a13b695342048313c130c/AndroidManifest.xml:2:1-14:12
+INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:2:1-33:12
 	package
-		ADDED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:3:5-38
-		INJECTED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:3:5-38
+		INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:2:1-33:12
-		INJECTED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:2:1-33:12
+		INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:2:1-33:12
-		INJECTED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:2:1-33:12
+		INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:5:5-67
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:5:5-67
 	android:name
-		ADDED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:6:5-79
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:6:5-79
 	android:name
-		ADDED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:6:22-76
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:6:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:7:5-81
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:7:5-81
 	android:name
-		ADDED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:7:22-78
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:7:22-78
 uses-permission#android.permission.CHANGE_NETWORK_STATE
-ADDED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:8:5-79
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:8:5-79
 	android:name
-		ADDED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:8:22-76
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:8:22-76
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:9:5-75
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:9:5-75
 	android:name
-		ADDED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:9:22-72
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:9:22-72
 application
-ADDED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:11:5-31:19
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\3011c8314f96b6540a3c3333a056b275\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\3011c8314f96b6540a3c3333a056b275\AndroidManifest.xml:9:5-20
-MERGED from [com.kakao.sdk:auth:1.15.1] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\auth-1.15.1.aar\ced499c78c66a6422923374e85e8b996\AndroidManifest.xml:11:5-20:19
-MERGED from [com.kakao.sdk:auth:1.15.1] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\auth-1.15.1.aar\ced499c78c66a6422923374e85e8b996\AndroidManifest.xml:11:5-20:19
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\c475d4fb8826173d5f4811b344fdbae3\AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\c475d4fb8826173d5f4811b344fdbae3\AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\da1e093fbbade220b364ad3cb9a5f6f8\AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\da1e093fbbade220b364ad3cb9a5f6f8\AndroidManifest.xml:22:5-23:19
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:11:5-31:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/spark/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/536fe1f600573171681fa284abe8f911/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/spark/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/536fe1f600573171681fa284abe8f911/AndroidManifest.xml:9:5-20
+MERGED from [com.kakao.sdk:auth:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/auth-1.15.1.aar/9ad754b0e174f438fd504127c9c067d1/AndroidManifest.xml:11:5-20:19
+MERGED from [com.kakao.sdk:auth:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/auth-1.15.1.aar/9ad754b0e174f438fd504127c9c067d1/AndroidManifest.xml:11:5-20:19
+MERGED from [com.android.support:support-compat:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/a5ca15ae7af273c89783c38ae921ab75/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/a5ca15ae7af273c89783c38ae921ab75/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/4f13217597fd145658de86e74529e88d/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/4f13217597fd145658de86e74529e88d/AndroidManifest.xml:22:5-23:19
 	android:appComponentFactory
-		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\c475d4fb8826173d5f4811b344fdbae3\AndroidManifest.xml:22:18-91
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/a5ca15ae7af273c89783c38ae921ab75/AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:16:9-35
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:16:9-35
 	android:label
-		ADDED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:14:9-41
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:14:9-41
 	android:roundIcon
-		ADDED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:15:9-54
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:15:9-54
 	android:icon
-		ADDED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:13:9-43
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:13:9-43
 	android:allowBackup
-		ADDED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:12:9-35
 	android:theme
-		ADDED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:17:9-40
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:17:9-40
 meta-data#com.kakao.sdk.AppKey
-ADDED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:18:9-20:64
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:18:9-20:64
 	android:value
-		ADDED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:20:13-61
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:20:13-61
 	android:name
-		ADDED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:19:13-48
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:19:13-48
 activity#com.picke.dishnow_owner.SignupActivity
-ADDED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:22:9-28:20
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:22:9-28:20
 	android:name
-		ADDED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:22:19-49
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:22:19-49
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:23:13-27:29
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:23:13-27:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:24:17-69
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:24:17-69
 	android:name
-		ADDED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:24:25-66
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:24:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:26:17-77
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:26:17-77
 	android:name
-		ADDED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:26:27-74
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:26:27-74
 activity#com.picke.dishnow_owner.MainActivity
-ADDED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:29:9-50
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:29:9-50
 	android:name
-		ADDED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:29:19-47
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:29:19-47
 activity#com.picke.dishnow_owner.SigninActivity
-ADDED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:30:9-61
+ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:30:9-61
 	android:name
-		ADDED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml:30:19-49
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml:30:19-49
 uses-sdk
-INJECTED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\cd5b2c903ca4779d21596b9ef6b2ba75\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\cd5b2c903ca4779d21596b9ef6b2ba75\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\3011c8314f96b6540a3c3333a056b275\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\3011c8314f96b6540a3c3333a056b275\AndroidManifest.xml:5:5-7:41
-MERGED from [com.kakao.sdk:usermgmt:1.15.1] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\usermgmt-1.15.1.aar\89653179eb3777a913939d176cf4f650\AndroidManifest.xml:10:5-12:41
-MERGED from [com.kakao.sdk:usermgmt:1.15.1] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\usermgmt-1.15.1.aar\89653179eb3777a913939d176cf4f650\AndroidManifest.xml:10:5-12:41
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\ab11ef7800e2318ca83174d4865aa24d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\ab11ef7800e2318ca83174d4865aa24d\AndroidManifest.xml:20:5-44
-MERGED from [com.kakao.sdk:auth:1.15.1] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\auth-1.15.1.aar\ced499c78c66a6422923374e85e8b996\AndroidManifest.xml:7:5-9:41
-MERGED from [com.kakao.sdk:auth:1.15.1] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\auth-1.15.1.aar\ced499c78c66a6422923374e85e8b996\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\1bbdac32492c4656d41743dd1df3966f\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\1bbdac32492c4656d41743dd1df3966f\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\54696291231bacb22691733a21f77486\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\54696291231bacb22691733a21f77486\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\2d01a621d68e686c9ce159de9595c8cc\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\2d01a621d68e686c9ce159de9595c8cc\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\f69872e7b527fbe8b04c220c0ff6ab9f\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\f69872e7b527fbe8b04c220c0ff6ab9f\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\c528e8732249e49610d4e0b584b0aa38\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\c528e8732249e49610d4e0b584b0aa38\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\36eee7265cc81f92273029c18133961b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\36eee7265cc81f92273029c18133961b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\4cf488c32318bb8bbb0c58357f353c40\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\4cf488c32318bb8bbb0c58357f353c40\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\6cef85e81c093c38d27e8d69d35ef453\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\6cef85e81c093c38d27e8d69d35ef453\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\47d886f726ed7de2909b81778259fb48\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\47d886f726ed7de2909b81778259fb48\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\3ed042f0c968ad1fefe9407634c6d0bc\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\3ed042f0c968ad1fefe9407634c6d0bc\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\8fd7da927ccaf58d744796307aaea674\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\8fd7da927ccaf58d744796307aaea674\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\215b52e7f5da9e0bdc49b7d88f5dd98d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\215b52e7f5da9e0bdc49b7d88f5dd98d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\c475d4fb8826173d5f4811b344fdbae3\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\c475d4fb8826173d5f4811b344fdbae3\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\da1e093fbbade220b364ad3cb9a5f6f8\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\da1e093fbbade220b364ad3cb9a5f6f8\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\b495ef7443e55eee37b2359e90bcf99b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\b495ef7443e55eee37b2359e90bcf99b\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\b6157f626ba4e905159478d932e4c79e\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\b6157f626ba4e905159478d932e4c79e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\f3d49a6dc29293aab66f4b61d4245b0a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\f3d49a6dc29293aab66f4b61d4245b0a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\b68d10f5b73729ca0ef29a5f87d0d80e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\b68d10f5b73729ca0ef29a5f87d0d80e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\83e3f2299d487b7972f71054d73d1f08\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\83e3f2299d487b7972f71054d73d1f08\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\e3a51c3b23a231c02ebbe84d59b3cc5e\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\e3a51c3b23a231c02ebbe84d59b3cc5e\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\daac2cb2414a72730f8814562fe068c0\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\daac2cb2414a72730f8814562fe068c0\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\8541def763bf1b28ec8b1e54afc421fd\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\8541def763bf1b28ec8b1e54afc421fd\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\b876f05f8b3c6d70d78798da3b9b63aa\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\b876f05f8b3c6d70d78798da3b9b63aa\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\80a19ac5a4c9b7fc2eefae2239b5fcbe\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\80a19ac5a4c9b7fc2eefae2239b5fcbe\AndroidManifest.xml:20:5-44
-MERGED from [com.kakao.sdk:network:1.15.1] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\network-1.15.1.aar\666d85977ee7414b59c9fbe79c2b3430\AndroidManifest.xml:7:5-9:41
-MERGED from [com.kakao.sdk:network:1.15.1] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\network-1.15.1.aar\666d85977ee7414b59c9fbe79c2b3430\AndroidManifest.xml:7:5-9:41
-MERGED from [com.kakao.sdk:common:1.15.1] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\common-1.15.1.aar\42bf7ff37017b35bc2af4319c3857cbb\AndroidManifest.xml:7:5-9:41
-MERGED from [com.kakao.sdk:common:1.15.1] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\common-1.15.1.aar\42bf7ff37017b35bc2af4319c3857cbb\AndroidManifest.xml:7:5-9:41
-MERGED from [com.kakao.sdk:util:1.15.1] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\util-1.15.1.aar\755d5d07845f567b546b1bce94ccbb6f\AndroidManifest.xml:10:5-12:41
-MERGED from [com.kakao.sdk:util:1.15.1] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\util-1.15.1.aar\755d5d07845f567b546b1bce94ccbb6f\AndroidManifest.xml:10:5-12:41
-INJECTED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml
+INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml
+INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/spark/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/536fe1f600573171681fa284abe8f911/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/spark/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/536fe1f600573171681fa284abe8f911/AndroidManifest.xml:5:5-7:41
+MERGED from [com.kakao.sdk:usermgmt:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/usermgmt-1.15.1.aar/06be3be95d9df7c402cc06df2736580d/AndroidManifest.xml:10:5-12:41
+MERGED from [com.kakao.sdk:usermgmt:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/usermgmt-1.15.1.aar/06be3be95d9df7c402cc06df2736580d/AndroidManifest.xml:10:5-12:41
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/9651072a8158813d3536ff032c598f55/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/9651072a8158813d3536ff032c598f55/AndroidManifest.xml:20:5-44
+MERGED from [com.kakao.sdk:auth:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/auth-1.15.1.aar/9ad754b0e174f438fd504127c9c067d1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.kakao.sdk:auth:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/auth-1.15.1.aar/9ad754b0e174f438fd504127c9c067d1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/3e259f41a9e01d11f1a7427d32511618/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/3e259f41a9e01d11f1a7427d32511618/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/63d73872f254471417dbb1413a2de1c1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/63d73872f254471417dbb1413a2de1c1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/4923e21c53e9ce55b7f061d197afa1b4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/4923e21c53e9ce55b7f061d197afa1b4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/962ed279eba7e0c6cf7497fa17c4526c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/962ed279eba7e0c6cf7497fa17c4526c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/0b1b9a0d0ca199bd9dc215521fa5ca6c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/0b1b9a0d0ca199bd9dc215521fa5ca6c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/f072d678b0f25ddba8513f85143e5c9a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/f072d678b0f25ddba8513f85143e5c9a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/f36858528220da81f741406d03b7c860/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/f36858528220da81f741406d03b7c860/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/56c8dc7acb50eb6e6ced8a66b67068f4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/56c8dc7acb50eb6e6ced8a66b67068f4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/79ae86b96600486c6249a73ac79295a8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/79ae86b96600486c6249a73ac79295a8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/ced3a3f5b8b933d45d09f83f44ed8fc1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/ced3a3f5b8b933d45d09f83f44ed8fc1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/6e75159cf706fbc7918a416b87e5815c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/6e75159cf706fbc7918a416b87e5815c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/eb79fd531e218972057996e89d87d14b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/eb79fd531e218972057996e89d87d14b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/a5ca15ae7af273c89783c38ae921ab75/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/a5ca15ae7af273c89783c38ae921ab75/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/4f13217597fd145658de86e74529e88d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/4f13217597fd145658de86e74529e88d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/85f0a5d32c91407dc1434430b591a2bd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/85f0a5d32c91407dc1434430b591a2bd/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/1fe0acda323eadc77f39ff3fb0c44cca/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/1fe0acda323eadc77f39ff3fb0c44cca/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/16075c79f29b67d1a429a31956ac9aba/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/16075c79f29b67d1a429a31956ac9aba/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/121f279a36b469b97777209e69021b06/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/121f279a36b469b97777209e69021b06/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/accc7de677b6655fd40c05ed2255132a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/accc7de677b6655fd40c05ed2255132a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/14af0a36bee4aa134576ce07ee1e57c2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/14af0a36bee4aa134576ce07ee1e57c2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/fbc4f0eaeb5103c612ad26e7dc8cfe49/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/fbc4f0eaeb5103c612ad26e7dc8cfe49/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/3286428a710a5ff8582c850083b1ffac/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/3286428a710a5ff8582c850083b1ffac/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/e5271b385e57dc71d0427a2df741b8ac/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/e5271b385e57dc71d0427a2df741b8ac/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/0fc937f4ec5210317fb4c8f531c6ace0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/spark/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/0fc937f4ec5210317fb4c8f531c6ace0/AndroidManifest.xml:20:5-44
+MERGED from [com.kakao.sdk:network:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/network-1.15.1.aar/4407195218a7c1837aecf225621cb3d8/AndroidManifest.xml:7:5-9:41
+MERGED from [com.kakao.sdk:network:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/network-1.15.1.aar/4407195218a7c1837aecf225621cb3d8/AndroidManifest.xml:7:5-9:41
+MERGED from [com.kakao.sdk:common:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/common-1.15.1.aar/b3440be687dc76d953cb8a13cdbe64a5/AndroidManifest.xml:7:5-9:41
+MERGED from [com.kakao.sdk:common:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/common-1.15.1.aar/b3440be687dc76d953cb8a13cdbe64a5/AndroidManifest.xml:7:5-9:41
+MERGED from [com.kakao.sdk:util:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/util-1.15.1.aar/aed82e16471a13b695342048313c130c/AndroidManifest.xml:10:5-12:41
+MERGED from [com.kakao.sdk:util:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/util-1.15.1.aar/aed82e16471a13b695342048313c130c/AndroidManifest.xml:10:5-12:41
+INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml
+INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\sungbin\Desktop\android_dishnow_owner\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml
+		ADDED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/AndroidManifest.xml
 activity#com.kakao.auth.authorization.authcode.KakaoWebViewActivity
-ADDED from [com.kakao.sdk:auth:1.15.1] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\auth-1.15.1.aar\ced499c78c66a6422923374e85e8b996\AndroidManifest.xml:12:9-19:20
+ADDED from [com.kakao.sdk:auth:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/auth-1.15.1.aar/9ad754b0e174f438fd504127c9c067d1/AndroidManifest.xml:12:9-19:20
 	android:label
-		ADDED from [com.kakao.sdk:auth:1.15.1] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\auth-1.15.1.aar\ced499c78c66a6422923374e85e8b996\AndroidManifest.xml:16:13-59
+		ADDED from [com.kakao.sdk:auth:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/auth-1.15.1.aar/9ad754b0e174f438fd504127c9c067d1/AndroidManifest.xml:16:13-59
 	android:launchMode
-		ADDED from [com.kakao.sdk:auth:1.15.1] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\auth-1.15.1.aar\ced499c78c66a6422923374e85e8b996\AndroidManifest.xml:17:13-43
+		ADDED from [com.kakao.sdk:auth:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/auth-1.15.1.aar/9ad754b0e174f438fd504127c9c067d1/AndroidManifest.xml:17:13-43
 	android:windowSoftInputMode
-		ADDED from [com.kakao.sdk:auth:1.15.1] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\auth-1.15.1.aar\ced499c78c66a6422923374e85e8b996\AndroidManifest.xml:18:13-55
+		ADDED from [com.kakao.sdk:auth:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/auth-1.15.1.aar/9ad754b0e174f438fd504127c9c067d1/AndroidManifest.xml:18:13-55
 	android:exported
-		ADDED from [com.kakao.sdk:auth:1.15.1] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\auth-1.15.1.aar\ced499c78c66a6422923374e85e8b996\AndroidManifest.xml:15:13-37
+		ADDED from [com.kakao.sdk:auth:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/auth-1.15.1.aar/9ad754b0e174f438fd504127c9c067d1/AndroidManifest.xml:15:13-37
 	android:configChanges
-		ADDED from [com.kakao.sdk:auth:1.15.1] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\auth-1.15.1.aar\ced499c78c66a6422923374e85e8b996\AndroidManifest.xml:14:13-59
+		ADDED from [com.kakao.sdk:auth:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/auth-1.15.1.aar/9ad754b0e174f438fd504127c9c067d1/AndroidManifest.xml:14:13-59
 	android:name
-		ADDED from [com.kakao.sdk:auth:1.15.1] C:\Users\sungbin\.gradle\caches\transforms-1\files-1.1\auth-1.15.1.aar\ced499c78c66a6422923374e85e8b996\AndroidManifest.xml:13:13-86
+		ADDED from [com.kakao.sdk:auth:1.15.1] /Users/spark/.gradle/caches/transforms-1/files-1.1/auth-1.15.1.aar/9ad754b0e174f438fd504127c9c067d1/AndroidManifest.xml:13:13-86

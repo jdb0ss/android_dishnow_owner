@@ -2,27 +2,11 @@ package com.picke.dishnow_owner.Owner_User;
 
 public class UserAuthClass {
     private String uid;
-    private String resid;
-    private String respassword;
-    private String resemail;
-    private String resname;
-    private String resphone;
-
-    public String getResname() {
-        return resname;
-    }
-
-    public void setResname(String resname) {
-        this.resname = resname;
-    }
-
-    public String getResphone() {
-        return resphone;
-    }
-
-    public void setResphone(String resphone) {
-        this.resphone = resphone;
-    }
+    private String ownerid;
+    private String ownerpassword;
+    private String owneremail;
+    private String ownername;
+    private String ownerphone;
 
     public String getUid() {
         return uid;
@@ -32,27 +16,44 @@ public class UserAuthClass {
         this.uid = uid;
     }
 
-    public String getResid() {
-        return resid;
+    public String getOwnerid() {
+        return ownerid;
     }
 
-    public void setResid(String resid) {
-        this.resid = resid;
+    public void setOwnerid(String ownerid) {
+        this.ownerid = ownerid;
     }
 
-    public String getRespassword() {
-        return respassword;
+    public String getOwnerpassword() {
+        return ownerpassword;
     }
 
-    public void setRespassword(String respassword) {
-        this.respassword = respassword;
+    public void setOwnerpassword(String ownerpassword) {
+        this.ownerpassword = ownerpassword;
     }
 
-    public String getResemail() {
-        return resemail;
+    public String getOwneremail() {
+        return owneremail;
     }
 
-    public void setResemail(String resemail) {
-        this.resemail = resemail;
+    public void setOwneremail(String owneremail) {
+        this.owneremail = owneremail;
     }
+
+    public String getOwnername() {
+        return ownername;
+    }
+
+    public void setOwnername(String ownername) {
+        this.ownername = ownername;
+    }
+
+    public String getOwnerphone() {
+        return ownerphone;
+    }
+
+    public void setOwnerphone(String ownerphone) {
+        this.ownerphone = ownerphone;
+    }
+
 }

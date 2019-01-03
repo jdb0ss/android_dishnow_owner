@@ -14,7 +14,7 @@ public class UserInfoClass {
     private String ownerphone;
     private String respassword;
 
-    public String getId(){
+    public String getuId(){
         return uid;
     }
 
@@ -62,7 +62,7 @@ public class UserInfoClass {
         return endtime;
     }
 
-    void setId(String uid){
+    void setuId(String uid){
         this.uid = uid;
     }
 
