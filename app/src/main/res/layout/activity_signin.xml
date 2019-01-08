@@ -1,9 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SigninActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <EditText
+        android:id="@+id/signin_idinput"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="135dp"
+        android:hint="아이디 입력" />
+
+    <EditText
+        android:id="@+id/signin_passwordinput"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/signin_idinput"
+        android:layout_centerHorizontal="true"
+        android:hint="비밀번호 입력"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/signin_loginButton"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/signin_passwordinput"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_alignLeft="@+id/signin_passwordinput"
+        android:text="로그인"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/signin_signupButton"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/signin_passwordinput"
+        android:layout_marginTop="80dp"
+        android:layout_alignRight="@+id/signin_passwordinput"
+        android:text="회원가입"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/signin_findidButton"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_alignTop="@+id/signin_signupButton"
+        android:layout_toLeftOf="@id/signin_signupButton"
+        android:text="아이디 찾기"
+        android:textAllCaps="false" />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_alignTop="@id/signin_signupButton"
+        android:layout_alignLeft="@+id/signin_passwordinput"
+        android:text="비밀번호 찾기"
+        android:textSize="13sp"
+        android:textAllCaps="false"/>
+
+    <CheckBox
+        android:id="@+id/signin_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signin_findidButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="자동 로그인" />
+</RelativeLayout>

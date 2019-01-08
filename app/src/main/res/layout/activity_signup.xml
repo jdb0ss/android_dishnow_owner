@@ -81,7 +81,6 @@
                   android:layout_marginRight="10dp"
                   android:hint="휴대폰 번호(- 없이)" />
               <Button
-                  android:layout_marginLeft="10dp"
                   android:layout_width="100dp"
                   android:layout_height="wrap_content"
                   android:text="인증 받기"

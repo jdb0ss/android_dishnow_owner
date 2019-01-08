@@ -54,23 +54,26 @@ public class SignupActivity extends AppCompatActivity {
     private String owneremail;
     private String ownername;
     private String ownerphone;
+    private static String phone;
 
     private RequestQueue requestQueue;
     private final String feed_url = "http://claor123.cafe24.com/Owner_Signup.php";
 
-    public Boolean passwordcheck(){
-        ownerpassword = Eownerpassword.getText().toString();
-        ownerpassword2 = Eownerpassword2.getText().toString();
-        if(ownerpassword.equals(ownerpassword2)){
-            userAuthClass.setOwnerpassword(ownerpassword);
-            return true;
-        }else {
-            Toast.makeText(getApplicationContext(),"비밀번호가 일치하지 않습니다.",Toast.LENGTH_SHORT).show();
-            return false;
-        }
-    }
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_signup);
+        buttonauthphone = findViewById(R.id.signup_authphone);
+        buttonsignup = findViewById(R.id.signup_signup_button);
+        Eownername = findViewById(R.id.signup_ownername);
+        Eownerphone = findViewById(R.id.signup_ownerphone);
+        Eownerid = findViewById(R.id.signup_ownerid);
+        Eowneremail = findViewById(R.id.signup_owneremail);
+        Eownerpassword = findViewById(R.id.signup_ownerpassword);
+        Eownerpassword2 = findViewById(R.id.signup_ownerpassword_repeat);
 
-    private void phonecheck() {
+        requestQueue = Volley.newRequestQueue(this);
+
         TelephonyManager telephonyManager = (TelephonyManager) getSystemService(TELEPHONY_SERVICE);
         if (ActivityCompat.checkSelfPermission(this,
                 Manifest.permission.READ_SMS) != PackageManager.PERMISSION_GRANTED &&
@@ -87,31 +90,11 @@ public class SignupActivity extends AppCompatActivity {
             // for ActivityCompat#requestPermissions for more details.
             return;
         }
-        String PhoneNum = telephonyManager.getLine1Number();
-        if (PhoneNum.startsWith("+82")) {
-            PhoneNum = PhoneNum.replace("+82", "0");
+        final String PhoneNum = telephonyManager.getLine1Number();
+        phone=PhoneNum;
+        if(PhoneNum.startsWith("+82")){
+            phone = "0"+phone.substring(3);
         }
-        if(ownerphone.equals(PhoneNum)){
-            IsPhone = true;
-            Toast.makeText(getApplicationContext(),"인증 성공!",Toast.LENGTH_SHORT).show();
-        }else{
-            Toast.makeText(getApplicationContext(),"인증 실패.",Toast.LENGTH_SHORT).show();
-        }
-    }
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signup);
-        buttonauthphone = findViewById(R.id.signup_authphone);
-        buttonsignup = findViewById(R.id.signup_signup_button);
-        Eownername = findViewById(R.id.signup_ownername);
-        Eownerphone = findViewById(R.id.signup_ownerphone);
-        Eownerid = findViewById(R.id.signup_resid);
-        Eownerpassword = findViewById(R.id.signup_respassword);
-        Eownerpassword2 = findViewById(R.id.signup_respassword_repeat);
-
-        requestQueue = Volley.newRequestQueue(this);
 
         final StringRequest StringRequest = new StringRequest(Request.Method.POST, feed_url, new Response.Listener<String>() {
             @Override
@@ -140,7 +123,13 @@ public class SignupActivity extends AppCompatActivity {
         buttonauthphone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                phonecheck();
+                ownerphone = Eownerphone.getText().toString();
+                IsPhone = phone.equals(ownerphone);
+                if(phone.equals(ownerphone)){
+                    Toast.makeText(getApplicationContext(),"인증 성공!",Toast.LENGTH_SHORT).show();
+                }else{
+                    Toast.makeText(getApplicationContext(),"인증 실패.",Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
@@ -151,23 +140,26 @@ public class SignupActivity extends AppCompatActivity {
                 ownername = Eownername.getText().toString();
                 owneremail = Eowneremail.getText().toString();
                 ownerphone = Eownerphone.getText().toString();
-                userAuthClass.setOwnerid(ownerid);
-                userAuthClass.setOwnername(ownername);
-                userAuthClass.setOwnerphone(ownerphone);
-                userAuthClass.setOwneremail(owneremail);
+                ownerpassword = Eownerpassword.getText().toString();
+                ownerpassword2 = Eownerpassword2.getText().toString();
 
-                if(passwordcheck()) {
-                    if(IsPhone){
+                if(ownerpassword2.equals(ownerpassword)) {
+                    if(IsPhone==true){
                         requestQueue.add(StringRequest);
                         Toast.makeText(getApplicationContext(),"가입 완료!",Toast.LENGTH_SHORT).show();
+                        userAuthClass.setOwnerpassword(ownerpassword);
+                        userAuthClass.setOwnerid(ownerid);
+                        userAuthClass.setOwnername(ownername);
+                        userAuthClass.setOwnerphone(ownerphone);
+                        userAuthClass.setOwneremail(owneremail);
                     }else{
                         Toast.makeText(getApplicationContext(),"전화번호 인증을 해주세요.",Toast.LENGTH_SHORT).show();
                     }
+                }else{
+                    Toast.makeText(getApplicationContext(),"비밀번호가 일치하지 않습니다.",Toast.LENGTH_SHORT).show();
                 }
             }
         });
 
     }
-
-
 }
