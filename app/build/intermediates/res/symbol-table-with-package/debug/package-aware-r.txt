@@ -641,6 +641,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable account
 drawable btn_x
+drawable header_background
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable kakao_account_button_background
@@ -668,6 +669,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable selector_login_button
+drawable signin_button
 drawable story
 drawable talk
 drawable tooltip_frame_dark
@@ -757,6 +759,7 @@ id login_method_icon
 id login_method_layout
 id login_method_text
 id login_title_text
+id main_hello
 id message
 id middle
 id multiply
@@ -774,6 +777,9 @@ id progress_bar
 id progress_circular
 id progress_horizontal
 id radio
+id res_auth_name
+id res_auth_plz
+id res_auth_signup
 id right
 id right_icon
 id right_side
@@ -796,12 +802,14 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
-id signin_checkBox
+id siginup_id_overlap
 id signin_findidButton
 id signin_idinput
 id signin_loginButton
 id signin_passwordinput
 id signin_signupButton
+id signin_title
+id signin_wronginput
 id signup_authphone
 id signup_first
 id signup_owneremail
@@ -831,6 +839,7 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
+id textView
 id time
 id title
 id titleDividerNoCustom
@@ -879,6 +888,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_kakao_webview
 layout activity_main
+layout activity_res_auth
 layout activity_signin
 layout activity_signup
 layout kakao_login_layout

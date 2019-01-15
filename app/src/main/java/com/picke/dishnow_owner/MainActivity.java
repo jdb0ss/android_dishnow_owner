@@ -4,29 +4,29 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     String feed_url = "http://claor123.cafe24.com/Callout.php";
-    private String mJsonString;
-    private Intent intent;
-    private String res_id;
+    private TextView hello;
     boolean Start = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        GetData task = new GetData();
-        task.execute(feed_url,res_id);
-        if(Start==true)startActivity(intent);
-    }
+        Intent intent = getIntent();
+        final String id = intent.getStringExtra("o_id");
+        final String name = intent.getStringExtra("o_name");
+        int resauth = intent.getIntExtra("o_resauth",0);
 
-    public class GetData extends AsyncTask<String, Void, String>{
-        String target;
+        hello=findViewById(R.id.main_hello);
+        hello.setText("환영합니다, "+ name +"님!");
 
-        @Override
-        protected String doInBackground(String... strings) {
-            return null;
-        }
+
+
+
+
     }
 }
