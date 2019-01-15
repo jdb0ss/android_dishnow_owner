@@ -65,16 +65,20 @@ public class SigninActivity extends AppCompatActivity {
                 ||ContextCompat.checkSelfPermission(this,Manifest.permission.READ_SMS)
                 !=PackageManager.PERMISSION_GRANTED
                 ||ContextCompat.checkSelfPermission(this,Manifest.permission.READ_CONTACTS)
-                !=PackageManager.PERMISSION_GRANTED)
+                !=PackageManager.PERMISSION_GRANTED
+                ||ContextCompat.checkSelfPermission(this,Manifest.permission.READ_EXTERNAL_STORAGE)
+                !=PackageManager.PERMISSION_GRANTED
+                )
         {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_PHONE_NUMBERS,
                     Manifest.permission.ACCESS_COARSE_LOCATION,
                     Manifest.permission.ACCESS_FINE_LOCATION,
                     Manifest.permission.READ_CONTACTS,
                     Manifest.permission.READ_PHONE_STATE,
-                    Manifest.permission.READ_SMS}, PERMISSION);
+                    Manifest.permission.READ_SMS,
+                    Manifest.permission.READ_EXTERNAL_STORAGE
+                    }, PERMISSION);
         }
-
 
         signupbutton = findViewById(R.id.signin_signupButton);
         signinbutton = findViewById(R.id.signin_loginButton);

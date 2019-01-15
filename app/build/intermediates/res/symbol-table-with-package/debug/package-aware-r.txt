@@ -780,6 +780,7 @@ id radio
 id res_auth_name
 id res_auth_plz
 id res_auth_signup
+id res_signup_imageupload
 id right
 id right_icon
 id right_side
@@ -889,6 +890,7 @@ layout abc_tooltip
 layout activity_kakao_webview
 layout activity_main
 layout activity_res_auth
+layout activity_res_signup
 layout activity_signin
 layout activity_signup
 layout kakao_login_layout

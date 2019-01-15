@@ -28,4 +28,7 @@ dependencies {
     implementation 'com.mcxiaoke.volley:library:1.0.18'
     implementation group: project.KAKAO_SDK_GROUP, name: 'usermgmt',
             version: project.KAKAO_SDK_VERSION
+    implementation 'com.squareup.okhttp3:okhttp:3.8.1'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
 }
