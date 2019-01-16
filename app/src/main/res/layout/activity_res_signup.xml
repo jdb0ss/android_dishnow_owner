@@ -1,16 +1,175 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ResSignupActivity">
+    tools:context=".ResSignupActivity"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    >
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="사업자 정보 필수 입력 정보"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            >
 
-    <Button
-        android:layout_width="wrap_content"
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text="사업자 번호"
+                android:gravity="center"
+                />
+            <EditText
+                android:id="@+id/res_signup_resnum"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                />
+            <Button
+                android:id="@+id/res_signup_findresnum"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text="조회"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text="사업자등록증 사본등록"
+                android:textSize="12sp"
+                android:gravity="center"
+                />
+            <EditText
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                />
+            <Button
+                android:id="@+id/res_signup_findimage"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="찾아보기"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text="사업주명"
+                android:gravity="center"
+                />
+            <EditText
+                android:id="@+id/res_signup_ownername"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="음식점 정보"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text="음식점 이름"
+                android:gravity="center"
+                />
+            <EditText
+                android:id="@+id/res_signup_resname"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text="음식점 전화번호"
+                android:gravity="center"
+                />
+            <EditText
+                android:id="@+id/res_signup_resphonenum"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text="음식점 주소"
+                android:gravity="center"
+                />
+            <EditText
+                android:id="@+id/res_signup_location"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                />
+            <Button
+                android:id="@+id/res_signup_findlocal"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="주소검색"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="사진 첨부"
-        android:id="@+id/res_signup_imageupload"/>
-
-
-</android.support.constraint.ConstraintLayout>
+        android:layout_marginBottom="10dp"
+        >
+        <Button
+            android:id="@+id/res_signup_ressignup"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:text="등록완료"
+            android:textSize="20sp"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+</LinearLayout>

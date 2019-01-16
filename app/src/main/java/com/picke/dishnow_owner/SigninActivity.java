@@ -31,7 +31,6 @@ import org.json.JSONObject;
 
 import java.util.HashMap;
 import java.util.Map;
-
 public class SigninActivity extends AppCompatActivity {
 
     Button signupbutton;
@@ -52,6 +51,7 @@ public class SigninActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signin);
+
 
 
         if(Build.VERSION.SDK_INT>=23&&ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
@@ -146,7 +146,6 @@ public class SigninActivity extends AppCompatActivity {
                 return params;
             }
         };
-
         signinbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

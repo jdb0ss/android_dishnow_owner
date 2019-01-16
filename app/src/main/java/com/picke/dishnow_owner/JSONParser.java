@@ -17,13 +17,14 @@ import okhttp3.RequestBody;
 import okhttp3.Response;
 
 public class JSONParser {
+    static String filename="";
 
     public static JSONObject uploadImage(String imageUploadUrl,String sourceImageFile,String id){
         try{
             File sourceFile = new File(sourceImageFile);
             final MediaType MEDIA_TYPE_PNG = MediaType.parse("image/*");
-            String filename = sourceImageFile.substring(sourceImageFile.lastIndexOf("/")+1);
-            Log.d("spark123",filename);
+            filename = sourceImageFile.substring(sourceImageFile.lastIndexOf("/")+1);
+            filename = id+"_res_auth"+filename.substring(filename.lastIndexOf("."));
 
             //OKHTTP3
             RequestBody requestBody = new MultipartBody.Builder()
@@ -42,10 +43,13 @@ public class JSONParser {
             String res = response.body().string();
             return new JSONObject(res);
         } catch (UnknownHostException | UnsupportedEncodingException e) {
-            Log.e("TAG", "Error: " + e.getLocalizedMessage());
+            Log.e("TAG2", "Error: " + e.getLocalizedMessage());
         } catch (Exception e) {
-            Log.e("TAG", "Other Error: " + e.getLocalizedMessage());
+            Log.e("TAG2", "Other Error: " + e.getLocalizedMessage());
         }
         return null;
+    }
+    public static String get_url(){
+        return filename;
     }
 }

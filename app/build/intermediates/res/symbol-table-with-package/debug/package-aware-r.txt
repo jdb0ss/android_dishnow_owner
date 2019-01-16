@@ -780,7 +780,15 @@ id radio
 id res_auth_name
 id res_auth_plz
 id res_auth_signup
-id res_signup_imageupload
+id res_signup_findimage
+id res_signup_findlocal
+id res_signup_findresnum
+id res_signup_location
+id res_signup_ownername
+id res_signup_resname
+id res_signup_resnum
+id res_signup_resphonenum
+id res_signup_ressignup
 id right
 id right_icon
 id right_side
