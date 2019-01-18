@@ -24,7 +24,7 @@
             android:value="6b32b4ba0498283ab49ee7db948eeeb1" />
 
         <activity
-            android:name=".SigninActivity"
+            android:name=".MainActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,10 +32,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".SigninActivity" />
         <activity android:name=".SignupActivity" />
         <activity android:name=".ResAuthActivity" />
-        <activity android:name=".ResSignupActivity"></activity>
+        <activity android:name=".ResSignupActivity" />
+        <activity android:name=".PopupActivity"></activity>
     </application>
 
 </manifest>

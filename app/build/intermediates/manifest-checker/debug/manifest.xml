@@ -33,7 +33,7 @@
             android:value="6b32b4ba0498283ab49ee7db948eeeb1" />
 
         <activity
-            android:name="com.picke.dishnow_owner.SigninActivity"
+            android:name="com.picke.dishnow_owner.MainActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -41,10 +41,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.picke.dishnow_owner.MainActivity" />
+        <activity android:name="com.picke.dishnow_owner.SigninActivity" />
         <activity android:name="com.picke.dishnow_owner.SignupActivity" />
         <activity android:name="com.picke.dishnow_owner.ResAuthActivity" />
         <activity android:name="com.picke.dishnow_owner.ResSignupActivity" />
+        <activity android:name="com.picke.dishnow_owner.PopupActivity" />
         <activity
             android:name="com.kakao.auth.authorization.authcode.KakaoWebViewActivity"
             android:configChanges="orientation|screenSize"

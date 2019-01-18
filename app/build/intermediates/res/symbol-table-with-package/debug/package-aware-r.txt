@@ -759,16 +759,20 @@ id login_method_icon
 id login_method_layout
 id login_method_text
 id login_title_text
-id main_hello
+id main_button
+id main_chat
+id main_tv
 id message
 id middle
 id multiply
 id never
+id no_button
 id none
 id normal
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id numbers
 id packed
 id parent
 id parentPanel
@@ -789,6 +793,7 @@ id res_signup_resname
 id res_signup_resnum
 id res_signup_resphonenum
 id res_signup_ressignup
+id resid
 id right
 id right_icon
 id right_side
@@ -862,6 +867,7 @@ id webview
 id withText
 id wrap
 id wrap_content
+id yes_button
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
 integer cancel_button_image_alpha
@@ -897,6 +903,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_kakao_webview
 layout activity_main
+layout activity_popup
 layout activity_res_auth
 layout activity_res_signup
 layout activity_signin

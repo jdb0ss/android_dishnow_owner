@@ -30,6 +30,5 @@ import android.widget.TextView;
             Intent intent1 = new Intent(ResAuthActivity.this,ResSignupActivity.class);
             intent1.putExtra("o_id",id);
             startActivity(intent1);
-
         }
 }
