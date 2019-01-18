@@ -8,7 +8,6 @@
         android:id="@+id/main_chat"
         android:layout_height="wrap_content"
         android:layout_width="fill_parent"
-
     />
 
     <Button
