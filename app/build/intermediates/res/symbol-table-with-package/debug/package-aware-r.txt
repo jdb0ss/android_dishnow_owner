@@ -760,7 +760,10 @@ id login_method_layout
 id login_method_text
 id login_title_text
 id main_button
+id main_call
 id main_chat
+id main_people
+id main_phone
 id main_tv
 id message
 id middle

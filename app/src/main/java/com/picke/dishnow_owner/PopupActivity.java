@@ -23,17 +23,15 @@ import java.net.URL;
 public class PopupActivity extends AppCompatActivity {
     TextView res_id;
     TextView numbers;
-    //내가작성*******************************************************************//
     Button yes;
     Button nop;
-    String feed_url = "http://claor123.cafe24.com/Respermit.php";
+   //String feed_url = "http://claor123.cafe24.com/Respermit.php";
     private static final String TAG = "claor123";
     private String mJsonString;
     public String start = "fffffffff";
     boolean Start = false;
     public Intent intent;
 
-    //내가작성*******************************************************************//
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,35 +39,32 @@ public class PopupActivity extends AppCompatActivity {
         res_id = findViewById(R.id.resid);
         numbers = findViewById(R.id.numbers);
         final Bundle extras = getIntent().getExtras();
-        res_id.setText(extras.getString("user_id"));
-        numbers.setText(extras.getString("numbers"));
-        //내가작성*******************************************************************//
-        final String A = extras.getString("user_id");
-        final String B = extras.getString("numbers");
+        res_id.setText(extras.getString("user_people"));
+        numbers.setText(extras.getString("user_phone"));
+        final String A = extras.getString("user_people");
+        final String B = extras.getString("user_phone");
         yes = (Button) findViewById(R.id.yes_button);
         nop = (Button) findViewById(R.id.no_button);
         yes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 GetData task = new GetData();
-                task.execute(feed_url, "1", A, B);
+                //task.execute(feed_url, "1", A, B);
                 intent = new Intent(PopupActivity.this, MainActivity.class);
-                finish();
                 startActivity(intent);
+                finish();
             }
         });
         nop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 intent = new Intent(PopupActivity.this, MainActivity.class);
-                finish();
                 startActivity(intent);
+                finish();
             }
         });
-        //내가작성*******************************************************************//
     }
 
-    //내가작성*******************************************************************//
     public class GetData extends AsyncTask<String, Void, String> {
         //ProgressDialog progressDialog;
         String target;
