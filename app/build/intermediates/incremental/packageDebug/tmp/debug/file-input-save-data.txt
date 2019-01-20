@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun Jan 20 01:16:03 KST 2019
+#Sun Jan 20 18:31:22 KST 2019
 0.baseType=DIRECTORY
 0.base=/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/transforms/dexMerger/debug/0
 0.path=classes.dex

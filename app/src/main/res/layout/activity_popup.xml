@@ -33,13 +33,9 @@
 
         <!-- Notice -->
 
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="24dp">
 
         <TextView
-            android:id="@+id/resid"
+            android:id="@+id/popup_user_numbers"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="3dp"
@@ -49,7 +45,7 @@
             android:textSize="15sp" />
 
         <TextView
-            android:id="@+id/numbers"
+            android:id="@+id/popup_user_time"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="3dp"
@@ -73,7 +69,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/yes_button"
+                android:id="@+id/popup_yes_button"
                 android:layout_width="150sp"
                 android:layout_height="53dp"
                 android:background="#00000000"
@@ -85,7 +81,7 @@
                 android:textSize="15sp" />
 
             <Button
-                android:id="@+id/no_button"
+                android:id="@+id/popup_no_button"
                 android:layout_width="150sp"
                 android:layout_height="53dp"
                 android:background="#00000000"

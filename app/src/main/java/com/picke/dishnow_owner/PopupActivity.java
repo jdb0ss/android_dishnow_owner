@@ -20,42 +20,57 @@ import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+import io.socket.client.Socket;
+
 public class PopupActivity extends AppCompatActivity {
-    TextView res_id;
-    TextView numbers;
-    Button yes;
-    Button nop;
-   //String feed_url = "http://claor123.cafe24.com/Respermit.php";
+    TextView tuser_numbers;
+    TextView tuser_time;
+    Button byes;
+    Button bnop;
+    String feed_url = "http://claor123.cafe24.com/Respermit.php";
     private static final String TAG = "claor123";
     private String mJsonString;
     public String start = "fffffffff";
     boolean Start = false;
     public Intent intent;
+    private Socket mSocket;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_popup);
-        res_id = findViewById(R.id.resid);
-        numbers = findViewById(R.id.numbers);
+        tuser_numbers = findViewById(R.id.popup_user_numbers);
+        tuser_time = findViewById(R.id.popup_user_time);
         final Bundle extras = getIntent().getExtras();
-        res_id.setText(extras.getString("user_people"));
-        numbers.setText(extras.getString("user_phone"));
-        final String A = extras.getString("user_people");
-        final String B = extras.getString("user_phone");
-        yes = (Button) findViewById(R.id.yes_button);
-        nop = (Button) findViewById(R.id.no_button);
-        yes.setOnClickListener(new View.OnClickListener() {
+        tuser_numbers.setText(extras.getString("user_numbers"));
+        tuser_time.setText(extras.getString("user_time"));
+        final String user_people = extras.getString("user_numbers");
+        final String user_time = extras.getString("user_time");
+        final String user_id = extras.getString("user_id");
+        final String res_id = extras.getString("res_id");
+        byes = (Button) findViewById(R.id.popup_yes_button);
+        bnop = (Button) findViewById(R.id.popup_no_button);
+        byes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 GetData task = new GetData();
+                JSONObject jsonObject = null;
+                try{
+                    jsonObject = new JSONObject();
+                    jsonObject.put("res_id",res_id);
+                    jsonObject.put("user_id",user_id);
+                    mSocket.emit("res_yes",jsonObject);
+                }catch (Exception e){
+                    e.printStackTrace();
+                }
                 //task.execute(feed_url, "1", A, B);
+
                 intent = new Intent(PopupActivity.this, MainActivity.class);
                 startActivity(intent);
                 finish();
             }
         });
-        nop.setOnClickListener(new View.OnClickListener() {
+        bnop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 intent = new Intent(PopupActivity.this, MainActivity.class);

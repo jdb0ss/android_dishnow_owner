@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText ephone;
     Button callbutton;
     Handler handler = null;
-    String res_id = "2";
+    String res_id = "3";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,26 +67,27 @@ public class MainActivity extends AppCompatActivity {
         try {
             mSocket = IO.socket("http://ec2-18-218-206-167.us-east-2.compute.amazonaws.com:3000");
             mSocket.on(Socket.EVENT_CONNECT, (Object... objects) -> {
-                runOnUiThread(()->{
-                    JsonObject prejsonobject = new JsonObject();
-                    prejsonobject.addProperty("res_id",res_id);
-                    JSONObject jsonObject_id = null;
-                    try{
-                        jsonObject_id = new JSONObject(prejsonobject.toString());
-                    }catch(Exception e){
-                        e.printStackTrace();
-                    }
-                    JSONObject finalJsonObject_id = jsonObject_id;
-                    mSocket.emit("res_id", finalJsonObject_id);
-                });
+                JsonObject prejsonobject = new JsonObject();
+                prejsonobject.addProperty("res_id",res_id);
+                JSONObject jsonObject_id = null;
+                try{
+                    jsonObject_id = new JSONObject(prejsonobject.toString());
+                }catch(Exception e){
+                    e.printStackTrace();
+                }
+                JSONObject finalJsonObject_id = jsonObject_id;
+                mSocket.emit("res_id", finalJsonObject_id);
             }).on("user_call", (Object... objects) -> {
                 JsonParser jsonParsers = new JsonParser();
                 JsonObject jsonObject = (JsonObject) jsonParsers.parse(objects[0].toString());
                 runOnUiThread(() -> {
                     Intent intent = new Intent(MainActivity.this,PopupActivity.class);
-                    intent.putExtra("user_people", jsonObject.get("user_people").toString());
-                    intent.putExtra("user_phone", jsonObject.get("user_phone").toString());
+                    intent.putExtra("user_numbers", jsonObject.get("user_numbers").toString());
+                    intent.putExtra("user_time", jsonObject.get("user_time").toString());
+                    intent.putExtra("user_id",jsonObject.get("user_id").toString());
+                    intent.putExtra("res_id",res_id);
                     startActivity(intent);
+                    finish();
                 });
             });
             mSocket.connect();
@@ -106,60 +107,27 @@ public class MainActivity extends AppCompatActivity {
             mSocket.emit("msg",jsonObject);
             editText.setText("");
         });
-
-
-        callbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-               JSONObject jsonObject = new JSONObject();
-                try {
-                    jsonObject.put("user_id","1");
-                    jsonObject.put("user_people","23");
-                    jsonObject.put("user_phone","123455167");
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-                JSONArray jsonArray = null;
-               try {
-                   jsonArray = new JSONArray();
-                   jsonArray.put("1");
-                   jsonArray.put("2");
-                   jsonArray.put("3");
-               }catch (Exception e){
-                   e.printStackTrace();
-               }
-                try {
-                    jsonObject.put("res_list",jsonArray);
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-                mSocket.emit("user_call",jsonObject);
-            }
-        });
-
     }
     @Override
     public void onPause(){
         super.onPause();
-        mSocket.disconnect();
+        //mSocket.disconnect();
     }
     @Override
     public void onResume(){
         super.onResume();
-        JsonObject prejsonobject = new JsonObject();
-        prejsonobject.addProperty("res_id",res_id);
-        JSONObject jsonObject_id = null;
-        try{
-            jsonObject_id = new JSONObject(prejsonobject.toString());
-        }catch(Exception e){
-            e.printStackTrace();
-        }
-        JSONObject finalJsonObject_id = jsonObject_id;
-        mSocket.emit("res_id", finalJsonObject_id);
-        mSocket.connect();
-
+            JsonObject prejsonobject = new JsonObject();
+            prejsonobject.addProperty("res_id", res_id);
+            JSONObject jsonObject_id = null;
+            try {
+                jsonObject_id = new JSONObject(prejsonobject.toString());
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            JSONObject finalJsonObject_id = jsonObject_id;
+            mSocket.emit("res_id", finalJsonObject_id);
+            mSocket.connect();
     }
-
 }
 
 

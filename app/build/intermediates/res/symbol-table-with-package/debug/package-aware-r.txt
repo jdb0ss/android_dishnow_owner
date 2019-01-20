@@ -769,17 +769,19 @@ id message
 id middle
 id multiply
 id never
-id no_button
 id none
 id normal
 id notification_background
 id notification_main_column
 id notification_main_column_container
-id numbers
 id packed
 id parent
 id parentPanel
 id percent
+id popup_no_button
+id popup_user_numbers
+id popup_user_time
+id popup_yes_button
 id progress_bar
 id progress_circular
 id progress_horizontal
@@ -796,7 +798,6 @@ id res_signup_resname
 id res_signup_resnum
 id res_signup_resphonenum
 id res_signup_ressignup
-id resid
 id right
 id right_icon
 id right_side
@@ -870,7 +871,6 @@ id webview
 id withText
 id wrap
 id wrap_content
-id yes_button
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
 integer cancel_button_image_alpha
