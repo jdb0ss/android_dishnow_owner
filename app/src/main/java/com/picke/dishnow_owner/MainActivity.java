@@ -1,9 +1,14 @@
 package com.picke.dishnow_owner;
 
+import android.content.Context;
 import android.content.Intent;
+import android.media.Ringtone;
+import android.media.RingtoneManager;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Handler;
 import android.os.Parcelable;
+import android.os.Vibrator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.JsonReader;
@@ -44,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
     public String start;
     boolean Start = false;
     public Intent intent;
-    private Socket mSocket;
+    static public Socket mSocket;
     private Button button;
     private EditText editText;
     private TextView tv;
@@ -53,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
     Button callbutton;
     Handler handler = null;
     String res_id = "3";
+    private Vibrator vibrator;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,6 +70,8 @@ public class MainActivity extends AppCompatActivity {
         ephone = findViewById(R.id.main_phone);
         epeople = findViewById(R.id.main_people);
         callbutton = findViewById(R.id.main_call);
+        vibrator = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
+
         try {
             mSocket = IO.socket("http://ec2-18-218-206-167.us-east-2.compute.amazonaws.com:3000");
             mSocket.on(Socket.EVENT_CONNECT, (Object... objects) -> {
@@ -78,6 +86,11 @@ public class MainActivity extends AppCompatActivity {
                 JSONObject finalJsonObject_id = jsonObject_id;
                 mSocket.emit("res_id", finalJsonObject_id);
             }).on("user_call", (Object... objects) -> {
+                vibrator.vibrate(2000);
+                Uri uri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+                Ringtone ringtone = RingtoneManager.getRingtone(getApplicationContext(), uri);
+                ringtone.play();
+
                 JsonParser jsonParsers = new JsonParser();
                 JsonObject jsonObject = (JsonObject) jsonParsers.parse(objects[0].toString());
                 runOnUiThread(() -> {
@@ -108,11 +121,13 @@ public class MainActivity extends AppCompatActivity {
             editText.setText("");
         });
     }
+
     @Override
     public void onPause(){
         super.onPause();
-        //mSocket.disconnect();
+        mSocket.disconnect();
     }
+
     @Override
     public void onResume(){
         super.onResume();
@@ -129,5 +144,3 @@ public class MainActivity extends AppCompatActivity {
             mSocket.connect();
     }
 }
-
-

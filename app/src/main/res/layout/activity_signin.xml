@@ -55,7 +55,6 @@
         android:layout_marginLeft="47dp"
         android:layout_marginTop="380dp"
         android:textSize="16dp"
-
         android:textStyle="bold"
         android:textColor="#E60012"
         />

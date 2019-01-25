@@ -3,6 +3,8 @@ package com.picke.dishnow_owner;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.database.Cursor;
+import android.location.Address;
+import android.location.Geocoder;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.provider.MediaStore;
@@ -13,6 +15,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -26,7 +29,9 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.IOException;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class ResSignupActivity extends AppCompatActivity {
@@ -39,6 +44,7 @@ public class ResSignupActivity extends AppCompatActivity {
     private EditText textresname;
     private EditText textownername;
     private EditText textresphonenum;
+    private EditText textlocation;
     private String sresnum;
     private String sresname;
     private String sownername;
@@ -55,6 +61,8 @@ public class ResSignupActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_res_signup);
 
+        final Geocoder geocoder = new Geocoder(this);
+
 
         Intent intent = getIntent();
         id = intent.getStringExtra("o_id");
@@ -66,6 +74,7 @@ public class ResSignupActivity extends AppCompatActivity {
         textresname = findViewById(R.id.res_signup_resname);
         textownername = findViewById(R.id.res_signup_ownername);
         textresphonenum = findViewById(R.id.res_signup_resphonenum);
+        textlocation = findViewById(R.id.res_signup_location);
 
         imageuploadbutton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -103,12 +112,32 @@ public class ResSignupActivity extends AppCompatActivity {
             }
         });
 
+
+        buttonfindlocal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                List<Address> list = null;
+                try {
+                    list = geocoder.getFromLocationName(textlocation.getText().toString(),10);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                    Toast.makeText(getApplicationContext(),"인터넷 상태를 확인해 주세요.",Toast.LENGTH_SHORT).show();
+                }
+                if(list!=null){
+                    double x= list.get(0).getLatitude();
+                    textlocation.setText(String.valueOf(x));
+                }else{
+                    Toast.makeText(getApplicationContext(),"정확한 주소를 입력해 주세요",Toast.LENGTH_LONG);
+                }
+            }
+        });
+
+
         requestQueue = Volley.newRequestQueue(this);
     }
     final StringRequest stringRequest = new StringRequest(Request.Method.POST, resauth_url_url, new Response.Listener<String>() {
         @Override
         public void onResponse(String response) {
-
         }
     }, new Response.ErrorListener() {
         @Override

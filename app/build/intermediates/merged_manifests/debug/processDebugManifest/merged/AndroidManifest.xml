@@ -17,6 +17,7 @@
     <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
@@ -33,7 +34,7 @@
             android:value="6b32b4ba0498283ab49ee7db948eeeb1" />
 
         <activity
-            android:name="com.picke.dishnow_owner.MainActivity"
+            android:name="com.picke.dishnow_owner.SigninActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -41,7 +42,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.picke.dishnow_owner.SigninActivity" />
+        <activity android:name="com.picke.dishnow_owner.MainActivity" />
         <activity android:name="com.picke.dishnow_owner.SignupActivity" />
         <activity android:name="com.picke.dishnow_owner.ResAuthActivity" />
         <activity android:name="com.picke.dishnow_owner.ResSignupActivity" />

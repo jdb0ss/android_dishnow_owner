@@ -1,9 +1,11 @@
 package com.picke.dishnow_owner;
 
 import android.Manifest;
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.DownloadManager;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Paint;
 import android.os.Build;
@@ -36,7 +38,7 @@ public class SigninActivity extends AppCompatActivity {
     Button signupbutton;
     Button signinbutton;
     EditText Eidinput;
-    EditText Epassowrdinput;
+    EditText Epasswordinput;
     TextView wronginput;
 
     private String idinput;
@@ -52,8 +54,32 @@ public class SigninActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signin);
 
+        //auto login
+        SharedPreferences auto =  getSharedPreferences("auto",Activity.MODE_PRIVATE);
+        String loginid,loginpassword,id,name,resauth;
+        loginid = auto.getString("o_id",null);
+        loginpassword = auto.getString("o_password",null);
+        if(loginid!=null&&loginpassword!=null){
+            id = auto.getString("id",null);
+            name = auto.getString("o_name",null);
+            resauth = auto.getString("o_resauth",null);
+            Intent intent = new Intent(SigninActivity.this,MainActivity.class);
+            Intent intent_resauth = new Intent(SigninActivity.this,ResAuthActivity.class);
+            intent.putExtra("o_id",id);
+            intent.putExtra("o_name",name);
+            intent.putExtra("o_resauth",resauth);
+            intent_resauth.putExtra("o_id",id);
+            intent_resauth.putExtra("o_name",name);
+            intent_resauth.putExtra("o_resauth",resauth);
+            if(resauth.equals("1")) {
+               startActivity(intent);
+            }else{
+                startActivity(intent_resauth);
+            }
+            finish();
+        }
 
-
+        //permission
         if(Build.VERSION.SDK_INT>=23&&ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
                 !=PackageManager.PERMISSION_GRANTED
                 ||ContextCompat.checkSelfPermission(this,Manifest.permission.ACCESS_COARSE_LOCATION)
@@ -83,18 +109,17 @@ public class SigninActivity extends AppCompatActivity {
         signupbutton = findViewById(R.id.signin_signupButton);
         signinbutton = findViewById(R.id.signin_loginButton);
         Eidinput = findViewById(R.id.signin_idinput);
-        Epassowrdinput = findViewById(R.id.signin_passwordinput);
+        Epasswordinput = findViewById(R.id.signin_passwordinput);
         wronginput = findViewById(R.id.signin_wronginput);
 
         requestQueue = Volley.newRequestQueue(this);
-
         signupbutton.setPaintFlags(signupbutton.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
-
         signupbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(SigninActivity.this,SignupActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -117,6 +142,14 @@ public class SigninActivity extends AppCompatActivity {
                         intent_resauth.putExtra("o_id",id);
                         intent_resauth.putExtra("o_name",name);
                         intent_resauth.putExtra("o_resauth",resauth);
+                        SharedPreferences.Editor autologin = auto.edit();
+                        autologin.putString("id",id);
+                        autologin.putString("o_name",name);
+                        autologin.putString("o_resauth", String.valueOf(resauth));
+                        autologin.putString("o_id",idinput);
+                        autologin.putString("o_password",passwordinput);
+                        autologin.commit();
+
                         if(resauth==1){
                             startActivity(intent);
                         }
@@ -150,7 +183,7 @@ public class SigninActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 idinput = Eidinput.getText().toString();
-                passwordinput = Epassowrdinput.getText().toString();
+                passwordinput = Epasswordinput.getText().toString();
                 requestQueue.add(StringRequest);
             }
         });
