@@ -53,8 +53,11 @@ public class ResSignupActivity extends AppCompatActivity {
     String imagepath;
     String id;
     RequestQueue requestQueue;
+    RequestQueue requestQueue2;
     String resauth_url_url = "http://claor123.cafe24.com/ResAuthURL.php";
     String imageupload_url = "http://claor123.cafe24.com/upload/res_auth/ImageUpload.php";
+    String resinfo_url = "http://claor123.cafe24.com/ResSignup.php";
+    double lat,lon;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,7 +65,6 @@ public class ResSignupActivity extends AppCompatActivity {
         setContentView(R.layout.activity_res_signup);
 
         final Geocoder geocoder = new Geocoder(this);
-
 
         Intent intent = getIntent();
         id = intent.getStringExtra("o_id");
@@ -86,7 +88,6 @@ public class ResSignupActivity extends AppCompatActivity {
         buttonressignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 sresnum = textresnum.getText().toString();
                 sresname = textresname.getText().toString();
                 sownername = textownername.getText().toString();
@@ -105,6 +106,7 @@ public class ResSignupActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),"음식점 전화번호를 입력해주세요",Toast.LENGTH_SHORT).show();
                 }
                 else{
+                    requestQueue2.add(stringRequest2);
                     Intent intent = new Intent(ResSignupActivity.this, MainActivity.class);
                     startActivity(intent);
                     finish();
@@ -124,16 +126,18 @@ public class ResSignupActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),"인터넷 상태를 확인해 주세요.",Toast.LENGTH_SHORT).show();
                 }
                 if(list!=null){
-                    double x= list.get(0).getLatitude();
-                    textlocation.setText(String.valueOf(x));
-                }else{
-                    Toast.makeText(getApplicationContext(),"정확한 주소를 입력해 주세요",Toast.LENGTH_LONG);
+                    if(list.size()==0){
+                        Toast.makeText(getApplicationContext(),"정확한 주소를 입력해 주세요",Toast.LENGTH_LONG);
+                    }else {
+                        lat = list.get(0).getLatitude();
+                        lon = list.get(0).getLongitude();
+                    }
                 }
             }
         });
 
-
         requestQueue = Volley.newRequestQueue(this);
+        requestQueue2 = Volley.newRequestQueue(this);
     }
     final StringRequest stringRequest = new StringRequest(Request.Method.POST, resauth_url_url, new Response.Listener<String>() {
         @Override
@@ -150,6 +154,31 @@ public class ResSignupActivity extends AppCompatActivity {
             Map<String, String> params = new HashMap<>();
             params.put("m_url","http://claor123.cafe24.com/upload/res_auth/"+JSONParser.get_url());
             params.put("m_id",id);
+            return params;
+        }
+    };
+
+    final StringRequest stringRequest2 = new StringRequest(Request.Method.POST, resinfo_url, new Response.Listener<String>() {
+        @Override
+        public void onResponse(String response) {
+        }
+    }, new Response.ErrorListener() {
+        @Override
+        public void onErrorResponse(VolleyError error) {
+            Log.d("spark123","errorv");
+        }
+    }) {
+        @Override
+        protected Map<String, String> getParams() throws AuthFailureError {
+            Map<String, String> params = new HashMap<>();
+            params.put("m_id",id);
+            params.put("m_ownername",sownername);
+            params.put("m_lat",String.valueOf(lat));
+            params.put("m_lon",String.valueOf(lon));
+            params.put("m_address",textlocation.getText().toString());
+            params.put("m_resname",sresname);
+            params.put("m_resnum",sresnum);
+            params.put("m_resphone",sresphonenum);
             return params;
         }
     };

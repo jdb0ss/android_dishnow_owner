@@ -387,6 +387,7 @@ color button_material_light
 color colorAccent
 color colorPrimary
 color colorPrimaryDark
+color color_red
 color com_kakao_account_button_background
 color com_kakao_brown
 color com_kakao_button_background_press
@@ -759,12 +760,7 @@ id login_method_icon
 id login_method_layout
 id login_method_text
 id login_title_text
-id main_button
-id main_call
-id main_chat
-id main_people
-id main_phone
-id main_tv
+id main_show
 id message
 id middle
 id multiply

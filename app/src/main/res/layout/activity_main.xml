@@ -1,66 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#50bcdf"
     android:orientation="vertical">
 
-
-    <EditText
-        android:id="@+id/main_chat"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/main_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="등록"
-        app:layout_constraintBaseline_toBaselineOf="@+id/main_chat"
-        app:layout_constraintEnd_toEndOf="@+id/main_chat" />
-
     <TextView
-        android:id="@+id/main_tv"
+        android:id="@+id/main_show"
         android:layout_width="wrap_content"
-        android:layout_height="24dp"
-        android:layout_marginTop="79dp"
-        android:text="사장님 어플입니다."
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="요청 내역이 없습니다."
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/main_people"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="34dp"
-        android:layout_marginLeft="34dp"
-        android:hint="인원"
-        app:layout_constraintBaseline_toBaselineOf="@+id/main_phone"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/main_phone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginBottom="25dp"
-        android:hint="전화번호"
-        app:layout_constraintBottom_toTopOf="@+id/main_call"
-        app:layout_constraintStart_toEndOf="@+id/main_people" />
-
-    <Button
-        android:id="@+id/main_call"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="88dp"
-        android:text="call"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

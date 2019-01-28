@@ -45,32 +45,22 @@ public class MainActivity extends AppCompatActivity {
 
     String feed_url = "http://claor123.cafe24.com/Callout.php";
     private static final String TAG = "claor123";
-    private String mJsonString;
     public String start;
     boolean Start = false;
     public Intent intent;
     static public Socket mSocket;
-    private Button button;
-    private EditText editText;
-    private TextView tv;
-    private EditText epeople;
-    private EditText ephone;
-    Button callbutton;
     Handler handler = null;
-    String res_id = "3";
+    String res_id;
     private Vibrator vibrator;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        button = findViewById(R.id.main_button);
-        editText = findViewById(R.id.main_chat);
-        tv = findViewById(R.id.main_tv);
-        ephone = findViewById(R.id.main_phone);
-        epeople = findViewById(R.id.main_people);
-        callbutton = findViewById(R.id.main_call);
         vibrator = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
+
+        intent = getIntent();
+        res_id=intent.getStringExtra("o_id");
 
         try {
             mSocket = IO.socket("http://ec2-18-218-206-167.us-east-2.compute.amazonaws.com:3000");
@@ -85,7 +75,8 @@ public class MainActivity extends AppCompatActivity {
                 }
                 JSONObject finalJsonObject_id = jsonObject_id;
                 mSocket.emit("res_id", finalJsonObject_id);
-            }).on("user_call", (Object... objects) -> {
+            });
+            mSocket.on("user_call", (Object... objects) -> {
                 vibrator.vibrate(2000);
                 Uri uri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
                 Ringtone ringtone = RingtoneManager.getRingtone(getApplicationContext(), uri);
@@ -93,33 +84,24 @@ public class MainActivity extends AppCompatActivity {
 
                 JsonParser jsonParsers = new JsonParser();
                 JsonObject jsonObject = (JsonObject) jsonParsers.parse(objects[0].toString());
-                runOnUiThread(() -> {
-                    Intent intent = new Intent(MainActivity.this,PopupActivity.class);
-                    intent.putExtra("user_numbers", jsonObject.get("user_numbers").toString());
-                    intent.putExtra("user_time", jsonObject.get("user_time").toString());
-                    intent.putExtra("user_id",jsonObject.get("user_id").toString());
-                    intent.putExtra("res_id",res_id);
-                    startActivity(intent);
-                    finish();
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        Intent intent = new Intent(MainActivity.this, PopupActivity.class);
+                        intent.putExtra("user_numbers", jsonObject.get("user_numbers").toString());
+                        intent.putExtra("user_time", jsonObject.get("user_time").toString());
+                        intent.putExtra("user_id", jsonObject.get("user_id").toString());
+                        intent.putExtra("res_id", res_id);
+                        startActivity(intent);
+                        finish();
+                    }
                 });
+
             });
             mSocket.connect();
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-        button.setOnClickListener((view)->{
-            JsonObject preJsonobject = new JsonObject();
-            preJsonobject.addProperty("message",editText.getText().toString());
-            JSONObject jsonObject = null;
-            try{
-                jsonObject = new JSONObject(preJsonobject.toString());
-            }catch(JSONException e){
-                e.printStackTrace();
-            }
-            mSocket.emit("msg",jsonObject);
-            editText.setText("");
-        });
     }
 
     @Override

@@ -131,7 +131,6 @@ public class SignupActivity extends AppCompatActivity {
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
-
             }
         }, new Response.ErrorListener() {
             @Override
@@ -229,28 +228,28 @@ public class SignupActivity extends AppCompatActivity {
                 }
                 else if(ownerphone.length()==0)
                 {
-                    Toast.makeText(getApplicationContext(),"핸드폰 번호를 입력해주세요",Toast.LENGTH_SHORT).show();
-                }
-                else if(ownerid.length()<6)
-                {
-                    Toast.makeText(getApplicationContext(),"아이디가 너무 짧습니다",Toast.LENGTH_SHORT).show();
-                }
+                        Toast.makeText(getApplicationContext(),"핸드폰 번호를 입력해주세요",Toast.LENGTH_SHORT).show();
+                    }
+                    else if(ownerid.length()<6)
+                    {
+                        Toast.makeText(getApplicationContext(),"아이디가 너무 짧습니다",Toast.LENGTH_SHORT).show();
+                    }
 
-                //이메일형식체크
-                else if(!android.util.Patterns.EMAIL_ADDRESS.matcher(owneremail).matches())
-                {
-                    Toast.makeText(getApplicationContext(),"이메일 형식이 아닙니다",Toast.LENGTH_SHORT).show();
-                }
+                    //이메일형식체크
+                    else if(!android.util.Patterns.EMAIL_ADDRESS.matcher(owneremail).matches())
+                    {
+                        Toast.makeText(getApplicationContext(),"이메일 형식이 아닙니다",Toast.LENGTH_SHORT).show();
+                    }
 
-                //비밀번호 유효성
-                else if(!Pattern.matches("^(?=.*[a-zA-Z]+)(?=.*[!@#$%^*+=-]|.*[0-9]+).{8,20}$", ownerpassword))
-                {
-                    Toast.makeText(getApplicationContext(),"비밀번호 형식이 맞지않습니다",Toast.LENGTH_SHORT).show();
-                }
-                else {
+                    //비밀번호 유효성
+                    else if(!Pattern.matches("^(?=.*[a-zA-Z]+)(?=.*[!@#$%^*+=-]|.*[0-9]+).{8,20}$", ownerpassword))
+                    {
+                        Toast.makeText(getApplicationContext(),"비밀번호 형식이 맞지않습니다",Toast.LENGTH_SHORT).show();
+                    }
+                    else {
 
-                    if (Idcheck == true) {
-                        if (ownerpassword2.equals(ownerpassword)) {
+                        if (Idcheck == true) {
+                            if (ownerpassword2.equals(ownerpassword)) {
                             if (IsPhone == true) {
                                 requestQueue.add(StringRequest);
                                 Toast.makeText(getApplicationContext(), "가입 완료!", Toast.LENGTH_SHORT).show();
@@ -271,6 +270,4 @@ public class SignupActivity extends AppCompatActivity {
         });
 
     }
-
-
 }

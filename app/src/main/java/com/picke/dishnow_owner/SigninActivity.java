@@ -54,31 +54,6 @@ public class SigninActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signin);
 
-        //auto login
-        SharedPreferences auto =  getSharedPreferences("auto",Activity.MODE_PRIVATE);
-        String loginid,loginpassword,id,name,resauth;
-        loginid = auto.getString("o_id",null);
-        loginpassword = auto.getString("o_password",null);
-        if(loginid!=null&&loginpassword!=null){
-            id = auto.getString("id",null);
-            name = auto.getString("o_name",null);
-            resauth = auto.getString("o_resauth",null);
-            Intent intent = new Intent(SigninActivity.this,MainActivity.class);
-            Intent intent_resauth = new Intent(SigninActivity.this,ResAuthActivity.class);
-            intent.putExtra("o_id",id);
-            intent.putExtra("o_name",name);
-            intent.putExtra("o_resauth",resauth);
-            intent_resauth.putExtra("o_id",id);
-            intent_resauth.putExtra("o_name",name);
-            intent_resauth.putExtra("o_resauth",resauth);
-            if(resauth.equals("1")) {
-               startActivity(intent);
-            }else{
-                startActivity(intent_resauth);
-            }
-            finish();
-        }
-
         //permission
         if(Build.VERSION.SDK_INT>=23&&ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
                 !=PackageManager.PERMISSION_GRANTED
@@ -103,7 +78,71 @@ public class SigninActivity extends AppCompatActivity {
                     Manifest.permission.READ_PHONE_STATE,
                     Manifest.permission.READ_SMS,
                     Manifest.permission.READ_EXTERNAL_STORAGE
-                    }, PERMISSION);
+            }, PERMISSION);
+        }
+
+        //auto login
+        SharedPreferences auto =  getSharedPreferences("auto",Activity.MODE_PRIVATE);
+        String loginid,loginpassword,id,name,resauth;
+        loginid = auto.getString("o_id",null);
+        loginpassword = auto.getString("o_password",null);
+        RequestQueue requestQueue1 = Volley.newRequestQueue(this);
+
+        final StringRequest StringRequest2 = new StringRequest(Request.Method.POST, login_url, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                try {
+                    JSONObject jsonObject = new JSONObject(response);
+                    boolean success = jsonObject.getBoolean("success");
+                    String name = jsonObject.getString("owner_name");
+                    String id = jsonObject.getString("id");
+                    String resauth = jsonObject.getString("owner_resauth");
+
+                    if(success==true){
+                        Intent intent = new Intent(SigninActivity.this,MainActivity.class);
+                        Intent intent_resauth = new Intent(SigninActivity.this,ResAuthActivity.class);
+                        intent.putExtra("o_id",id);
+                        intent.putExtra("o_name",name);
+                        intent.putExtra("o_resauth",resauth);
+                        intent_resauth.putExtra("o_id",id);
+                        intent_resauth.putExtra("o_name",name);
+                        intent_resauth.putExtra("o_resauth",resauth);
+                        if(resauth.equals("1")){
+                            SharedPreferences.Editor autologin = auto.edit();
+                            autologin.putString("o_resauth",resauth);
+                            autologin.commit();
+                            startActivity(intent);
+                            finish();
+                        }
+                        else{
+                            startActivity(intent_resauth);
+                            finish();
+                        }
+                    }else{
+                        wronginput.setText("아이디 또는 비밀번호가 일치하지 않습니다.");
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                    Log.d("spark123","errorj");
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.d("spark123","errorv");
+            }
+        }) {
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String, String> params = new HashMap<>();
+                params.put("m_id",loginid);
+                params.put("m_password",loginpassword);
+                return params;
+            }
+        };
+
+        if(loginid!=null&&loginpassword!=null){
+            //requestQueue1.add(StringRequest2);
         }
 
         signupbutton = findViewById(R.id.signin_signupButton);
@@ -122,6 +161,7 @@ public class SigninActivity extends AppCompatActivity {
                 finish();
             }
         });
+
 
         final StringRequest StringRequest = new StringRequest(Request.Method.POST, login_url, new Response.Listener<String>() {
             @Override
@@ -149,7 +189,6 @@ public class SigninActivity extends AppCompatActivity {
                         autologin.putString("o_id",idinput);
                         autologin.putString("o_password",passwordinput);
                         autologin.commit();
-
                         if(resauth==1){
                             startActivity(intent);
                         }
@@ -158,7 +197,7 @@ public class SigninActivity extends AppCompatActivity {
                         }
                         finish();
                     }else{
-                       wronginput.setText("아이디 또는 비밀번호가 일치하지 않습니다.");
+                        wronginput.setText("아이디 또는 비밀번호가 일치하지 않습니다.");
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -179,6 +218,8 @@ public class SigninActivity extends AppCompatActivity {
                 return params;
             }
         };
+
+
         signinbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
