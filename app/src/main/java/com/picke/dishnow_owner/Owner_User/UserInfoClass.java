@@ -1,6 +1,18 @@
 package com.picke.dishnow_owner.Owner_User;
 
+import android.content.Context;
+
 public class UserInfoClass {
+    private static UserInfoClass userInfoClass=null;
+    private UserInfoClass(Context context){}
+
+    public static UserInfoClass getInstance(Context context){
+        if(userInfoClass == null){
+            userInfoClass = new UserInfoClass(context);
+        }
+        return userInfoClass;
+    }
+
     private String uid;
     private String resid;
     private String resname;
@@ -9,8 +21,8 @@ public class UserInfoClass {
     private String ownername;
     private String starttime;
     private String endtime;
-    public String lat;
-    public String lon;
+    private String lat;
+    private String lon;
     private String ownerphone;
     private String respassword;
 
@@ -100,7 +112,4 @@ public class UserInfoClass {
     public void setResid(String resid) {
         this.resid = resid;
     }
-
-
-
 }

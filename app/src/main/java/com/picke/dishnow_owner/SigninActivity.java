@@ -8,9 +8,11 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Paint;
+import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
+import android.support.v4.graphics.drawable.DrawableCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -27,6 +29,8 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.picke.dishnow_owner.Owner_User.UserAuthClass;
+import com.picke.dishnow_owner.Utility.VolleySingleton;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -43,9 +47,11 @@ public class SigninActivity extends AppCompatActivity {
 
     private String idinput;
     private String passwordinput;
+
     final int PERMISSION = 1;
 
     private RequestQueue requestQueue;
+    private UserAuthClass userAuthClass;
 
     private final String login_url = "http://claor123.cafe24.com/Login.php";
 
@@ -53,6 +59,10 @@ public class SigninActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signin);
+
+        requestQueue = VolleySingleton.getmInstance(getApplicationContext()).getRequestQueue();
+        userAuthClass = UserAuthClass.getInstance(getApplicationContext());
+
 
         //permission
         if(Build.VERSION.SDK_INT>=23&&ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
@@ -86,7 +96,6 @@ public class SigninActivity extends AppCompatActivity {
         String loginid,loginpassword,id,name,resauth;
         loginid = auto.getString("o_id",null);
         loginpassword = auto.getString("o_password",null);
-        RequestQueue requestQueue1 = Volley.newRequestQueue(this);
 
         final StringRequest StringRequest2 = new StringRequest(Request.Method.POST, login_url, new Response.Listener<String>() {
             @Override
@@ -142,7 +151,7 @@ public class SigninActivity extends AppCompatActivity {
         };
 
         if(loginid!=null&&loginpassword!=null){
-            //requestQueue1.add(StringRequest2);
+            //requestQueue.add(StringRequest2);  // TODO AUTO LOGIN
         }
 
         signupbutton = findViewById(R.id.signin_signupButton);
@@ -151,7 +160,6 @@ public class SigninActivity extends AppCompatActivity {
         Epasswordinput = findViewById(R.id.signin_passwordinput);
         wronginput = findViewById(R.id.signin_wronginput);
 
-        requestQueue = Volley.newRequestQueue(this);
         signupbutton.setPaintFlags(signupbutton.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
         signupbutton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -171,7 +179,7 @@ public class SigninActivity extends AppCompatActivity {
                     boolean success = jsonObject.getBoolean("success");
                     String name = jsonObject.getString("owner_name");
                     String id = jsonObject.getString("id");
-                    final int resauth = jsonObject.getInt("owner_resauth");
+                    String resauth = jsonObject.getString("owner_resauth");
 
                     if(success==true){
                         Intent intent = new Intent(SigninActivity.this,MainActivity.class);
@@ -185,11 +193,11 @@ public class SigninActivity extends AppCompatActivity {
                         SharedPreferences.Editor autologin = auto.edit();
                         autologin.putString("id",id);
                         autologin.putString("o_name",name);
-                        autologin.putString("o_resauth", String.valueOf(resauth));
+                        autologin.putString("o_resauth", resauth);
                         autologin.putString("o_id",idinput);
                         autologin.putString("o_password",passwordinput);
                         autologin.commit();
-                        if(resauth==1){
+                        if(resauth.equals("1")){
                             startActivity(intent);
                         }
                         else{
@@ -229,4 +237,5 @@ public class SigninActivity extends AppCompatActivity {
             }
         });
     }
+
 }

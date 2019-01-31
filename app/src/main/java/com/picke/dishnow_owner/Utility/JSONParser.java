@@ -1,7 +1,6 @@
-package com.picke.dishnow_owner;
+package com.picke.dishnow_owner.Utility;
 
 import android.util.Log;
-import android.widget.Toast;
 
 import org.json.JSONObject;
 

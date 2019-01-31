@@ -47,6 +47,7 @@
         <activity android:name="com.picke.dishnow_owner.ResAuthActivity" />
         <activity android:name="com.picke.dishnow_owner.ResSignupActivity" />
         <activity android:name="com.picke.dishnow_owner.PopupActivity" />
+        <activity android:name="com.picke.dishnow_owner.JusoActivity" />
         <activity
             android:name="com.kakao.auth.authorization.authcode.KakaoWebViewActivity"
             android:configChanges="orientation|screenSize"

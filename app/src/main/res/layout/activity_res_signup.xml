@@ -15,6 +15,7 @@
         android:layout_height="170dp"
         android:orientation="vertical"
         >
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="35dp"
@@ -84,87 +85,111 @@
                 />
         </LinearLayout>
     </LinearLayout>
+
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:orientation="vertical"
-        >
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="35dp">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="음식점 정보"
-                />
+                android:text="음식점 정보" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="35dp"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
+
             <TextView
                 android:layout_width="70dp"
                 android:layout_height="match_parent"
-                android:text="음식점 이름"
                 android:gravity="center"
-                />
+                android:text="음식점 이름" />
+
             <EditText
                 android:id="@+id/res_signup_resname"
                 android:layout_width="130dp"
-                android:layout_height="match_parent"
-                />
+                android:layout_height="match_parent" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="35dp"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
+
             <TextView
                 android:layout_width="70dp"
                 android:layout_height="match_parent"
-                android:text="음식점 전화번호"
                 android:gravity="center"
-                />
+                android:text="음식점 전화번호" />
+
             <EditText
                 android:id="@+id/res_signup_resphonenum"
                 android:layout_width="180dp"
-                android:layout_height="match_parent"
-                />
+                android:layout_height="match_parent" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="35dp"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
+
             <TextView
                 android:layout_width="70dp"
                 android:layout_height="match_parent"
-                android:text="음식점 주소"
                 android:gravity="center"
-                />
+                android:text="음식점 주소" />
+
             <EditText
                 android:id="@+id/res_signup_location"
                 android:layout_width="180dp"
-                android:layout_height="match_parent"
-                />
+                android:textSize="20dp"
+                android:layout_height="40dp" />
+
             <Button
                 android:id="@+id/res_signup_findlocal"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
-                android:text="주소검색"
-                />
+                android:text="주소검색" />
+
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            >
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="상세주소" />
+        <EditText
+            android:layout_width="200dp"
+            android:id="@+id/res_signup_location2"
+            android:layout_height="wrap_content"
+            />
+        </LinearLayout>
+
     </LinearLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_marginBottom="10dp"
         >
+
         <Button
             android:id="@+id/res_signup_ressignup"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:text="등록완료"
             android:textSize="20sp"

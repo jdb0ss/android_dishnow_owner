@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
     public String start;
     boolean Start = false;
     public Intent intent;
+    private TextView tv;
     static public Socket mSocket;
     Handler handler = null;
     String res_id;
@@ -57,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        tv = findViewById(R.id.main_show);
         vibrator = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
 
         intent = getIntent();
@@ -73,10 +75,8 @@ public class MainActivity extends AppCompatActivity {
                 }catch(Exception e){
                     e.printStackTrace();
                 }
-                JSONObject finalJsonObject_id = jsonObject_id;
-                mSocket.emit("res_id", finalJsonObject_id);
-            });
-            mSocket.on("user_call", (Object... objects) -> {
+                mSocket.emit("res_id", jsonObject_id);
+            }).on("user_call", (Object... objects) -> {
                 vibrator.vibrate(2000);
                 Uri uri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
                 Ringtone ringtone = RingtoneManager.getRingtone(getApplicationContext(), uri);
@@ -84,19 +84,15 @@ public class MainActivity extends AppCompatActivity {
 
                 JsonParser jsonParsers = new JsonParser();
                 JsonObject jsonObject = (JsonObject) jsonParsers.parse(objects[0].toString());
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
+                runOnUiThread(()->{
                         Intent intent = new Intent(MainActivity.this, PopupActivity.class);
                         intent.putExtra("user_numbers", jsonObject.get("user_numbers").toString());
                         intent.putExtra("user_time", jsonObject.get("user_time").toString());
                         intent.putExtra("user_id", jsonObject.get("user_id").toString());
                         intent.putExtra("res_id", res_id);
-                        startActivity(intent);
-                        finish();
-                    }
+                        //startActivity(intent);
+                        //finish();
                 });
-
             });
             mSocket.connect();
         } catch (Exception e) {
@@ -113,16 +109,15 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onResume(){
         super.onResume();
-            JsonObject prejsonobject = new JsonObject();
-            prejsonobject.addProperty("res_id", res_id);
-            JSONObject jsonObject_id = null;
-            try {
-                jsonObject_id = new JSONObject(prejsonobject.toString());
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-            JSONObject finalJsonObject_id = jsonObject_id;
-            mSocket.emit("res_id", finalJsonObject_id);
-            mSocket.connect();
+        JsonObject prejsonobject = new JsonObject();
+        prejsonobject.addProperty("res_id", res_id);
+        JSONObject jsonObject_id = null;
+        try {
+            jsonObject_id = new JSONObject(prejsonobject.toString());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        mSocket.emit("res_id", jsonObject_id);
+        mSocket.connect();
     }
 }

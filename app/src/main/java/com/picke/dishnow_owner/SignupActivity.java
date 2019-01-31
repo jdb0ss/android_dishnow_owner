@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.Signature;
+import android.graphics.drawable.Drawable;
 import android.os.Binder;
 import android.os.Build;
 import android.support.annotation.Nullable;
@@ -16,11 +17,15 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.telephony.TelephonyManager;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Base64;
 import android.util.Log;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -32,6 +37,7 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.picke.dishnow_owner.GPS.GpsInfo;
 import com.picke.dishnow_owner.Owner_User.UserAuthClass;
+import com.picke.dishnow_owner.Utility.VolleySingleton;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -51,11 +57,12 @@ public class SignupActivity extends AppCompatActivity {
     private EditText Eownerid;
     private EditText Eownerpassword;
     private EditText Eownerpassword2;
+    private TextView errorid;
 
     //private UserAuthClass userAuthClass;
     private String ownerpassword2;
 
-    private String ownerid;
+    private String ownerid="123";
     private String ownerpassword;
     private String owneremail;
     private String ownername;
@@ -66,7 +73,6 @@ public class SignupActivity extends AppCompatActivity {
     private Boolean Idcheck = false;
 
     private RequestQueue requestQueue;
-    private RequestQueue requestQueue2;
 
     private final String feed_url = "http://claor123.cafe24.com/Owner_Signup.php";
     private final String id_url = "http://claor123.cafe24.com/Id_overlap.php";
@@ -84,10 +90,57 @@ public class SignupActivity extends AppCompatActivity {
         Eowneremail = findViewById(R.id.signup_owneremail);
         Eownerpassword = findViewById(R.id.signup_ownerpassword);
         Eownerpassword2 = findViewById(R.id.signup_ownerpassword_repeat);
+        errorid = findViewById(R.id.signup_iderror);
 
-        requestQueue = Volley.newRequestQueue(this);
-        requestQueue2 = Volley.newRequestQueue(this);
+        Drawable image = getApplicationContext().getResources().getDrawable(R.drawable.ic_iconmonstr_arrow_25);
+        image.setBounds(60,0,0,0);
 
+
+        final StringRequest StringRequest2 = new StringRequest(Request.Method.POST, id_url, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                try {
+                    JSONObject jsonObject = new JSONObject(response);
+                    boolean success = jsonObject.getBoolean("success");
+                    if(success==false){
+                        errorid.setText("중복");
+                        Eownerid.setCompoundDrawablesWithIntrinsicBounds(null,null,null,null);
+                    }else{
+                        Idcheck = true;
+                        Eownerid.setCompoundDrawablesWithIntrinsicBounds(null,null,image,null);
+                        errorid.setText("");
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.d("claor123","errorv");
+
+            }
+        }) {
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String, String> params = new HashMap<>();
+                params.put("m_id",ownerid);
+                return params;
+            }
+        };
+        requestQueue = VolleySingleton.getmInstance(getApplicationContext()).getRequestQueue();
+
+        Eownerid.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean isFocused) {
+                if(!isFocused)
+                {
+                    ownerid = Eownerid.getText().toString();
+                   // Eownerid.setCompoundDrawablesWithIntrinsicBounds(null,null,image,null);
+                    requestQueue.add(StringRequest2);
+                }
+            }
+        });
 
         TelephonyManager telephonyManager = (TelephonyManager) getSystemService(TELEPHONY_SERVICE);
 
@@ -108,43 +161,7 @@ public class SignupActivity extends AppCompatActivity {
             phone = "0"+phone.substring(3);
         }
 
-        final StringRequest StringRequest2 = new StringRequest(Request.Method.POST, id_url, new Response.Listener<String>() {
-            @Override
-            public void onResponse(String response) {
-                try {
-                    JSONObject jsonObject = new JSONObject(response);
-                    boolean success = jsonObject.getBoolean("success");
-                    if(success==false){
-                        AlertDialog.Builder builder = new AlertDialog.Builder(SignupActivity.this);
-                        builder.setMessage("이미 사용중인 아이디입니다.");
-                        builder.setNegativeButton("다시 시도", null);
-                        builder.create();
-                        builder.show();
-                    }else{
-                        Idcheck = true;
-                        AlertDialog.Builder builder = new AlertDialog.Builder(SignupActivity.this);
-                        builder.setMessage("사용 가능한 아이디입니다.");
-                        builder.setNegativeButton("확인", null);
-                        builder.create();
-                        builder.show();
-                    }
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
 
-            }
-        }) {
-            @Override
-            protected Map<String, String> getParams() throws AuthFailureError {
-                Map<String, String> params = new HashMap<>();
-                params.put("m_id",ownerid);
-                return params;
-             }
-         };
 
         final StringRequest StringRequest = new StringRequest(Request.Method.POST, feed_url, new Response.Listener<String>() {
             @Override
@@ -196,7 +213,7 @@ public class SignupActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 ownerid = Eownerid.getText().toString();
-                requestQueue2.add(StringRequest2);
+                requestQueue.add(StringRequest2);
             }
         });
 
@@ -236,7 +253,7 @@ public class SignupActivity extends AppCompatActivity {
                     }
 
                     //이메일형식체크
-                    else if(!android.util.Patterns.EMAIL_ADDRESS.matcher(owneremail).matches())
+                    else if(!Patterns.EMAIL_ADDRESS.matcher(owneremail).matches())
                     {
                         Toast.makeText(getApplicationContext(),"이메일 형식이 아닙니다",Toast.LENGTH_SHORT).show();
                     }

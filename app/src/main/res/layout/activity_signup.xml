@@ -21,14 +21,15 @@
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:text="가입 완료" />
+
         </LinearLayout>
 
         <LinearLayout
             android:gravity="center_vertical"
-        android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
             android:id="@+id/signup_first">
                 <TextView
                     android:layout_marginTop="10dp"
@@ -44,20 +45,26 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_below="@+id/signup_first"
+            android:layout_marginBottom="50dp"
             >
-                 <EditText
-                        android:layout_width="250dp"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/signup_ownerid"
-                        android:hint="아이디(6자~20자)"
-                 />
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/signup_ownerid"
+                android:hint="아이디(6자~20자)"
+                />
                 <Button
-                    android:layout_width="100dp"
+                    android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:id="@+id/siginup_id_overlap"
                     android:text="중복 확인"
 
                     />
+            <TextView
+                android:id="@+id/signup_iderror"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#E60012"/>
         </LinearLayout>
         <EditText
             android:layout_width="match_parent"
@@ -99,5 +106,6 @@
                   android:layout_height="wrap_content"
                   android:text="인증 받기"
                   android:id="@+id/signup_authphone"/>
+
       </LinearLayout>
 </RelativeLayout>

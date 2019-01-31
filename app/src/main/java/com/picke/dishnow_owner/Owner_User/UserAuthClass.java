@@ -1,6 +1,18 @@
 package com.picke.dishnow_owner.Owner_User;
 
+import android.content.Context;
+
 public class UserAuthClass {
+    private static UserAuthClass userAuthClass=null;
+    public UserAuthClass(Context context){}
+
+    public static UserAuthClass getInstance(Context context){
+        if(userAuthClass == null){
+                userAuthClass = new UserAuthClass(context);
+        }
+        return userAuthClass;
+    }
+
     private String uid;
     private String ownerid;
     private String ownerpassword;

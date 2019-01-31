@@ -7,12 +7,18 @@ import android.location.Address;
 import android.location.Geocoder;
 import android.net.Uri;
 import android.os.AsyncTask;
+import android.os.Handler;
+import android.os.Message;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.JsonReader;
 import android.util.Log;
 import android.view.View;
+import android.webkit.JavascriptInterface;
+import android.webkit.WebChromeClient;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -25,6 +31,8 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.picke.dishnow_owner.Utility.JSONParser;
+import com.picke.dishnow_owner.Utility.VolleySingleton;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -45,15 +53,17 @@ public class ResSignupActivity extends AppCompatActivity {
     private EditText textownername;
     private EditText textresphonenum;
     private EditText textlocation;
+    private EditText textlocation2;
     private String sresnum;
     private String sresname;
     private String sownername;
     private String sresphonenum;
+    private String juso1;
+    private String juso2;
 
     String imagepath;
     String id;
     RequestQueue requestQueue;
-    RequestQueue requestQueue2;
     String resauth_url_url = "http://claor123.cafe24.com/ResAuthURL.php";
     String imageupload_url = "http://claor123.cafe24.com/upload/res_auth/ImageUpload.php";
     String resinfo_url = "http://claor123.cafe24.com/ResSignup.php";
@@ -64,10 +74,6 @@ public class ResSignupActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_res_signup);
 
-        final Geocoder geocoder = new Geocoder(this);
-
-        Intent intent = getIntent();
-        id = intent.getStringExtra("o_id");
         imageuploadbutton = findViewById(R.id.res_signup_findimage);
         buttonressignup = findViewById(R.id.res_signup_ressignup);
         buttonfindresnum = findViewById(R.id.res_signup_findresnum);
@@ -77,6 +83,18 @@ public class ResSignupActivity extends AppCompatActivity {
         textownername = findViewById(R.id.res_signup_ownername);
         textresphonenum = findViewById(R.id.res_signup_resphonenum);
         textlocation = findViewById(R.id.res_signup_location);
+        textlocation2 = findViewById(R.id.res_signup_location2);
+
+        Intent intent = getIntent();
+        id = intent.getStringExtra("o_id");
+        juso1=intent.getStringExtra("juso1");
+        juso2=intent.getStringExtra("juso2");
+        textlocation.setText(juso1);
+        textlocation2.setText(juso2);
+
+        requestQueue = VolleySingleton.getmInstance(getApplicationContext()).getRequestQueue();
+        final Geocoder geocoder = new Geocoder(this);
+
 
         imageuploadbutton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -88,6 +106,21 @@ public class ResSignupActivity extends AppCompatActivity {
         buttonressignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                List<Address> list = null;
+                try {
+                    list = geocoder.getFromLocationName(juso1,10);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                    Toast.makeText(getApplicationContext(),"인터넷 상태를 확인해 주세요.",Toast.LENGTH_LONG).show();
+                }
+                if(list!=null){
+                    if(list.size()==0){
+                        Toast.makeText(getApplicationContext(),"정확한 주소를 입력해 주세요",Toast.LENGTH_LONG).show();
+                    }else {
+                        lat = list.get(0).getLatitude();
+                        lon = list.get(0).getLongitude();
+                    }
+                }
                 sresnum = textresnum.getText().toString();
                 sresname = textresname.getText().toString();
                 sownername = textownername.getText().toString();
@@ -106,7 +139,7 @@ public class ResSignupActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),"음식점 전화번호를 입력해주세요",Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    requestQueue2.add(stringRequest2);
+                    requestQueue.add(stringRequest2);
                     Intent intent = new Intent(ResSignupActivity.this, MainActivity.class);
                     startActivity(intent);
                     finish();
@@ -114,31 +147,18 @@ public class ResSignupActivity extends AppCompatActivity {
             }
         });
 
-
         buttonfindlocal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                List<Address> list = null;
-                try {
-                    list = geocoder.getFromLocationName(textlocation.getText().toString(),10);
-                } catch (IOException e) {
-                    e.printStackTrace();
-                    Toast.makeText(getApplicationContext(),"인터넷 상태를 확인해 주세요.",Toast.LENGTH_SHORT).show();
-                }
-                if(list!=null){
-                    if(list.size()==0){
-                        Toast.makeText(getApplicationContext(),"정확한 주소를 입력해 주세요",Toast.LENGTH_LONG);
-                    }else {
-                        lat = list.get(0).getLatitude();
-                        lon = list.get(0).getLongitude();
-                    }
-                }
+                Intent intent1 = new Intent(ResSignupActivity.this,JusoActivity.class);
+                intent1.putExtra("o_id",id);
+                startActivity(intent1);
+                finish();
             }
         });
 
-        requestQueue = Volley.newRequestQueue(this);
-        requestQueue2 = Volley.newRequestQueue(this);
     }
+
     final StringRequest stringRequest = new StringRequest(Request.Method.POST, resauth_url_url, new Response.Listener<String>() {
         @Override
         public void onResponse(String response) {
@@ -158,9 +178,11 @@ public class ResSignupActivity extends AppCompatActivity {
         }
     };
 
+
     final StringRequest stringRequest2 = new StringRequest(Request.Method.POST, resinfo_url, new Response.Listener<String>() {
         @Override
         public void onResponse(String response) {
+
         }
     }, new Response.ErrorListener() {
         @Override
@@ -175,7 +197,7 @@ public class ResSignupActivity extends AppCompatActivity {
             params.put("m_ownername",sownername);
             params.put("m_lat",String.valueOf(lat));
             params.put("m_lon",String.valueOf(lon));
-            params.put("m_address",textlocation.getText().toString());
+            params.put("m_address",juso1+" "+juso2);
             params.put("m_resname",sresname);
             params.put("m_resnum",sresnum);
             params.put("m_resphone",sresphonenum);
@@ -183,9 +205,9 @@ public class ResSignupActivity extends AppCompatActivity {
         }
     };
 
+
     private class ImageUploadTask extends AsyncTask<String, Integer, Boolean>{
         ProgressDialog progressDialog;
-
         @Override
         protected void onPreExecute(){
             super.onPreExecute();
@@ -219,6 +241,7 @@ public class ResSignupActivity extends AppCompatActivity {
         startActivityForResult(chooserIntent,1010);
     }
 
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data){
         super.onActivityResult(requestCode,resultCode,data);
@@ -238,6 +261,7 @@ public class ResSignupActivity extends AppCompatActivity {
             }
             new ImageUploadTask().execute(imageupload_url,imagepath);
             requestQueue.add(stringRequest);
+
         }
     }
 }
