@@ -41,6 +41,7 @@
         android:layout_below="@+id/signin_idinput"
         android:layout_centerHorizontal="true"
         android:hint="비밀번호 입력"
+        android:inputType="textPassword"
         android:layout_marginTop="10dp"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />

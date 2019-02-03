@@ -18,7 +18,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.telephony.TelephonyManager;
 import android.text.Editable;
+import android.text.InputType;
 import android.text.TextWatcher;
+import android.text.method.PasswordTransformationMethod;
 import android.util.Base64;
 import android.util.Log;
 import android.util.Patterns;
@@ -50,7 +52,6 @@ import java.util.regex.Pattern;
 public class SignupActivity extends AppCompatActivity {
     private Button buttonsignup;
     private Button buttonauthphone;
-    private Button buttonidoverlap;
     private EditText Eowneremail;
     private EditText Eownername;
     private EditText Eownerphone;
@@ -62,7 +63,7 @@ public class SignupActivity extends AppCompatActivity {
     //private UserAuthClass userAuthClass;
     private String ownerpassword2;
 
-    private String ownerid="123";
+    private String ownerid;
     private String ownerpassword;
     private String owneremail;
     private String ownername;
@@ -83,7 +84,6 @@ public class SignupActivity extends AppCompatActivity {
         setContentView(R.layout.activity_signup);
         buttonauthphone = findViewById(R.id.signup_authphone);
         buttonsignup = findViewById(R.id.signup_signup_button);
-        buttonidoverlap = findViewById(R.id.siginup_id_overlap);
         Eownername = findViewById(R.id.signup_ownername);
         Eownerphone = findViewById(R.id.signup_ownerphone);
         Eownerid = findViewById(R.id.signup_ownerid);
@@ -91,6 +91,12 @@ public class SignupActivity extends AppCompatActivity {
         Eownerpassword = findViewById(R.id.signup_ownerpassword);
         Eownerpassword2 = findViewById(R.id.signup_ownerpassword_repeat);
         errorid = findViewById(R.id.signup_iderror);
+
+        Eownerpassword.setInputType(InputType.TYPE_TEXT_VARIATION_PASSWORD);
+        Eownerpassword.setTransformationMethod(PasswordTransformationMethod.getInstance());
+        Eownerpassword2.setInputType(InputType.TYPE_TEXT_VARIATION_PASSWORD);
+        Eownerpassword2.setTransformationMethod(PasswordTransformationMethod.getInstance());
+
 
         Drawable image = getApplicationContext().getResources().getDrawable(R.drawable.ic_iconmonstr_arrow_25);
         image.setBounds(60,0,0,0);
@@ -206,14 +212,6 @@ public class SignupActivity extends AppCompatActivity {
                     builder.create();
                     builder.show();
                 }
-            }
-        });
-
-        buttonidoverlap.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ownerid = Eownerid.getText().toString();
-                requestQueue.add(StringRequest2);
             }
         });
 

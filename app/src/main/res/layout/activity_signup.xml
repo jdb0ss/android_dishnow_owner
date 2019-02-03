@@ -53,13 +53,6 @@
                 android:id="@+id/signup_ownerid"
                 android:hint="아이디(6자~20자)"
                 />
-                <Button
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/siginup_id_overlap"
-                    android:text="중복 확인"
-
-                    />
             <TextView
                 android:id="@+id/signup_iderror"
                 android:layout_width="wrap_content"
@@ -70,11 +63,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/signup_ownerpassword"
-            android:hint="비밀번호(영문+숫자, 8-20자)"/>
+            android:hint="비밀번호(영문+숫자, 8-20자)"
+            android:inputType="textPassword"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/signup_ownerpassword_repeat"
+            android:inputType="textPassword"
             android:hint="비밀번호 재확인"/>
 
         <EditText

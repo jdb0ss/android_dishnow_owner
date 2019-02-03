@@ -15,6 +15,8 @@ import android.support.v4.content.ContextCompat;
 import android.support.v4.graphics.drawable.DrawableCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.InputType;
+import android.text.method.PasswordTransformationMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -62,7 +64,6 @@ public class SigninActivity extends AppCompatActivity {
 
         requestQueue = VolleySingleton.getmInstance(getApplicationContext()).getRequestQueue();
         userAuthClass = UserAuthClass.getInstance(getApplicationContext());
-
 
         //permission
         if(Build.VERSION.SDK_INT>=23&&ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
@@ -159,17 +160,8 @@ public class SigninActivity extends AppCompatActivity {
         Eidinput = findViewById(R.id.signin_idinput);
         Epasswordinput = findViewById(R.id.signin_passwordinput);
         wronginput = findViewById(R.id.signin_wronginput);
-
-        signupbutton.setPaintFlags(signupbutton.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
-        signupbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(SigninActivity.this,SignupActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-
+        Epasswordinput.setInputType(InputType.TYPE_TEXT_VARIATION_PASSWORD);
+        Epasswordinput.setTransformationMethod(PasswordTransformationMethod.getInstance());
 
         final StringRequest StringRequest = new StringRequest(Request.Method.POST, login_url, new Response.Listener<String>() {
             @Override
@@ -236,6 +228,14 @@ public class SigninActivity extends AppCompatActivity {
                 requestQueue.add(StringRequest);
             }
         });
-    }
 
+        signupbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SigninActivity.this,SignupActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+    }
 }
