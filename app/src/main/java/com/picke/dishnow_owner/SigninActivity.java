@@ -152,7 +152,7 @@ public class SigninActivity extends AppCompatActivity {
         };
 
         if(loginid!=null&&loginpassword!=null){
-            //requestQueue.add(StringRequest2);  // TODO AUTO LOGIN
+            //requestQueue.add(StringRequest2);  // TODO: AUTO LOGIN
         }
 
         signupbutton = findViewById(R.id.signin_signupButton);
