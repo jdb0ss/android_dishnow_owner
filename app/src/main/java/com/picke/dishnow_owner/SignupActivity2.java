@@ -45,9 +45,10 @@ public class SignupActivity2 extends AppCompatActivity {
     private String Authnumber="";
     private UserAuthClass userAuthClass;
     private String uid;
-    private Boolean flag=false;
+    private Boolean flag=true;
 
-    final String feed_url="http://claor123.cafe24.com/smspush.php";
+    final String feed_url_signup = "http://claor123.cafe24.com/Owner_Signup.php";
+    final String feed_url_phone = "http://claor123.cafe24.com/smspush.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +60,7 @@ public class SignupActivity2 extends AppCompatActivity {
         Ephoneauth = findViewById(R.id.signup2_phoneauth);
         phoneauthbutton = findViewById(R.id.signup2_phoneauthbutton);
         tverrorphoneauth =findViewById(R.id.signup2_phoneautherror);
+        signupbutton = findViewById(R.id.signup2_signup_button);
 
         userAuthClass = UserAuthClass.getInstance(getApplicationContext());
         requestQueue = VolleySingleton.getmInstance(getApplicationContext()).getRequestQueue();
@@ -66,35 +68,9 @@ public class SignupActivity2 extends AppCompatActivity {
         Drawable image = getApplicationContext().getResources().getDrawable(R.drawable.ic_iconmonstr_check_mark_15);
         image.setBounds(60,0,0,0);
 
-
-
         Toolbar toolbar = findViewById(R.id.signup2_toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-        final StringRequest StringRequest_signup = new StringRequest(Request.Method.POST, feed_url, new Response.Listener<String>() {
-            @Override
-            public void onResponse(String response) {
-                uid= response.substring(1,response.length()-1);
-                Log.d("spark123", "[" + response + "]");
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                Log.d("spark123error", "[" + error.getMessage() + "]");
-            }
-        }) {
-            @Override
-            protected Map<String, String> getParams() throws AuthFailureError {
-                Map<String, String> params = new HashMap<>();
-                params.put("m_id",userAuthClass.getOwnerid());
-                params.put("m_password",userAuthClass.getOwnerpassword());
-                params.put("m_name",userAuthClass.getOwnername());
-                params.put("m_phone",userAuthClass.getOwnerphone());
-                params.put("m_email","123");
-                return params;
-            }
-        };
 
         Ephoneauth.addTextChangedListener(new TextWatcher() {
             @Override
@@ -113,7 +89,6 @@ public class SignupActivity2 extends AppCompatActivity {
                     Ephoneauth.getBackground().setColorFilter(getResources().getColor(R.color.color_red),PorterDuff.Mode.SRC_ATOP);
                     Ephoneauth.setCompoundDrawablesWithIntrinsicBounds(null,null,null,null);
                     tverrorphoneauth.setText("인증번호를 확인해주세요.");
-
                 }
             }
 
@@ -124,7 +99,7 @@ public class SignupActivity2 extends AppCompatActivity {
         });
 
 
-        final StringRequest stringRequest_phone = new StringRequest(Request.Method.POST, feed_url, new Response.Listener<String>() {
+        final StringRequest stringRequest_phone = new StringRequest(Request.Method.POST, feed_url_phone, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
 
@@ -139,6 +114,30 @@ public class SignupActivity2 extends AppCompatActivity {
                 Map<String,String> params = new HashMap<>();
                 params.put("m_phone",Eownerphone.getText().toString());
                 params.put("m_number",Authnumber);
+                return params;
+            }
+        };
+
+        final StringRequest StringRequest_signup = new StringRequest(Request.Method.POST, feed_url_signup, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                uid= response.substring(1,response.length()-1);
+                Log.d("spark123", "[" + response + "]");
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.d("spark123error", "[" + error.getMessage() + "]");
+            }
+        }) {
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String, String> params = new HashMap<>();
+                params.put("m_id",userAuthClass.getOwnerid());
+                params.put("m_password",userAuthClass.getOwnerpassword());
+                params.put("m_name",userAuthClass.getOwnername());
+                params.put("m_phone",userAuthClass.getOwnerphone());
+                params.put("m_email",userAuthClass.getOwnerid());
                 return params;
             }
         };
@@ -159,13 +158,15 @@ public class SignupActivity2 extends AppCompatActivity {
         signupbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                userAuthClass.setOwnername(Eonwername.getText().toString());
-                userAuthClass.setOwnerphone(Eownerphone.getText().toString());
-                requestQueue.add(StringRequest_signup);
-                userAuthClass.setUid(uid);
-                Intent intent = new Intent(SignupActivity2.this,ResAuthActivity.class);
-                startActivity(intent);
-                finish();
+                if(flag) {
+                    userAuthClass.setOwnername(Eonwername.getText().toString());
+                    userAuthClass.setOwnerphone(Eownerphone.getText().toString());
+                    requestQueue.add(StringRequest_signup);
+                    userAuthClass.setUid(uid);
+                    Intent intent = new Intent(SignupActivity2.this, ResAuthActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
             }
         });
     }
