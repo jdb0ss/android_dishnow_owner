@@ -58,6 +58,7 @@ public class SignupActivity2 extends AppCompatActivity {
         Eownerphone = findViewById(R.id.signup2_ownerphone);
         Ephoneauth = findViewById(R.id.signup2_phoneauth);
         phoneauthbutton = findViewById(R.id.signup2_phoneauthbutton);
+        tverrorphoneauth =findViewById(R.id.signup2_phoneautherror);
 
         userAuthClass = UserAuthClass.getInstance(getApplicationContext());
         requestQueue = VolleySingleton.getmInstance(getApplicationContext()).getRequestQueue();
