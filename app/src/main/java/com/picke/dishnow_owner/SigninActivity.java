@@ -111,7 +111,7 @@ public class SigninActivity extends AppCompatActivity {
 
                     if(success==true){
                         Intent intent = new Intent(SigninActivity.this,MainActivity.class);
-                        Intent intent_resauth = new Intent(SigninActivity.this,ResAuthActivity.class);
+                        Intent intent_resauth = new Intent(SigninActivity.this,ResSignupActivity.class);
                         intent.putExtra("o_id",id);
                         intent.putExtra("o_name",name);
                         intent.putExtra("o_resauth",resauth);
@@ -177,7 +177,7 @@ public class SigninActivity extends AppCompatActivity {
 
                     if(success==true){
                         Intent intent = new Intent(SigninActivity.this,MainActivity.class);
-                        Intent intent_resauth = new Intent(SigninActivity.this,ResAuthActivity.class);
+                        Intent intent_resauth = new Intent(SigninActivity.this,ResSignupActivity.class);
                         intent.putExtra("o_id",id);
                         intent.putExtra("o_name",name);
                         intent.putExtra("o_resauth",resauth);
