@@ -52,8 +52,8 @@
         <activity android:name="com.picke.dishnow_owner.JusoActivity" />
         <activity
             android:name="com.picke.dishnow_owner.SignupActivity2"
-            android:label="" >
-        </activity>
+            android:label="" />
+        <activity android:name="com.picke.dishnow_owner.ResInfoActivity" />
         <activity
             android:name="com.kakao.auth.authorization.authcode.KakaoWebViewActivity"
             android:configChanges="orientation|screenSize"

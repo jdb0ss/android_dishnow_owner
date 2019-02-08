@@ -1202,6 +1202,14 @@ id res_auth_header
 id res_auth_name
 id res_auth_signup
 id res_auth_welcome
+id res_info_address_edt
+id res_info_address_num_edt
+id res_info_detail_address_edt
+id res_info_register
+id res_info_res_name
+id res_info_resphone
+id res_info_search_address_btn
+id res_info_toolbar
 id res_signup_findimage
 id res_signup_findlocal
 id res_signup_findresnum
@@ -1307,6 +1315,7 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id txt_res_info
 id uniform
 id unlabeled
 id up
