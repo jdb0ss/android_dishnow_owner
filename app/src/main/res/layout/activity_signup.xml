@@ -4,11 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginRight="10dp"
-    android:orientation="vertical"
-    android:layout_gravity="center"
-    android:layout_marginLeft="10dp"
+
     tools:context=".SignupActivity">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@drawable/tabbar_baground"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:id="@+id/signup_toolbar"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="회원 가입"
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"
+            />
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
         <LinearLayout
             android:layout_marginBottom="10dp"
             android:id="@+id/signup_third"
@@ -21,56 +42,91 @@
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:text="가입 완료" />
-
         </LinearLayout>
 
         <LinearLayout
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
             android:gravity="center_vertical"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="106dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:id="@+id/signup_first">
-                <TextView
-                    android:layout_marginTop="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="필수 정보를 입력해주세요"
-                    android:gravity="center"
-                    android:textSize="20sp"
-                    android:layout_marginBottom="10dp"
-                    />
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_below="@+id/signup_first"
-            android:layout_marginBottom="50dp"
-            >
-            <EditText
-                android:layout_width="250dp"
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="계정 생성"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:layout_marginTop="34dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="#555555"
+                android:text="아이디"/>
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/signup_ownerid"
-                android:hint="아이디(6자~20자)"
+                android:hint="4~20자의 아이디를 입력하세요."
+                android:textSize="16sp"
                 />
             <TextView
                 android:id="@+id/signup_iderror"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="#E60012"/>
-        </LinearLayout>
+                android:textSize="12sp"
+                android:textColor="#E60012"/>
+            <TextView
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="비밀번호"
+                android:textColor="#555555"
+                />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/signup_ownerpassword"
-            android:hint="비밀번호(영문+숫자, 8-20자)"
-            android:inputType="textPassword"/>
-        <EditText
+            android:hint="영문,숫자 8~20자의 비밀번호를 설정하세요."
+            android:textSize="16sp"
+            android:inputType="textPassword"
+            />
+            <TextView
+                android:id="@+id/signup_passworderror"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#E60012"/>
+            <TextView
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="비밀번호 확인"
+                android:textColor="#555555"
+                />
+
+            <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/signup_ownerpassword_repeat"
             android:inputType="textPassword"
-            android:hint="비밀번호 재확인"/>
+            android:hint="비밀번호를 다시 한번 입력하세요."
+                android:textSize="16sp"
+               />
+            <TextView
+                android:id="@+id/signup_passwordoverlaperror"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#E60012"/>
 
         <EditText
             android:layout_width="match_parent"
@@ -101,6 +157,7 @@
                   android:layout_height="wrap_content"
                   android:text="인증 받기"
                   android:id="@+id/signup_authphone"/>
-
       </LinearLayout>
-</RelativeLayout>
+    </RelativeLayout>
+
+

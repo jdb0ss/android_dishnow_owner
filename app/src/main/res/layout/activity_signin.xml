@@ -31,7 +31,7 @@
         android:textColorHint="#FFFFFF"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="250dp"
-        android:hint="아이디 입력" />
+        android:hint="아이디" />
 
     <EditText
         android:id="@+id/signin_passwordinput"
@@ -40,7 +40,7 @@
         android:textColorHint="#FFFFFF"
         android:layout_below="@+id/signin_idinput"
         android:layout_centerHorizontal="true"
-        android:hint="비밀번호 입력"
+        android:hint="비밀번호"
         android:inputType="textPassword"
         android:layout_marginTop="10dp"
         tools:layout_editor_absoluteX="0dp"
@@ -73,7 +73,6 @@
         android:text="로그인"
         android:textColor="#733FFF"
         android:textAllCaps="false" />
-
     <Button
         android:id="@+id/signin_findidButton"
         android:layout_width="wrap_content"
@@ -87,7 +86,6 @@
         android:layout_below="@id/signin_loginButton"
         android:text="아이디 또는 비밀번호를 잊으셨나요?"
          />
-
     <Button
         android:gravity="center_horizontal"
         android:layout_alignParentBottom="true"
@@ -99,7 +97,6 @@
         android:textSize="16dp"
         android:background="#00ff0000"
         android:textColor="#FFFFFF"
-        android:text="새로운 계정 만들기"
         android:textStyle="normal"
         />
 

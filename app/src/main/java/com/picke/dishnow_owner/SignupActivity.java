@@ -1,6 +1,7 @@
 package com.picke.dishnow_owner;
 
 import android.Manifest;
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.DownloadManager;
@@ -9,6 +10,7 @@ import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.Signature;
+import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.os.Binder;
 import android.os.Build;
@@ -16,6 +18,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.AppCompatEditText;
 import android.telephony.TelephonyManager;
 import android.text.Editable;
 import android.text.InputType;
@@ -24,11 +27,13 @@ import android.text.method.PasswordTransformationMethod;
 import android.util.Base64;
 import android.util.Log;
 import android.util.Patterns;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.support.v7.widget.Toolbar;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -49,20 +54,20 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.regex.Pattern;
 
+
 public class SignupActivity extends AppCompatActivity {
     private Button buttonsignup;
     private Button buttonauthphone;
     private EditText Eowneremail;
     private EditText Eownername;
     private EditText Eownerphone;
-    private EditText Eownerid;
+    private AppCompatEditText Eownerid;
     private EditText Eownerpassword;
     private EditText Eownerpassword2;
     private TextView errorid;
 
     //private UserAuthClass userAuthClass;
     private String ownerpassword2;
-
     private String ownerid;
     private String ownerpassword;
     private String owneremail;
@@ -97,10 +102,13 @@ public class SignupActivity extends AppCompatActivity {
         Eownerpassword2.setInputType(InputType.TYPE_TEXT_VARIATION_PASSWORD);
         Eownerpassword2.setTransformationMethod(PasswordTransformationMethod.getInstance());
 
+        Toolbar toolbar = findViewById(R.id.signup_toolbar);
+        setSupportActionBar(toolbar);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         Drawable image = getApplicationContext().getResources().getDrawable(R.drawable.ic_iconmonstr_arrow_25);
         image.setBounds(60,0,0,0);
-
 
         final StringRequest StringRequest2 = new StringRequest(Request.Method.POST, id_url, new Response.Listener<String>() {
             @Override
@@ -109,12 +117,14 @@ public class SignupActivity extends AppCompatActivity {
                     JSONObject jsonObject = new JSONObject(response);
                     boolean success = jsonObject.getBoolean("success");
                     if(success==false){
-                        errorid.setText("중복");
+                        errorid.setText("이미 사용중인 아이디입니다.");
                         Eownerid.setCompoundDrawablesWithIntrinsicBounds(null,null,null,null);
+                        Eownerid.getBackground().setColorFilter(getResources().getColor(R.color.color_red),PorterDuff.Mode.SRC_ATOP);
                     }else{
                         Idcheck = true;
                         Eownerid.setCompoundDrawablesWithIntrinsicBounds(null,null,image,null);
                         errorid.setText("");
+                        Eownerid.getBackground().setColorFilter(getResources().getColor(R.color.color_violet),PorterDuff.Mode.SRC_ATOP);
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -166,8 +176,6 @@ public class SignupActivity extends AppCompatActivity {
         if(PhoneNum.startsWith("+82")){
             phone = "0"+phone.substring(3);
         }
-
-
 
         final StringRequest StringRequest = new StringRequest(Request.Method.POST, feed_url, new Response.Listener<String>() {
             @Override
@@ -283,6 +291,15 @@ public class SignupActivity extends AppCompatActivity {
                 }
             }
         });
-
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch (item.getItemId()){
+            case android.R.id.home:{
+                finish();
+                return true;
+            }
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

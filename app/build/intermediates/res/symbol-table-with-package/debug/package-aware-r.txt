@@ -612,6 +612,7 @@ color colorAccent
 color colorPrimary
 color colorPrimaryDark
 color color_red
+color color_violet
 color com_kakao_account_button_background
 color com_kakao_brown
 color com_kakao_button_background_press
@@ -1006,6 +1007,7 @@ drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable account
+drawable auth_phone_button
 drawable avd_hide_password
 drawable avd_show_password
 drawable btn_x
@@ -1037,6 +1039,8 @@ drawable kakaotalk_icon
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
+drawable next_button
+drawable next_white_button
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -1053,6 +1057,7 @@ drawable okcheck
 drawable selector_login_button
 drawable signin_button
 drawable story
+drawable tabbar_baground
 drawable talk
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -1238,6 +1243,14 @@ id signin_passwordinput
 id signin_signupButton
 id signin_title
 id signin_wronginput
+id signup2_first
+id signup2_ownername
+id signup2_ownerphone
+id signup2_phoneauth
+id signup2_phoneauthbutton
+id signup2_phoneautherror
+id signup2_signup_button
+id signup2_toolbar
 id signup_authphone
 id signup_first
 id signup_iderror
@@ -1247,8 +1260,11 @@ id signup_ownername
 id signup_ownerpassword
 id signup_ownerpassword_repeat
 id signup_ownerphone
+id signup_passworderror
+id signup_passwordoverlaperror
 id signup_signup_button
 id signup_third
+id signup_toolbar
 id smallLabel
 id snackbar_action
 id snackbar_text
@@ -1357,6 +1373,7 @@ layout activity_res_auth
 layout activity_res_signup
 layout activity_signin
 layout activity_signup
+layout activity_signup2
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -1471,6 +1488,7 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string search_menu_title
+string signup_actionbar
 string status_bar_notification_info_overflow
 string title_activity_juso
 string title_for_ssl_warning
@@ -1707,6 +1725,7 @@ style RtlOverlay_Widget_AppCompat_Search_DropDown_Text
 style RtlOverlay_Widget_AppCompat_SearchView_MagIcon
 style RtlUnderlay_Widget_AppCompat_ActionButton
 style RtlUnderlay_Widget_AppCompat_ActionButton_Overflow
+style SignupActionBar
 style TextAppearance_AppCompat
 style TextAppearance_AppCompat_Body1
 style TextAppearance_AppCompat_Body2

@@ -25,8 +25,8 @@
             android:value="6b32b4ba0498283ab49ee7db948eeeb1" />
 
         <activity
-            android:name=".SigninActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+            android:name=".SignupActivity2"
+           >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -34,11 +34,14 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".SignupActivity" />
+        <activity
+            android:name=".SignupActivity"
+            android:label="" />
         <activity android:name=".ResAuthActivity" />
         <activity android:name=".ResSignupActivity" />
         <activity android:name=".PopupActivity" />
-        <activity android:name=".JusoActivity"></activity>
+        <activity android:name=".JusoActivity" />
+        <activity android:name=".SigninActivity"></activity>
     </application>
 
 </manifest>

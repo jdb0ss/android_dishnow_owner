@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".SignupActivity2">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@drawable/tabbar_baground"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:id="@+id/signup2_toolbar"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="회원 가입"
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"
+            />
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+    <RelativeLayout
+        android:layout_marginBottom="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom">
+        <Button
+            android:layout_centerHorizontal="true"
+            android:id="@+id/signup2_signup_button"
+            android:layout_width="262dp"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/next_button"
+            android:text="회원 가입" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="106dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/signup2_first">
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="본인 인증"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="허위/중복 가입을 막기 위한 절차입니다."
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_marginTop="21dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textColor="#555555"
+            android:text="이름"/>
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signup2_ownername"
+            android:hint="이름을 입력하세요."
+            android:textSize="16sp"
+            />
+        <TextView
+            android:layout_marginTop="31dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="휴대폰 번호"
+            android:textColor="#555555"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="219dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/signup2_ownerphone"
+            android:hint="-없이 입력하세요."
+            android:textSize="16sp"
+            />
+
+            <Button
+                android:layout_marginLeft="5dp"
+                android:layout_width="101dp"
+                android:layout_height="40dp"
+                android:id="@+id/signup2_phoneauthbutton"
+                android:text="인증번호 전송"
+                android:textSize="12sp"
+                android:textColor="@color/color_violet"
+                android:background="@drawable/auth_phone_button"
+                />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width = "wrap_content"
+            android:layout_height ="wrap_content"
+            android:textSize="14sp"
+            android:text="인증번호"
+            android:textColor="#555555"
+            android:layout_marginTop="31dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signup2_phoneauth"
+            android:hint="인증번호 4자리를 입력하세요."
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/signup2_phoneautherror"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#E60012"/>
+    </LinearLayout>
+</RelativeLayout>
+
+

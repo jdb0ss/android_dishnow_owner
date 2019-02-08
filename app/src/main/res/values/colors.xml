@@ -3,11 +3,7 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#FF2222</color>
-    <color name="color_red">#FF2222</color>
-
+    <color name="color_red">#E60012</color>
+    <color name="color_violet">#733FFF</color>
 </resources>
-
-
-
-
 

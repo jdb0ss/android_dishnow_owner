@@ -15,6 +15,7 @@ import android.support.v4.content.ContextCompat;
 import android.support.v4.graphics.drawable.DrawableCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Html;
 import android.text.InputType;
 import android.text.method.PasswordTransformationMethod;
 import android.util.Log;
@@ -65,7 +66,7 @@ public class SigninActivity extends AppCompatActivity {
         requestQueue = VolleySingleton.getmInstance(getApplicationContext()).getRequestQueue();
         userAuthClass = UserAuthClass.getInstance(getApplicationContext());
 
-        //permission
+        //  TODO: Permission Check
         if(Build.VERSION.SDK_INT>=23&&ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
                 !=PackageManager.PERMISSION_GRANTED
                 ||ContextCompat.checkSelfPermission(this,Manifest.permission.ACCESS_COARSE_LOCATION)
@@ -152,7 +153,7 @@ public class SigninActivity extends AppCompatActivity {
         };
 
         if(loginid!=null&&loginpassword!=null){
-            //requestQueue.add(StringRequest2);  // TODO: AUTO LOGIN
+            //requestQueue.add(StringRequest2);  TODO: For Auto Login
         }
 
         signupbutton = findViewById(R.id.signin_signupButton);
@@ -162,6 +163,7 @@ public class SigninActivity extends AppCompatActivity {
         wronginput = findViewById(R.id.signin_wronginput);
         Epasswordinput.setInputType(InputType.TYPE_TEXT_VARIATION_PASSWORD);
         Epasswordinput.setTransformationMethod(PasswordTransformationMethod.getInstance());
+        signupbutton.setText(Html.fromHtml("<u>"+"새로운 계정 만들기"+"</u>"));
 
         final StringRequest StringRequest = new StringRequest(Request.Method.POST, login_url, new Response.Listener<String>() {
             @Override
@@ -219,7 +221,6 @@ public class SigninActivity extends AppCompatActivity {
             }
         };
 
-
         signinbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -234,7 +235,7 @@ public class SigninActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(SigninActivity.this,SignupActivity.class);
                 startActivity(intent);
-                finish();
+                //finish();
             }
         });
     }
