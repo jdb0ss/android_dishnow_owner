@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResInfoActivity">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@drawable/tabbar_baground"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:id="@+id/res_info_toolbar"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="음식점 등록"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            />
+        </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+    <RelativeLayout
+        android:layout_marginBottom="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom">
+        <Button
+            android:layout_centerHorizontal="true"
+            android:id="@+id/res_info_register"
+            android:layout_width="262dp"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/next_button"
+            android:text="등록하기" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="95dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/signup2_first">
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="음식점 정보"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:id="@+id/txt_res_info"
+            android:layout_marginBottom="43dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#555555"
+            android:text="음식점 이름"/>
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/res_info_res_name"
+            android:hint="음식점 이름을 입력하세요."
+            android:textSize="16sp"
+            android:layout_marginBottom="27dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="음식점 전화번호"
+            android:textColor="#555555"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/res_info_resphone"
+                android:hint="음식점 대표 전화번호를 입력하세요."
+                android:textSize="16sp"
+                android:layout_marginBottom="27dp"
+                />
+
+
+        </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#555555"
+                android:text="음식점 주소"/>
+              <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="249dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/res_info_address_num_edt"
+                android:layout_marginTop="8dp"
+                android:hint="우편번호"/>
+            <Button
+                android:layout_marginLeft="5dp"
+                android:layout_width="75dp"
+                android:layout_height="37dp"
+                android:id="@+id/res_info_search_address_btn"
+                android:text="주소검색"
+                android:layout_gravity="center"
+                android:textSize="14dp"
+                android:textColor="@color/color_violet"
+                android:background="@drawable/auth_phone_button"
+                />
+            </LinearLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/res_info_address_edt"
+                android:hint="주소"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/res_info_detail_address_edt"
+                android:hint="상세주소"/>
+        </LinearLayout>
+</RelativeLayout>

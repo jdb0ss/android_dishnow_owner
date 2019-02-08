@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ko/values-ko.xml",
+            "outputFile": "C:\\Users\\82104\\Desktop\\kim\\android_dishnow_owner\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ko\\values-ko.xml",
             "map": [
                 {
-                    "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/values-ko/values-ko.xml",
+                    "source": "C:\\Users\\82104\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\f734d60122beba983b990b87d6917227\\res\\values-ko\\values-ko.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/util-1.15.1.aar/aed82e16471a13b695342048313c130c/res/values-ko/values-ko.xml",
+                    "source": "C:\\Users\\82104\\.gradle\\caches\\transforms-1\\files-1.1\\auth-1.15.1.aar\\a5a0431a78a0a14ec175510e3895a3ce\\res\\values-ko\\values-ko.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,141,195,252,312,386,461",
+                        "endColumns": "85,53,56,59,73,74,55",
+                        "endOffsets": "136,190,247,307,381,456,512"
+                    },
+                    "to": {
+                        "startLines": "34,35,36,58,59,62,65",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "2918,3004,3058,4504,4564,4730,4984",
+                        "endColumns": "85,53,56,59,73,74,55",
+                        "endOffsets": "2999,3053,3110,4559,4633,4800,5035"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\82104\\.gradle\\caches\\transforms-1\\files-1.1\\util-1.15.1.aar\\6b0f3b42b206eb22e88bf7641fed461e\\res\\values-ko\\values-ko.xml",
                     "from": {
                         "startLines": "2,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -40,24 +57,7 @@
                     }
                 },
                 {
-                    "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/auth-1.15.1.aar/9ad754b0e174f438fd504127c9c067d1/res/values-ko/values-ko.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,141,195,252,312,386,461",
-                        "endColumns": "85,53,56,59,73,74,55",
-                        "endOffsets": "136,190,247,307,381,456,512"
-                    },
-                    "to": {
-                        "startLines": "34,35,36,58,59,62,65",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "2918,3004,3058,4504,4564,4730,4984",
-                        "endColumns": "85,53,56,59,73,74,55",
-                        "endOffsets": "2999,3053,3110,4559,4633,4800,5035"
-                    }
-                },
-                {
-                    "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/usermgmt-1.15.1.aar/06be3be95d9df7c402cc06df2736580d/res/values-ko/values-ko.xml",
+                    "source": "C:\\Users\\82104\\.gradle\\caches\\transforms-1\\files-1.1\\usermgmt-1.15.1.aar\\4647aaaa3441727114b3f02e97b0b841\\res\\values-ko\\values-ko.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -74,7 +74,7 @@
                     }
                 },
                 {
-                    "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/a5ca15ae7af273c89783c38ae921ab75/res/values-ko/values-ko.xml",
+                    "source": "C:\\Users\\82104\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\6a12d86462c7320bf001838daca8539c\\res\\values-ko\\values-ko.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
