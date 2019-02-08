@@ -1369,6 +1369,7 @@ layout activity_kakao_webview
 layout activity_main
 layout activity_popup
 layout activity_res_auth
+layout activity_res_info
 layout activity_res_signup
 layout activity_signin
 layout activity_signup
