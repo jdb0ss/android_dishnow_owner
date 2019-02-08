@@ -42,11 +42,11 @@ import java.util.HashMap;
 import java.util.Map;
 public class SigninActivity extends AppCompatActivity {
 
-    Button signupbutton;
-    Button signinbutton;
-    EditText Eidinput;
-    EditText Epasswordinput;
-    TextView wronginput;
+    private Button signupbutton;
+    private Button signinbutton;
+    private EditText Eidinput;
+    private EditText Epasswordinput;
+    private TextView wronginput;
 
     private String idinput;
     private String passwordinput;
@@ -235,6 +235,8 @@ public class SigninActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(SigninActivity.this,SignupActivity.class);
                 startActivity(intent);
+                userAuthClass.setOwnerid(Eidinput.getText().toString());
+                userAuthClass.setOwnerpassword(Epasswordinput.getText().toString());
                 //finish();
             }
         });

@@ -67,5 +67,4 @@ public class UserAuthClass {
     public void setOwnerphone(String ownerphone) {
         this.ownerphone = ownerphone;
     }
-
 }

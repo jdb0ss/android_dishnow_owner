@@ -1019,6 +1019,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable header_background
 drawable ic_iconmonstr_arrow_25
+drawable ic_iconmonstr_check_mark_15
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_mtrl_chip_checked_black
@@ -1251,19 +1252,14 @@ id signup2_phoneauthbutton
 id signup2_phoneautherror
 id signup2_signup_button
 id signup2_toolbar
-id signup_authphone
 id signup_first
 id signup_iderror
-id signup_owneremail
 id signup_ownerid
-id signup_ownername
 id signup_ownerpassword
 id signup_ownerpassword_repeat
-id signup_ownerphone
 id signup_passworderror
 id signup_passwordoverlaperror
 id signup_signup_button
-id signup_third
 id signup_toolbar
 id smallLabel
 id snackbar_action

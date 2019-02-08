@@ -26,29 +26,28 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_gravity="center"
         android:layout_marginLeft="15dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginRight="15dp"
         />
-        <LinearLayout
-            android:layout_marginBottom="10dp"
-            android:id="@+id/signup_third"
-            android:layout_alignParentBottom="true"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="bottom">
+
         <Button
+            android:layout_marginBottom="44dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
             android:id="@+id/signup_signup_button"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:text="가입 완료" />
-        </LinearLayout>
+            android:layout_width="262dp"
+            android:layout_height="50dp"
+            android:textSize="16sp"
+            android:textColor="@color/color_violet"
+            android:background="@drawable/auth_phone_button"
+            android:text="다음" />
 
         <LinearLayout
             android:layout_marginRight="15dp"
             android:layout_marginLeft="15dp"
             android:gravity="center_vertical"
-            android:layout_marginTop="106dp"
+            android:layout_marginTop="96dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -66,7 +65,7 @@
                 android:layout_marginTop="34dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="14dp"
+                android:textSize="14sp"
                 android:textColor="#555555"
                 android:text="아이디"/>
             <android.support.v7.widget.AppCompatEditText
@@ -94,7 +93,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/signup_ownerpassword"
-            android:hint="영문,숫자 8~20자의 비밀번호를 설정하세요."
+            android:hint="영문,숫자 8~20자를 입력하세요."
             android:textSize="16sp"
             android:inputType="textPassword"
             />
@@ -127,37 +126,8 @@
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
                 android:textColor="#E60012"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/signup_owneremail"
-            android:hint="이메일"
-            />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="이름"
-            android:id="@+id/signup_ownername"
-            />
         </LinearLayout>
-      <LinearLayout
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:orientation="horizontal"
-          android:layout_below="@+id/signup_first"
-          >
-              <EditText
-                  android:id="@+id/signup_ownerphone"
-                  android:layout_width="250dp"
-                  android:layout_height="wrap_content"
-                  android:hint="휴대폰 번호(- 없이)" />
-              <Button
-                  android:layout_width="100dp"
-                  android:layout_height="wrap_content"
-                  android:text="인증 받기"
-                  android:id="@+id/signup_authphone"/>
-      </LinearLayout>
+
     </RelativeLayout>
 
 

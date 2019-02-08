@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="회원 가입"
-            android:textSize="18dp"
+            android:textSize="18sp"
             android:textColor="#FFFFFF"
             />
     </android.support.v7.widget.Toolbar>
@@ -31,7 +31,7 @@
         android:layout_marginRight="15dp"
         />
     <RelativeLayout
-        android:layout_marginBottom="45dp"
+        android:layout_marginBottom="44dp"
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -51,7 +51,7 @@
         android:layout_marginRight="15dp"
         android:layout_marginLeft="15dp"
         android:gravity="center_vertical"
-        android:layout_marginTop="106dp"
+        android:layout_marginTop="95dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -74,7 +74,7 @@
             android:layout_marginTop="21dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="14dp"
+            android:textSize="14sp"
             android:textColor="#555555"
             android:text="이름"/>
         <android.support.v7.widget.AppCompatEditText

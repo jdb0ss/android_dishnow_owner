@@ -33,7 +33,9 @@
             android:name="com.kakao.sdk.AppKey"
             android:value="6b32b4ba0498283ab49ee7db948eeeb1" />
 
-        <activity android:name="com.picke.dishnow_owner.SignupActivity2" >
+        <activity
+            android:name="com.picke.dishnow_owner.SigninActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -48,7 +50,10 @@
         <activity android:name="com.picke.dishnow_owner.ResSignupActivity" />
         <activity android:name="com.picke.dishnow_owner.PopupActivity" />
         <activity android:name="com.picke.dishnow_owner.JusoActivity" />
-        <activity android:name="com.picke.dishnow_owner.SigninActivity" />
+        <activity
+            android:name="com.picke.dishnow_owner.SignupActivity2"
+            android:label="" >
+        </activity>
         <activity
             android:name="com.kakao.auth.authorization.authcode.KakaoWebViewActivity"
             android:configChanges="orientation|screenSize"
