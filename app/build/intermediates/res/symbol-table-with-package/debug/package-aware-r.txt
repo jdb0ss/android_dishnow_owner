@@ -1017,9 +1017,11 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable dishnow_logo_purple
 drawable header_background
 drawable ic_iconmonstr_arrow_25
 drawable ic_iconmonstr_check_mark_15
+drawable ic_iconmonstr_eat_5_thin
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_mtrl_chip_checked_black
@@ -1196,9 +1198,10 @@ id progress_bar
 id progress_circular
 id progress_horizontal
 id radio
+id res_auth_header
 id res_auth_name
-id res_auth_plz
 id res_auth_signup
+id res_auth_welcome
 id res_signup_findimage
 id res_signup_findlocal
 id res_signup_findresnum

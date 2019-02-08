@@ -6,39 +6,85 @@
     android:layout_height="match_parent"
     android:layout_centerHorizontal="true"
     android:layout_centerVertical="true"
+
     tools:context=".ResAuthActivity">
 
-    <TextView
-        android:layout_marginTop="130dp"
+    <ImageView
+        android:layout_marginTop="64dp"
         android:layout_centerHorizontal="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:id="@+id/res_auth_name"/>
+        android:layout_width="262dp"
+        android:layout_height="59dp"
+        android:background="@drawable/dishnow_logo_purple"
+        android:layout_marginBottom="67dp"
+        android:id="@+id/res_auth_header"
+        />
 
     <TextView
-        android:layout_marginTop="200dp"
+        android:layout_below="@+id/res_auth_header"
+        android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="업장을 등록해주세요"
-        android:textSize="30sp"
-        android:id="@+id/res_auth_plz"
-        android:layout_centerHorizontal="true"/>
+        android:textSize="50sp"
+        android:text="환영합니다!"
+        android:textColor="#000000"
+        android:layout_marginBottom="27dp"
+        android:id="@+id/res_auth_welcome"/>
+
     <LinearLayout
-        android:layout_alignTop="@id/res_auth_plz"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/res_auth_welcome"
         android:layout_centerHorizontal="true"
-        android:gravity="bottom">
+        android:orientation="vertical">
+     <LinearLayout
+         android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/res_auth_name"
+            android:textSize="18sp"
+            android:textColor="@color/color_violet"
+            android:text="홍길동"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="님, 회원가입을 축하합니다."
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="로그인 후 음식점을 등독하실 수 있습니다."/>
+    </LinearLayout>
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="371dp"
+        android:background="@drawable/ic_iconmonstr_eat_5_thin"
+        android:backgroundTint="#E4E4E4"
+
+
+        />
+
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="262dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="50dp"
         android:textSize="20sp"
         android:id="@+id/res_auth_signup"
-        android:hint="등록하기"
+        android:text="시작하기"
+        android:textColor="@color/color_violet"
+        android:background="@drawable/auth_phone_button"
+        android:layout_marginBottom="44dp"
         />
-    </LinearLayout>
 
 </RelativeLayout>

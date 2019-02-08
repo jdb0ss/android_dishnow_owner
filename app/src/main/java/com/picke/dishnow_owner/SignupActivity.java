@@ -68,7 +68,6 @@ public class SignupActivity extends AppCompatActivity {
     private String ownerid;
     private String uid;
 
-
     private UserAuthClass userAuthClass;
     private RequestQueue requestQueue;
 

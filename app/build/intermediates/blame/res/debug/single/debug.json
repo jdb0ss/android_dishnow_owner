@@ -276,6 +276,10 @@
         "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
+        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable_ic_iconmonstr_eat_5_thin.xml.flat",
+        "source": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/res/drawable/ic_iconmonstr_eat_5_thin.xml"
+    },
+    {
         "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/color_abc_hint_foreground_material_dark.xml.flat",
         "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/color/abc_hint_foreground_material_dark.xml"
     },
@@ -400,12 +404,12 @@
         "source": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
-        "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/drawable-xxxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
-    },
-    {
         "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable_next_button.xml.flat",
         "source": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/res/drawable/next_button.xml"
+    },
+    {
+        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
+        "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/drawable-xxxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
         "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/color_abc_primary_text_material_dark.xml.flat",
@@ -1938,6 +1942,10 @@
     {
         "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/layout_design_text_input_password_icon.xml.flat",
         "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/7a4b453b6aaf6afc9e011923ca592f7a/res/layout/design_text_input_password_icon.xml"
+    },
+    {
+        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable_dishnow_logo_purple.png.flat",
+        "source": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/res/drawable/dishnow_logo_purple.png"
     },
     {
         "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
