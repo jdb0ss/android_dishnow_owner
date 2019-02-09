@@ -14,21 +14,22 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.Toast;
 
+import com.picke.dishnow_owner.Owner_User.UserInfoClass;
+
 
 public class JusoActivity extends AppCompatActivity {
 
     private WebView webView;
     private WebSettings webSettings;
     private Handler handler;
-    private String id;
+    private UserInfoClass userInfoClass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        userInfoClass = UserInfoClass.getInstance(getApplicationContext());
         init_webview();
         handler = new Handler();
-        id = getIntent().getStringExtra("o_id");
-
     }
     public void init_webview() {
         setContentView(R.layout.activity_juso);
@@ -50,11 +51,10 @@ public class JusoActivity extends AppCompatActivity {
             handler.post(new Runnable() {
                 @Override
                 public void run() {
-                    Intent intent = new Intent(JusoActivity.this,ResSignupActivity.class);
-                    intent.putExtra("juso1",arg2);
-                    intent.putExtra("juso2",arg3);
-                    intent.putExtra("o_id",id);
-                    startActivity(intent);
+                    userInfoClass.setResadd_num(arg1);
+                    userInfoClass.setResaddress(arg2);
+                    userInfoClass.setResadd_detail(arg3);
+                    startActivity(new Intent(JusoActivity.this,ResInfoActivity.class));
                     finish();
                     init_webview();
                 }

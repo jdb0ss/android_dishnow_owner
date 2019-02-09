@@ -17,6 +17,8 @@ public class UserInfoClass {
     private String resid;
     private String resname;
     private String resaddress;
+    private String resadd_num;
+    private String resadd_detail;
     private String resphone;
     private String ownername;
     private String starttime;
@@ -25,6 +27,10 @@ public class UserInfoClass {
     private String lon;
     private String ownerphone;
     private String respassword;
+
+    public String getResadd_num(){return resadd_num;}
+
+    public String getResadd_detail(){return resadd_detail;}
 
     public String getuId(){
         return uid;
@@ -74,40 +80,41 @@ public class UserInfoClass {
         return endtime;
     }
 
-    void setuId(String uid){
+    public void setuId(String uid){
         this.uid = uid;
     }
-
-    void setResname(String resname){
+    public void setResname(String resname){
         this.resname = resname;
     }
-    void setResaddress(String resaddress){
+    public void setResaddress(String resaddress){
         this.resaddress = resaddress;
     }
-    void setResphone (String resphone){
+    public void setResphone (String resphone){
         this.resphone = resphone;
     }
-    void setOwnername(String ownername){
+    public void setOwnername(String ownername){
         this.ownername = ownername;
     }
-    void setStarttime(String starttime){
+    public void setStarttime(String starttime){
         this.starttime = starttime;
     }
-    void setEndtime(String endtime){
+    public void setEndtime(String endtime){
         this.endtime = endtime;
     }
-    void setLat(String lat){
+    public void setLat(String lat){
         this.lat = lat;
     }
-    void setLon(String lon){
+    public void setLon(String lon){
         this.lon = lon;
     }
-    void setOwnerphone(String ownerphone){
+    public void setOwnerphone(String ownerphone){
         this.ownerphone = ownerphone;
     }
-    void setPassword(String password){
+    public void setPassword(String password){
         this.respassword = password;
     }
+    public void setResadd_num(String resadd_num){this.resadd_num = resadd_num;}
+    public void setResadd_detail(String resadd_detail){this.resadd_detail = resadd_detail;}
 
     public void setResid(String resid) {
         this.resid = resid;
