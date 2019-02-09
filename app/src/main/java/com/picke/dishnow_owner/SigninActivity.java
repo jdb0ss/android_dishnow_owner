@@ -4,6 +4,7 @@ import android.Manifest;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.DownloadManager;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
@@ -57,6 +58,7 @@ public class SigninActivity extends AppCompatActivity {
     private UserAuthClass userAuthClass;
 
     private final String login_url = "http://claor123.cafe24.com/Login.php";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -241,4 +243,5 @@ public class SigninActivity extends AppCompatActivity {
             }
         });
     }
+
 }

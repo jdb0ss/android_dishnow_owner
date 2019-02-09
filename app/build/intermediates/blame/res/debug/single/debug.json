@@ -36,12 +36,12 @@
         "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/7a4b453b6aaf6afc9e011923ca592f7a/res/color/mtrl_text_btn_text_color_selector.xml"
     },
     {
-        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/layout_abc_screen_simple.xml.flat",
-        "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/layout/abc_screen_simple.xml"
-    },
-    {
         "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable_abc_ic_voice_search_api_material.xml.flat",
         "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/drawable/abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/layout_abc_screen_simple.xml.flat",
+        "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/layout/abc_screen_simple.xml"
     },
     {
         "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_kakaotalk_icon.png.flat",
@@ -52,20 +52,20 @@
         "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/drawable-mdpi-v4/abc_list_divider_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/color-v23_abc_color_highlight_material.xml.flat",
-        "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/color-v23/abc_color_highlight_material.xml"
-    },
-    {
         "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable_notification_bg_low.xml.flat",
         "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/a5ca15ae7af273c89783c38ae921ab75/res/drawable/notification_bg_low.xml"
     },
     {
-        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_kakaoaccount_icon.png.flat",
-        "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/util-1.15.1.aar/aed82e16471a13b695342048313c130c/res/drawable-hdpi-v4/kakaoaccount_icon.png"
+        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/color-v23_abc_color_highlight_material.xml.flat",
+        "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/color-v23/abc_color_highlight_material.xml"
     },
     {
         "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/layout-sw600dp-v13_design_layout_snackbar.xml.flat",
         "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/7a4b453b6aaf6afc9e011923ca592f7a/res/layout-sw600dp-v13/design_layout_snackbar.xml"
+    },
+    {
+        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_kakaoaccount_icon.png.flat",
+        "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/util-1.15.1.aar/aed82e16471a13b695342048313c130c/res/drawable-hdpi-v4/kakaoaccount_icon.png"
     },
     {
         "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable_kakao_editable_profile.png.flat",
@@ -120,12 +120,12 @@
         "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
     },
     {
-        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
-        "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/drawable-xxhdpi-v4/abc_textfield_default_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_focused_holo.9.png.flat",
         "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/drawable-mdpi-v4/abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
+        "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/drawable-xxhdpi-v4/abc_textfield_default_mtrl_alpha.9.png"
     },
     {
         "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable_abc_list_divider_material.xml.flat",
@@ -184,12 +184,12 @@
         "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/color-v23/abc_btn_colored_borderless_text_material.xml"
     },
     {
-        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
-        "source": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/res/layout/activity_main.xml"
-    },
-    {
         "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
         "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/drawable-xxxhdpi-v4/abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
+        "source": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/res/layout/activity_main.xml"
     },
     {
         "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
@@ -208,24 +208,24 @@
         "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/drawable-watch-v20/abc_dialog_material_background.xml"
     },
     {
-        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/color_switch_thumb_material_dark.xml.flat",
-        "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/color/switch_thumb_material_dark.xml"
-    },
-    {
         "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
         "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/color_switch_thumb_material_dark.xml.flat",
+        "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/color/switch_thumb_material_dark.xml"
     },
     {
         "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_black_48dp.png.flat",
-        "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/drawable-xxxhdpi-v4/abc_ic_star_black_48dp.png"
-    },
-    {
         "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable-ldrtl-mdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/drawable-ldrtl-mdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_black_48dp.png.flat",
+        "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/drawable-xxxhdpi-v4/abc_ic_star_black_48dp.png"
     },
     {
         "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable_abc_vector_test.xml.flat",
@@ -252,16 +252,16 @@
         "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/drawable-hdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable_kakao_profile_boxbg.9.png.flat",
-        "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/util-1.15.1.aar/aed82e16471a13b695342048313c130c/res/drawable/kakao_profile_boxbg.9.png"
+        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
+        "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/drawable-xhdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
         "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/layout_notification_template_part_chronometer.xml.flat",
         "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/a5ca15ae7af273c89783c38ae921ab75/res/layout/notification_template_part_chronometer.xml"
     },
     {
-        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
-        "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/drawable-xhdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png"
+        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable_kakao_profile_boxbg.9.png.flat",
+        "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/util-1.15.1.aar/aed82e16471a13b695342048313c130c/res/drawable/kakao_profile_boxbg.9.png"
     },
     {
         "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/interpolator-v21_mtrl_fast_out_linear_in.xml.flat",
@@ -288,12 +288,12 @@
         "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/7a4b453b6aaf6afc9e011923ca592f7a/res/animator/mtrl_btn_state_list_anim.xml"
     },
     {
-        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/layout_notification_action_tombstone.xml.flat",
-        "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/a5ca15ae7af273c89783c38ae921ab75/res/layout/notification_action_tombstone.xml"
-    },
-    {
         "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
         "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/drawable-xhdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/layout_notification_action_tombstone.xml.flat",
+        "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/a5ca15ae7af273c89783c38ae921ab75/res/layout/notification_action_tombstone.xml"
     },
     {
         "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/layout_activity_signin.xml.flat",
@@ -324,12 +324,12 @@
         "source": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/res/layout/activity_popup.xml"
     },
     {
-        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/anim_design_snackbar_out.xml.flat",
-        "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/7a4b453b6aaf6afc9e011923ca592f7a/res/anim/design_snackbar_out.xml"
-    },
-    {
         "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable-ldrtl-hdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/drawable-ldrtl-hdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/anim_design_snackbar_out.xml.flat",
+        "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/7a4b453b6aaf6afc9e011923ca592f7a/res/anim/design_snackbar_out.xml"
     },
     {
         "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/layout_abc_activity_chooser_view_list_item.xml.flat",
@@ -340,16 +340,16 @@
         "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/color/abc_primary_text_disable_only_material_dark.xml"
     },
     {
-        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/layout_abc_select_dialog_material.xml.flat",
-        "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/layout/abc_select_dialog_material.xml"
+        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
+        "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/drawable-mdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
         "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/layout-v21_notification_template_icon_group.xml.flat",
         "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/a5ca15ae7af273c89783c38ae921ab75/res/layout-v21/notification_template_icon_group.xml"
     },
     {
-        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
-        "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/drawable-mdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
+        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/layout_abc_select_dialog_material.xml.flat",
+        "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/layout/abc_select_dialog_material.xml"
     },
     {
         "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/layout-v21_notification_action_tombstone.xml.flat",
@@ -360,12 +360,12 @@
         "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/layout/abc_screen_content_include.xml"
     },
     {
-        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/anim_abc_fade_out.xml.flat",
-        "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/anim/abc_fade_out.xml"
-    },
-    {
         "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
         "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/drawable-xxhdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/anim_abc_fade_out.xml.flat",
+        "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/anim/abc_fade_out.xml"
     },
     {
         "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/layout_abc_activity_chooser_view.xml.flat",
@@ -384,12 +384,12 @@
         "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/layout/abc_popup_menu_header_item_layout.xml"
     },
     {
-        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/color_abc_primary_text_disable_only_material_light.xml.flat",
-        "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/color/abc_primary_text_disable_only_material_light.xml"
-    },
-    {
         "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/layout-watch-v20_abc_alert_dialog_title_material.xml.flat",
         "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/layout-watch-v20/abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/color_abc_primary_text_disable_only_material_light.xml.flat",
+        "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/color/abc_primary_text_disable_only_material_light.xml"
     },
     {
         "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
@@ -412,24 +412,24 @@
         "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/drawable-xxxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
-        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/color_abc_primary_text_material_dark.xml.flat",
-        "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/color/abc_primary_text_material_dark.xml"
+        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/color_mtrl_btn_ripple_color.xml.flat",
+        "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/7a4b453b6aaf6afc9e011923ca592f7a/res/color/mtrl_btn_ripple_color.xml"
     },
     {
         "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
         "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/drawable-xxxhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
-        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/color_mtrl_btn_ripple_color.xml.flat",
-        "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/7a4b453b6aaf6afc9e011923ca592f7a/res/color/mtrl_btn_ripple_color.xml"
-    },
-    {
-        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
-        "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/drawable-mdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png"
+        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/color_abc_primary_text_material_dark.xml.flat",
+        "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/color/abc_primary_text_material_dark.xml"
     },
     {
         "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_longpressed_holo.9.png.flat",
         "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/drawable-mdpi-v4/abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
+        "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/drawable-mdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
         "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
@@ -700,6 +700,10 @@
         "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/7a4b453b6aaf6afc9e011923ca592f7a/res/color/mtrl_chip_ripple_color.xml"
     },
     {
+        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/font_nanumsquareotfregular.otf.flat",
+        "source": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/res/font/nanumsquareotfregular.otf"
+    },
+    {
         "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_pressed_holo_light.9.png.flat",
         "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/drawable-mdpi-v4/abc_list_pressed_holo_light.9.png"
     },
@@ -750,6 +754,10 @@
     {
         "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/layout_support_simple_spinner_dropdown_item.xml.flat",
         "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d938353e2fa33595e33d8bbd6eb70423/res/layout/support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/font_nanumsquareotfbold.otf.flat",
+        "source": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/res/font/nanumsquareotfbold.otf"
     },
     {
         "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
@@ -926,6 +934,10 @@
     {
         "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable_account.png.flat",
         "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/usermgmt-1.15.1.aar/06be3be95d9df7c402cc06df2736580d/res/drawable/account.png"
+    },
+    {
+        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/font_nanumsquareorflight.otf.flat",
+        "source": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/res/font/nanumsquareorflight.otf"
     },
     {
         "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/layout_abc_dialog_title_material.xml.flat",
@@ -1978,6 +1990,10 @@
     {
         "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/layout_mtrl_layout_snackbar_include.xml.flat",
         "source": "/Users/spark/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/7a4b453b6aaf6afc9e011923ca592f7a/res/layout/mtrl_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/font_nanumsquareorfextrabold.otf.flat",
+        "source": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/src/main/res/font/nanumsquareorfextrabold.otf"
     },
     {
         "merged": "/Users/spark/AndroidStudioProjects/dishnow_owner/app/build/intermediates/res/merged/debug/drawable-v21_abc_dialog_material_background.xml.flat",

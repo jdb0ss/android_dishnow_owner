@@ -2,6 +2,8 @@ package com.picke.dishnow_owner.Utility;
 
 import android.util.Log;
 
+import com.picke.dishnow_owner.Owner_User.UserInfoClass;
+
 import org.json.JSONObject;
 
 import java.io.File;
@@ -23,7 +25,6 @@ public class JSONParser {
             File sourceFile = new File(sourceImageFile);
             final MediaType MEDIA_TYPE_PNG = MediaType.parse("image/*");
             filename = sourceImageFile.substring(sourceImageFile.lastIndexOf("/")+1);
-            filename = id+"_res_auth"+filename.substring(filename.lastIndexOf("."));
 
             //OKHTTP3
             RequestBody requestBody = new MultipartBody.Builder()

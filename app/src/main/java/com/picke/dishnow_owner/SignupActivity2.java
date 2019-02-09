@@ -25,6 +25,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.picke.dishnow_owner.Owner_User.UserAuthClass;
+import com.picke.dishnow_owner.Owner_User.UserInfoClass;
 import com.picke.dishnow_owner.Utility.VolleySingleton;
 
 import org.w3c.dom.Text;
@@ -44,6 +45,7 @@ public class SignupActivity2 extends AppCompatActivity {
     private RequestQueue requestQueue;
     private String Authnumber="";
     private UserAuthClass userAuthClass;
+    private UserInfoClass userInfoClass;
     private String uid;
     private Boolean flag=true;
 
@@ -63,6 +65,7 @@ public class SignupActivity2 extends AppCompatActivity {
         signupbutton = findViewById(R.id.signup2_signup_button);
 
         userAuthClass = UserAuthClass.getInstance(getApplicationContext());
+        userInfoClass = UserInfoClass.getInstance(getApplicationContext());
         requestQueue = VolleySingleton.getmInstance(getApplicationContext()).getRequestQueue();
 
         Drawable image = getApplicationContext().getResources().getDrawable(R.drawable.ic_iconmonstr_check_mark_15);
@@ -98,7 +101,6 @@ public class SignupActivity2 extends AppCompatActivity {
             }
         });
 
-
         final StringRequest stringRequest_phone = new StringRequest(Request.Method.POST, feed_url_phone, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -121,7 +123,9 @@ public class SignupActivity2 extends AppCompatActivity {
         final StringRequest StringRequest_signup = new StringRequest(Request.Method.POST, feed_url_signup, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                uid= response.substring(1,response.length()-1);
+                uid = response.substring(1,response.length()-1);
+                userAuthClass.setUid(uid);
+                userInfoClass.setuId(uid);
                 Log.d("spark123", "[" + response + "]");
             }
         }, new Response.ErrorListener() {
@@ -162,7 +166,7 @@ public class SignupActivity2 extends AppCompatActivity {
                     userAuthClass.setOwnername(Eonwername.getText().toString());
                     userAuthClass.setOwnerphone(Eownerphone.getText().toString());
                     requestQueue.add(StringRequest_signup);
-                    userAuthClass.setUid(uid);
+
                     Intent intent = new Intent(SignupActivity2.this, ResAuthActivity.class);
                     startActivity(intent);
                     finish();
