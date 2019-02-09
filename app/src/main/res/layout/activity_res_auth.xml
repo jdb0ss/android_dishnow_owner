@@ -20,6 +20,7 @@
         />
 
     <TextView
+        android:fontFamily="@font/nanumsquareotfregular"
         android:layout_below="@+id/res_auth_header"
         android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
@@ -41,6 +42,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         <TextView
+            android:fontFamily="@font/nanumsquareotfregular"
             android:id="@+id/res_auth_name"
             android:textSize="18sp"
             android:textColor="@color/color_violet"
@@ -49,18 +51,19 @@
             android:layout_height="wrap_content"
             />
         <TextView
+            android:fontFamily="@font/nanumsquareotfregular"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="님, 회원가입을 축하합니다."
             android:textSize="18sp"/>
-
     </LinearLayout>
 
         <TextView
+            android:fontFamily="@font/nanumsquareotfregular"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="18sp"
-            android:text="로그인 후 음식점을 등독하실 수 있습니다."/>
+            android:text="로그인 후 음식점을 등록하실 수 있습니다."/>
     </LinearLayout>
     <ImageView
         android:layout_centerHorizontal="true"
@@ -70,11 +73,10 @@
         android:background="@drawable/ic_iconmonstr_eat_5_thin"
         android:backgroundTint="#E4E4E4"
 
-
         />
 
-
     <Button
+        android:fontFamily="@font/nanumsquareotfregular"
         android:layout_alignParentBottom="true"
         android:layout_width="262dp"
         android:layout_centerHorizontal="true"
@@ -83,6 +85,7 @@
         android:id="@+id/res_auth_signup"
         android:text="시작하기"
         android:textColor="@color/color_violet"
+        style="?android:attr/borderlessButtonStyle"
         android:background="@drawable/auth_phone_button"
         android:layout_marginBottom="44dp"
         />

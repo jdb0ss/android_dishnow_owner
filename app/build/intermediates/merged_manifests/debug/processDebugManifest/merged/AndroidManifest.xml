@@ -55,6 +55,13 @@
             android:label="" />
         <activity android:name="com.picke.dishnow_owner.ResInfoActivity" />
         <activity
+            android:name="com.picke.dishnow_owner.FindidpassActivity"
+            android:label="" />
+        <activity
+            android:name="com.picke.dishnow_owner.FindemailActivity"
+            android:label="" >
+        </activity>
+        <activity
             android:name="com.kakao.auth.authorization.authcode.KakaoWebViewActivity"
             android:configChanges="orientation|screenSize"
             android:exported="false"

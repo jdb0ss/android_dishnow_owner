@@ -20,6 +20,7 @@
             android:text="회원 가입"
             android:textSize="18sp"
             android:textColor="#FFFFFF"
+            android:fontFamily="@font/nanumsquareotfregular"
             />
     </android.support.v7.widget.Toolbar>
     <RelativeLayout
@@ -45,6 +46,7 @@
             style="?android:attr/borderlessButtonStyle"
             android:textColor="#FFFFFF"
             android:background="@drawable/next_button"
+            android:fontFamily="@font/nanumsquareotfregular"
             android:text="회원 가입" />
     </RelativeLayout>
 
@@ -58,17 +60,18 @@
         android:orientation="vertical"
         android:id="@+id/signup2_first">
         <TextView
-            android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="본인 인증"
             android:textSize="16sp"
+            android:fontFamily="@font/nanumsquareotfbold"
             android:textColor="#000000"
             />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="허위/중복 가입을 막기 위한 절차입니다."
+            android:fontFamily="@font/nanumsquareotfregular"
             android:textSize="14sp"/>
 
         <TextView
@@ -76,12 +79,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="14sp"
+            android:fontFamily="@font/nanumsquareotfregular"
             android:textColor="#555555"
             android:text="이름"/>
         <android.support.v7.widget.AppCompatEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/signup2_ownername"
+            android:fontFamily="@font/nanumsquareotfregular"
             android:hint="이름을 입력하세요."
             android:textSize="16sp"
             />
@@ -91,6 +96,7 @@
             android:layout_height="wrap_content"
             android:textSize="14sp"
             android:text="휴대폰 번호"
+            android:fontFamily="@font/nanumsquareotfregular"
             android:textColor="#555555"
             />
         <LinearLayout
@@ -103,16 +109,18 @@
             android:layout_height="wrap_content"
             android:id="@+id/signup2_ownerphone"
             android:hint="-없이 입력하세요."
+            android:fontFamily="@font/nanumsquareotfregular"
             android:textSize="16sp"
             />
 
             <Button
                 android:layout_marginLeft="5dp"
                 android:layout_width="101dp"
-                android:layout_height="40dp"
+                android:layout_height="36dp"
                 android:id="@+id/signup2_phoneauthbutton"
                 android:text="인증번호 전송"
                 android:textSize="12sp"
+                android:fontFamily="@font/nanumsquareotfregular"
                 style="?android:attr/borderlessButtonStyle"
                 android:textColor="@color/color_violet"
                 android:background="@drawable/auth_phone_button"
@@ -125,6 +133,7 @@
             android:layout_height ="wrap_content"
             android:textSize="14sp"
             android:text="인증번호"
+            android:fontFamily="@font/nanumsquareotfregular"
             android:textColor="#555555"
             android:layout_marginTop="31dp"
             />
@@ -134,11 +143,13 @@
             android:layout_height="wrap_content"
             android:id="@+id/signup2_phoneauth"
             android:hint="인증번호 4자리를 입력하세요."
+            android:fontFamily="@font/nanumsquareotfregular"
             android:textSize="16sp"
             />
         <TextView
             android:id="@+id/signup2_phoneautherror"
             android:layout_width="wrap_content"
+            android:fontFamily="@font/nanumsquareotfregular"
             android:layout_height="wrap_content"
             android:textSize="12sp"
             android:textColor="#E60012"/>

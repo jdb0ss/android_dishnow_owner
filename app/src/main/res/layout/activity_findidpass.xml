@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindidpassActivity">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@drawable/tabbar_baground"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:id="@+id/findemail_toolbar"
+        android:layout_height="60dp">
+        <TextView
+            android:fontFamily="@font/nanumsquareotfregular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="이메일/비밀번호 찾기"
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical" />
+    <TabHost
+        android:id="@+id/tabHost1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- TabWidget의 id값이 반드시 "tabs"로 지정되어야 함. -->
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="69dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" />
+
+            <!-- FrameLayout의 id값이 반드시 "tabcontent"로 지정되어야 함. -->
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- 첫 번째 페이지. content1 -->
+                <LinearLayout
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/content1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:fontFamily="@font/nanumsquareotfregular"
+                        android:layout_width="match_parent"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:text="이름"
+                        android:textSize="14sp"
+                        android:layout_marginTop="31dp"/>
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/ownername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="이름을 입력하세요"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:fontFamily="@font/nanumsquareotfregular"
+                        android:layout_width="match_parent"
+                        android:layout_height="19dp"
+                        android:layout_marginTop="32dp"
+                        android:textSize="14sp"
+                        android:text="회원 정보에 등록된 휴대폰 번호"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <EditText
+                            android:fontFamily="@font/nanumsquareotfregular"
+                            android:id="@+id/ownerphonenum"
+                            android:layout_width="219dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:hint="휴대폰 번호를 '-' 없이 입력하세요."
+                            android:textSize="14sp"
+                            />
+
+                        <Button
+                            android:fontFamily="@font/nanumsquareotfregular"
+                            android:id="@+id/sendchecknumbutton"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="101dp"
+                            android:layout_height="40dp"
+                            android:text="인증번호 전송"
+                            android:textSize="14sp"
+                            android:textColor="@color/color_violet"
+                            android:background="@drawable/auth_phone_button"
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:fontFamily="@font/nanumsquareotfregular"
+                        android:layout_width="match_parent"
+                        android:layout_height="19dp"
+                        android:layout_marginTop="32dp"
+                        android:textSize="14sp"
+                        android:text="인증번호"/>
+                    <EditText
+                        android:fontFamily="@font/nanumsquareotfregular"
+                        android:id="@+id/checknum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="인증번호를 입력하세요"
+                        android:textSize="16sp"
+                        />
+                    <RelativeLayout
+                        android:layout_marginBottom="45dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="bottom">
+                        <Button
+                            android:fontFamily="@font/nanumsquareotfregular"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/findemailbutton"
+                            android:layout_width="262dp"
+                            android:layout_height="50dp"
+                            android:textSize="18sp"
+                            android:textColor="@color/color_violet"
+                            android:background="@drawable/auth_phone_button"
+                            android:text="이메일 찾기" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!-- 두 번째 페이지. content2 -->
+                <LinearLayout
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/content2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:fontFamily="@font/nanumsquareotfregular"
+                        android:layout_width="match_parent"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:text="가입 이메일"
+                        android:textSize="14sp"
+                        android:layout_marginTop="31dp"/>
+
+                    <EditText
+                        android:fontFamily="@font/nanumsquareotfregular"
+                        android:id="@+id/owneremail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="이메일을 입력하세요"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:fontFamily="@font/nanumsquareotfregular"
+                        android:layout_width="match_parent"
+                        android:layout_height="19dp"
+                        android:layout_marginTop="32dp"
+                        android:textSize="14sp"
+                        android:text="이름"/>
+
+                    <EditText
+                        android:fontFamily="@font/nanumsquareotfregular"
+                        android:id="@+id/ownername2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="이름을 입력하세요"
+                        android:textSize="16sp"
+                        />
+                    <TextView
+                        android:fontFamily="@font/nanumsquareotfregular"
+                        android:layout_width="match_parent"
+                        android:layout_height="19dp"
+                        android:layout_marginTop="32dp"
+                        android:textSize="14sp"
+                        android:text="회원 정보에 등록된 휴대폰 번호"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <EditText
+                            android:fontFamily="@font/nanumsquareotfregular"
+                            android:id="@+id/ownerphonenum2"
+                            android:layout_width="219dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:hint="대폰 번호를 '-' 없이 입력하세요."
+                            android:textSize="14sp"
+                            />
+                        <Button
+                            android:fontFamily="@font/nanumsquareotfregular"
+                            android:id="@+id/sendchecknumbutton2"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="101dp"
+                            android:layout_height="40dp"
+                            android:text="인증번호 전송"
+                            android:textSize="14sp"
+                            android:textColor="@color/color_violet"
+                            android:background="@drawable/auth_phone_button"
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:fontFamily="@font/nanumsquareotfregular"
+                        android:layout_width="match_parent"
+                        android:layout_height="19dp"
+                        android:layout_marginTop="32dp"
+                        android:textSize="14sp"
+                        android:text="인증번호"/>
+                    <EditText
+                        android:fontFamily="@font/nanumsquareotfregular"
+                        android:id="@+id/checknum2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="인증번호를 입력하세요"
+                        android:textSize="16sp"
+                        />
+                    <RelativeLayout
+                        android:layout_marginBottom="45dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="bottom"
+                        >
+                        <Button
+                            android:fontFamily="@font/nanumsquareotfregular"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/nextbutton2"
+                            android:layout_width="262dp"
+                            android:layout_height="50dp"
+                            android:textSize="18sp"
+                            android:textColor="@color/color_violet"
+                            android:background="@drawable/auth_phone_button"
+                            android:text="비밀번호 재설정"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</RelativeLayout>

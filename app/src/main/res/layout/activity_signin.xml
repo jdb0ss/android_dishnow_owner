@@ -33,6 +33,7 @@
         android:textColorHint="#FFFFFF"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="250dp"
+        android:textColor="#FFFFFF"
         android:hint="아이디" />
 
     <EditText
@@ -46,11 +47,12 @@
         android:hint="비밀번호"
         android:inputType="textPassword"
         android:layout_marginTop="10dp"
+        android:textColor="#FFFFFF"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />
 
     <TextView
-        android:fontFamily="@font/nanumsquareotfregular"
+        android:fontFamily="@font/nanumsquareotfbold"
         android:id="@+id/signin_wronginput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -60,14 +62,12 @@
         android:layout_marginLeft="47dp"
         android:layout_marginTop="380dp"
         android:textSize="16dp"
-        android:textStyle="bold"
         android:textColor="#E60012"
         />
 
     <Button
-        android:fontFamily="@font/nanumsquareotfregular"
+        android:fontFamily="@font/nanumsquareotfbold"
         android:id="@+id/signin_loginButton"
-        android:textStyle="bold"
         android:layout_width="245dp"
         android:layout_height="55dp"
         android:gravity="center"

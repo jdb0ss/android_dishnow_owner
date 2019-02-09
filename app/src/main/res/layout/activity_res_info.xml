@@ -18,6 +18,7 @@
             android:layout_gravity="center"
             android:text="음식점 등록"
             android:textSize="18sp"
+            android:fontFamily="@font/nanumsquareotfregular"
             android:textColor="#FFFFFF"
             />
         </android.support.v7.widget.Toolbar>
@@ -41,6 +42,7 @@
             android:layout_width="262dp"
             android:layout_height="50dp"
             android:textSize="18sp"
+            style="?android:attr/borderlessButtonStyle"
             android:textColor="#FFFFFF"
             android:background="@drawable/next_button"
             android:text="등록하기" />
@@ -61,6 +63,7 @@
             android:layout_height="wrap_content"
             android:text="음식점 정보"
             android:textSize="16sp"
+            android:fontFamily="@font/nanumsquareotfbold"
             android:textColor="#000000"
             android:id="@+id/txt_res_info"
             android:layout_marginBottom="43dp"
@@ -70,6 +73,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="14sp"
+            android:fontFamily="@font/nanumsquareotfregular"
             android:textColor="#555555"
             android:text="음식점 이름"/>
         <android.support.v7.widget.AppCompatEditText
@@ -77,6 +81,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/res_info_res_name"
             android:hint="음식점 이름을 입력하세요."
+            android:fontFamily="@font/nanumsquareotfregular"
             android:textSize="16sp"
             android:layout_marginBottom="27dp"
             />
@@ -85,6 +90,7 @@
             android:layout_height="wrap_content"
             android:textSize="14sp"
             android:text="음식점 전화번호"
+            android:fontFamily="@font/nanumsquareotfregular"
             android:textColor="#555555"
             />
         <LinearLayout
@@ -96,6 +102,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/res_info_resphone"
+                android:fontFamily="@font/nanumsquareotfregular"
                 android:hint="음식점 대표 전화번호를 입력하세요."
                 android:textSize="16sp"
                 android:layout_marginBottom="27dp"
@@ -112,18 +119,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <EditText
-                android:layout_width="249dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/res_info_address_num_edt"
+                android:fontFamily="@font/nanumsquareotfregular"
                 android:layout_marginTop="8dp"
+                android:textSize="16sp"
                 android:hint="우편번호"/>
             <Button
                 android:layout_marginLeft="5dp"
-                android:layout_width="75dp"
-                android:layout_height="37dp"
+                android:layout_width="101dp"
+                android:fontFamily="@font/nanumsquareotfregular"
+                android:layout_height="36dp"
                 android:id="@+id/res_info_search_address_btn"
                 android:text="주소검색"
                 android:layout_gravity="center"
+                style="?android:attr/borderlessButtonStyle"
                 android:textSize="14dp"
                 android:textColor="@color/color_violet"
                 android:background="@drawable/auth_phone_button"
@@ -132,12 +143,16 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumsquareotfregular"
                 android:id="@+id/res_info_address_edt"
+                android:textSize="16sp"
                 android:hint="주소"/>
             <EditText
                 android:layout_width="match_parent"
+                android:fontFamily="@font/nanumsquareotfregular"
                 android:layout_height="wrap_content"
                 android:id="@+id/res_info_detail_address_edt"
+                android:textSize="16sp"
                 android:hint="상세주소"/>
         </LinearLayout>
 </RelativeLayout>

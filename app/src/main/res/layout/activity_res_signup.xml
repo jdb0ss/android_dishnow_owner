@@ -20,6 +20,7 @@
             android:text="음식점 등록"
             android:textSize="18dp"
             android:textColor="#FFFFFF"
+            android:fontFamily="@font/nanumsquareotfregular"
             />
     </android.support.v7.widget.Toolbar>
     <RelativeLayout
@@ -42,8 +43,10 @@
             android:layout_width="262dp"
             android:layout_height="50dp"
             android:textSize="18sp"
+            android:fontFamily="@font/nanumsquareotfregular"
             android:textColor="@color/color_violet"
             android:background="@drawable/auth_phone_button"
+            style="?android:attr/borderlessButtonStyle"
             android:text="다음" />
     </RelativeLayout>
 
@@ -57,10 +60,10 @@
         android:orientation="vertical"
         android:id="@+id/signup2_first">
         <TextView
-            android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="사업자 정보"
+            android:fontFamily="@font/nanumsquareotfbold"
             android:textSize="16sp"
             android:textColor="#000000"
             />
@@ -72,10 +75,12 @@
             android:layout_height="wrap_content"
             android:textSize="14sp"
             android:textColor="#555555"
+            android:fontFamily="@font/nanumsquareotfregular"
             android:text="사업자번호"/>
         <android.support.v7.widget.AppCompatEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumsquareotfregular"
             android:id="@+id/ressignup_resnum"
             android:hint="'-'를 뺀 11자리 사업자번호를 입력하세요."
             android:textSize="16sp"
@@ -84,6 +89,7 @@
             android:layout_marginTop="31dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumsquareotfregular"
             android:textSize="14sp"
             android:text="사업자등록증 사본 등록"
             android:textColor="#555555"
@@ -97,6 +103,7 @@
                 android:layout_width="219dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/ressignup_imagefile"
+                android:fontFamily="@font/nanumsquareotfregular"
                 android:hint="사본 파일을 등록하세요."
                 android:textSize="16sp"
                 />
@@ -104,11 +111,12 @@
             <Button
                 android:layout_marginLeft="5dp"
                 android:layout_width="101dp"
-                android:layout_height="40dp"
+                android:layout_height="36dp"
+                android:fontFamily="@font/nanumsquareotfregular"
                 android:id="@+id/ressignup_imagebutton"
                 android:text="파일추가"
                 style="?android:attr/borderlessButtonStyle"
-                android:textSize="12sp"
+                android:textSize="14sp"
                 android:textColor="@color/color_violet"
                 android:background="@drawable/auth_phone_button"
                 />
@@ -120,6 +128,7 @@
             android:layout_height ="wrap_content"
             android:textSize="14sp"
             android:text="사업주명"
+            android:fontFamily="@font/nanumsquareotfregular"
             android:textColor="#555555"
             android:layout_marginTop="31dp"
             />
@@ -128,6 +137,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/ressignup_name"
+            android:fontFamily="@font/nanumsquareotfregular"
             android:hint="사업주명을 입력하세요."
             android:textSize="16sp"
             />
@@ -135,6 +145,7 @@
             android:id="@+id/signup2_phoneautherror"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumsquareotfregular"
             android:textSize="12sp"
             android:textColor="#E60012"/>
     </LinearLayout>

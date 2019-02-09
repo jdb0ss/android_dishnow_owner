@@ -42,6 +42,7 @@
             android:textColor="@color/color_violet"
             android:background="@drawable/auth_phone_button"
             style="?android:attr/borderlessButtonStyle"
+            android:fontFamily="@font/nanumsquareotfregular"
             android:text="다음" />
 
         <LinearLayout
@@ -54,12 +55,12 @@
             android:orientation="vertical"
             android:id="@+id/signup_first">
             <TextView
-                android:textStyle="bold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="계정 생성"
                 android:textSize="16sp"
                 android:textColor="#000000"
+                android:fontFamily="@font/nanumsquareotfbold"
                 />
 
             <TextView
@@ -68,12 +69,14 @@
                 android:layout_height="wrap_content"
                 android:textSize="14sp"
                 android:textColor="#555555"
+                android:fontFamily="@font/nanumsquareotfregular"
                 android:text="아이디"/>
             <android.support.v7.widget.AppCompatEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/signup_ownerid"
                 android:hint="4~20자의 아이디를 입력하세요."
+                android:fontFamily="@font/nanumsquareotfregular"
                 android:textSize="16sp"
                 />
             <TextView
@@ -81,6 +84,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
+                android:fontFamily="@font/nanumsquareotfregular"
                 android:textColor="#E60012"/>
             <TextView
                 android:layout_marginTop="12dp"
@@ -88,6 +92,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="14sp"
                 android:text="비밀번호"
+                android:fontFamily="@font/nanumsquareotfregular"
                 android:textColor="#555555"
                 />
         <EditText
@@ -97,12 +102,14 @@
             android:hint="영문,숫자 8~20자를 입력하세요."
             android:textSize="16sp"
             android:inputType="textPassword"
+            android:fontFamily="@font/nanumsquareotfregular"
             />
             <TextView
                 android:id="@+id/signup_passworderror"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
+                android:fontFamily="@font/nanumsquareotfregular"
                 android:textColor="#E60012"/>
             <TextView
                 android:layout_marginTop="12dp"
@@ -110,6 +117,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="14sp"
                 android:text="비밀번호 확인"
+                android:fontFamily="@font/nanumsquareotfregular"
                 android:textColor="#555555"
                 />
 
@@ -118,6 +126,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/signup_ownerpassword_repeat"
             android:inputType="textPassword"
+                android:fontFamily="@font/nanumsquareotfregular"
             android:hint="비밀번호를 다시 한번 입력하세요."
                 android:textSize="16sp"
                />
@@ -126,6 +135,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
+                android:fontFamily="@font/nanumsquareotfregular"
                 android:textColor="#E60012"/>
         </LinearLayout>
 

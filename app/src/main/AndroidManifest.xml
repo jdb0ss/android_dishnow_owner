@@ -43,8 +43,13 @@
         <activity android:name=".JusoActivity" />
         <activity
             android:name=".SignupActivity2"
-            android:label=""></activity>
-        <activity android:name=".ResInfoActivity"></activity>
+            android:label="" />
+        <activity android:name=".ResInfoActivity" />
+        <activity android:name=".FindidpassActivity"
+            android:label=""/>
+        <activity android:name=".FindemailActivity"
+            android:label="">
+        </activity>
     </application>
 
 </manifest>

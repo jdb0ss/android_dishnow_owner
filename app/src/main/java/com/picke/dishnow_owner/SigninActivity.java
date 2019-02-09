@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Paint;
+import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.support.v4.app.ActivityCompat;
@@ -45,6 +46,7 @@ public class SigninActivity extends AppCompatActivity {
 
     private Button signupbutton;
     private Button signinbutton;
+    private Button Bfindidpassword;
     private EditText Eidinput;
     private EditText Epasswordinput;
     private TextView wronginput;
@@ -100,6 +102,7 @@ public class SigninActivity extends AppCompatActivity {
         String loginid,loginpassword,id,name,resauth;
         loginid = auto.getString("o_id",null);
         loginpassword = auto.getString("o_password",null);
+
 
         final StringRequest StringRequest2 = new StringRequest(Request.Method.POST, login_url, new Response.Listener<String>() {
             @Override
@@ -164,8 +167,12 @@ public class SigninActivity extends AppCompatActivity {
         Epasswordinput = findViewById(R.id.signin_passwordinput);
         wronginput = findViewById(R.id.signin_wronginput);
         Epasswordinput.setInputType(InputType.TYPE_TEXT_VARIATION_PASSWORD);
+        Bfindidpassword = findViewById(R.id.signin_findidButton);
         Epasswordinput.setTransformationMethod(PasswordTransformationMethod.getInstance());
         signupbutton.setText(Html.fromHtml("<u>"+"새로운 계정 만들기"+"</u>"));
+
+        Eidinput.getBackground().setColorFilter(getResources().getColor(R.color.color_white),PorterDuff.Mode.SRC_ATOP);
+        Epasswordinput.getBackground().setColorFilter(getResources().getColor(R.color.color_white),PorterDuff.Mode.SRC_ATOP);
 
         final StringRequest StringRequest = new StringRequest(Request.Method.POST, login_url, new Response.Listener<String>() {
             @Override
@@ -231,6 +238,15 @@ public class SigninActivity extends AppCompatActivity {
                 requestQueue.add(StringRequest);
             }
         });
+
+        Bfindidpassword.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SigninActivity.this,FindidpassActivity.class));
+                finish();
+            }
+        });
+
 
         signupbutton.setOnClickListener(new View.OnClickListener() {
             @Override
