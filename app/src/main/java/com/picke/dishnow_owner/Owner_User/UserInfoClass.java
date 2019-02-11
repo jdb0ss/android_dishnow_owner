@@ -41,11 +41,11 @@ public class UserInfoClass {
     }
 
     public String getLat() {
-        return lat;
+        return this.lat;
     }
 
     public String getLon() {
-        return lon;
+        return this.lon;
     }
 
     public String getOwnerphone() {

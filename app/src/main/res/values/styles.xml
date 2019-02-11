@@ -9,8 +9,9 @@
     </style>
 
     <style name="AppTheme.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/color_violet</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">@color/color_violet</item>
     </style>
 
     <style name="SignupActionBar" parent="Theme.AppCompat.Light.NoActionBar">

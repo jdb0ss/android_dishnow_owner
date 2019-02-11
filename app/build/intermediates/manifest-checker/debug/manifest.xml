@@ -28,7 +28,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme.NoActionBar" >
         <meta-data
             android:name="com.kakao.sdk.AppKey"
             android:value="6b32b4ba0498283ab49ee7db948eeeb1" />
@@ -45,7 +45,8 @@
         <activity android:name="com.picke.dishnow_owner.MainActivity" />
         <activity
             android:name="com.picke.dishnow_owner.SignupActivity"
-            android:label="" />
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name="com.picke.dishnow_owner.ResAuthActivity" />
         <activity android:name="com.picke.dishnow_owner.ResSignupActivity" />
         <activity android:name="com.picke.dishnow_owner.PopupActivity" />
@@ -59,8 +60,8 @@
             android:label="" />
         <activity
             android:name="com.picke.dishnow_owner.FindemailActivity"
-            android:label="" >
-        </activity>
+            android:label="" />
+        <activity android:name="com.picke.dishnow_owner.ResAuthActivity0" />
         <activity
             android:name="com.kakao.auth.authorization.authcode.KakaoWebViewActivity"
             android:configChanges="orientation|screenSize"

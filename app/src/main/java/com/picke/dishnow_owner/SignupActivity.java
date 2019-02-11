@@ -73,6 +73,8 @@ public class SignupActivity extends AppCompatActivity {
 
     private final String feed_url = "http://claor123.cafe24.com/Owner_Signup.php";
     private final String id_url = "http://claor123.cafe24.com/Id_overlap.php";
+    public static Activity _Signup_Activity;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,11 +87,16 @@ public class SignupActivity extends AppCompatActivity {
         errorid = findViewById(R.id.signup_iderror);
         errorpassword = findViewById(R.id.signup_passworderror);
         errorpassword2 = findViewById(R.id.signup_passwordoverlaperror);
+        _Signup_Activity = SignupActivity.this;
 
         Eownerpassword.setInputType(InputType.TYPE_TEXT_VARIATION_PASSWORD);
         Eownerpassword.setTransformationMethod(PasswordTransformationMethod.getInstance());
         Eownerpassword2.setInputType(InputType.TYPE_TEXT_VARIATION_PASSWORD);
         Eownerpassword2.setTransformationMethod(PasswordTransformationMethod.getInstance());
+
+        Eownerid.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder), PorterDuff.Mode.SRC_ATOP);
+        Eownerpassword.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder), PorterDuff.Mode.SRC_ATOP);
+        Eownerpassword2.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder), PorterDuff.Mode.SRC_ATOP);
 
         Toolbar toolbar = findViewById(R.id.signup_toolbar);
         setSupportActionBar(toolbar);

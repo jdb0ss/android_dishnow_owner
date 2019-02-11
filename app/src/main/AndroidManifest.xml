@@ -19,7 +19,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme.NoActionBar">
         <meta-data
             android:name="com.kakao.sdk.AppKey"
             android:value="6b32b4ba0498283ab49ee7db948eeeb1" />
@@ -36,7 +36,8 @@
         <activity android:name=".MainActivity" />
         <activity
             android:name=".SignupActivity"
-            android:label="" />
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ResAuthActivity" />
         <activity android:name=".ResSignupActivity" />
         <activity android:name=".PopupActivity" />
@@ -45,11 +46,13 @@
             android:name=".SignupActivity2"
             android:label="" />
         <activity android:name=".ResInfoActivity" />
-        <activity android:name=".FindidpassActivity"
-            android:label=""/>
-        <activity android:name=".FindemailActivity"
-            android:label="">
-        </activity>
+        <activity
+            android:name=".FindidpassActivity"
+            android:label="" />
+        <activity
+            android:name=".FindemailActivity"
+            android:label=""></activity>
+        <activity android:name=".ResAuthActivity0"></activity>
     </application>
 
 </manifest>

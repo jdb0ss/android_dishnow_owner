@@ -612,6 +612,7 @@ color colorAccent
 color colorPrimary
 color colorPrimaryDark
 color color_black
+color color_bolder
 color color_red
 color color_violet
 color color_white
@@ -1021,6 +1022,8 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable dishnow_logo_purple
 drawable header_background
+drawable ic_icon_shop
+drawable ic_icon_x
 drawable ic_iconmonstr_arrow_25
 drawable ic_iconmonstr_check_mark_15
 drawable ic_iconmonstr_eat_5_thin
@@ -1215,7 +1218,10 @@ id popup_yes_button
 id progress_bar
 id progress_circular
 id progress_horizontal
+id qres_reg_header
+id qres_reg_shop
 id radio
+id res_auth_0_startbutton
 id res_auth_header
 id res_auth_name
 id res_auth_signup
@@ -1233,6 +1239,7 @@ id ressignup_imagefile
 id ressignup_name
 id ressignup_resnum
 id ressignup_signupbutton
+id ressignup_toolbar
 id right
 id right_icon
 id right_side
@@ -1276,6 +1283,7 @@ id signup2_ownerphone
 id signup2_phoneauth
 id signup2_phoneauthbutton
 id signup2_phoneautherror
+id signup2_phonetimer
 id signup2_signup_button
 id signup2_toolbar
 id signup_first
@@ -1396,6 +1404,7 @@ layout activity_kakao_webview
 layout activity_main
 layout activity_popup
 layout activity_res_auth
+layout activity_res_auth0
 layout activity_res_info
 layout activity_res_signup
 layout activity_signin

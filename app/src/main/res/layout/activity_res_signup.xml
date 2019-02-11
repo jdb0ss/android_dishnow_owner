@@ -11,13 +11,13 @@
         android:background="@drawable/tabbar_baground"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        android:id="@+id/signup2_toolbar"
+        android:id="@+id/ressignup_toolbar"
         android:layout_height="60dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="음식점 등록"
+            android:text="매장 등록"
             android:textSize="18dp"
             android:textColor="#FFFFFF"
             android:fontFamily="@font/nanumsquareotfregular"

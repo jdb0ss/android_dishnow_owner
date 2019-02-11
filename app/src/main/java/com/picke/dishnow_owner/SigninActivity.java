@@ -61,7 +61,6 @@ public class SigninActivity extends AppCompatActivity {
 
     private final String login_url = "http://claor123.cafe24.com/Login.php";
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -97,12 +96,10 @@ public class SigninActivity extends AppCompatActivity {
             }, PERMISSION);
         }
 
-        //auto login
         SharedPreferences auto =  getSharedPreferences("auto",Activity.MODE_PRIVATE);
         String loginid,loginpassword,id,name,resauth;
         loginid = auto.getString("o_id",null);
         loginpassword = auto.getString("o_password",null);
-
 
         final StringRequest StringRequest2 = new StringRequest(Request.Method.POST, login_url, new Response.Listener<String>() {
             @Override
@@ -116,7 +113,7 @@ public class SigninActivity extends AppCompatActivity {
 
                     if(success==true){
                         Intent intent = new Intent(SigninActivity.this,MainActivity.class);
-                        Intent intent_resauth = new Intent(SigninActivity.this,ResSignupActivity.class);
+                        Intent intent_resauth = new Intent(SigninActivity.this,ResAuthActivity0.class);
                         intent.putExtra("o_id",id);
                         intent.putExtra("o_name",name);
                         intent.putExtra("o_resauth",resauth);
@@ -186,7 +183,7 @@ public class SigninActivity extends AppCompatActivity {
 
                     if(success==true){
                         Intent intent = new Intent(SigninActivity.this,MainActivity.class);
-                        Intent intent_resauth = new Intent(SigninActivity.this,ResSignupActivity.class);
+                        Intent intent_resauth = new Intent(SigninActivity.this,ResAuthActivity0.class);
                         intent.putExtra("o_id",id);
                         intent.putExtra("o_name",name);
                         intent.putExtra("o_resauth",resauth);

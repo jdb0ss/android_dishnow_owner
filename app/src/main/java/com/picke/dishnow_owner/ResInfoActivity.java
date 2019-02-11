@@ -1,6 +1,7 @@
 package com.picke.dishnow_owner;
 
 import android.content.Intent;
+import android.graphics.PorterDuff;
 import android.location.Address;
 import android.location.Geocoder;
 import android.support.v7.app.AppCompatActivity;
@@ -54,6 +55,12 @@ public class ResInfoActivity extends AppCompatActivity {
         Btfindaddress = findViewById(R.id.res_info_search_address_btn);
         Btressignup = findViewById(R.id.res_info_register);
 
+        Eresname.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder), PorterDuff.Mode.SRC_ATOP);
+        Eresphone.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder), PorterDuff.Mode.SRC_ATOP);
+        Eresadd_detail.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder), PorterDuff.Mode.SRC_ATOP);
+        Eresaddress.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder), PorterDuff.Mode.SRC_ATOP);
+        Eresadd_num.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder), PorterDuff.Mode.SRC_ATOP);
+
         userInfoClass = UserInfoClass.getInstance(getApplicationContext());
         requestQueue = VolleySingleton.getmInstance(getApplicationContext()).getRequestQueue();
 
@@ -87,8 +94,12 @@ public class ResInfoActivity extends AppCompatActivity {
                     }else {
                         lat = Double.toString(list.get(0).getLatitude());
                         lon = Double.toString(list.get(0).getLongitude());
+                        userInfoClass.setLat(lat);
+                        userInfoClass.setLon(lon);
                     }
                 }
+                userInfoClass.setResphone(Eresphone.getText().toString());
+                userInfoClass.setResname(Eresname.getText().toString());
                 requestQueue.add(stringRequest2);
             }
         });
@@ -109,8 +120,8 @@ public class ResInfoActivity extends AppCompatActivity {
             Map<String, String> params = new HashMap<>();
             params.put("m_id",userInfoClass.getuId());
             params.put("m_ownername",userInfoClass.getOwnername());
-            params.put("m_lat",String.valueOf(lat));
-            params.put("m_lon",String.valueOf(lon));
+            params.put("m_lat",userInfoClass.getLat());
+            params.put("m_lon",userInfoClass.getLon());
             params.put("m_address",userInfoClass.getResaddress()+" "+userInfoClass.getResadd_detail());
             params.put("m_resname",userInfoClass.getResname());
             params.put("m_resnum",userInfoClass.getResid());

@@ -1,8 +1,13 @@
 package com.picke.dishnow_owner;
 
+import android.app.Activity;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
+import android.os.Handler;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
@@ -33,6 +38,8 @@ import org.w3c.dom.Text;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class SignupActivity2 extends AppCompatActivity {
 
@@ -48,6 +55,12 @@ public class SignupActivity2 extends AppCompatActivity {
     private UserInfoClass userInfoClass;
     private String uid;
     private Boolean flag=true;
+    private final Context context =this;
+    private TimerTask second;
+    private TextView Ttimer;
+    private final Handler handler = new Handler();
+    private Integer timer_minute=3;
+    private Integer timer_second=0;
 
     final String feed_url_signup = "http://claor123.cafe24.com/Owner_Signup.php";
     final String feed_url_phone = "http://claor123.cafe24.com/smspush.php";
@@ -63,6 +76,11 @@ public class SignupActivity2 extends AppCompatActivity {
         phoneauthbutton = findViewById(R.id.signup2_phoneauthbutton);
         tverrorphoneauth =findViewById(R.id.signup2_phoneautherror);
         signupbutton = findViewById(R.id.signup2_signup_button);
+        Ttimer = findViewById(R.id.signup2_phonetimer);
+
+        Eonwername.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder), PorterDuff.Mode.SRC_ATOP);
+        Eownerphone.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder), PorterDuff.Mode.SRC_ATOP);
+        Ephoneauth.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder), PorterDuff.Mode.SRC_ATOP);
 
         userAuthClass = UserAuthClass.getInstance(getApplicationContext());
         userInfoClass = UserInfoClass.getInstance(getApplicationContext());
@@ -104,7 +122,18 @@ public class SignupActivity2 extends AppCompatActivity {
         final StringRequest stringRequest_phone = new StringRequest(Request.Method.POST, feed_url_phone, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-
+                AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                builder
+                        .setMessage("인증번호가 전송되었습니다.")
+                        .setPositiveButton("확인",
+                                new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                    }
+                                });
+                AlertDialog alert = builder.create();
+                alert.show();
+                Button btn = alert.getButton(AlertDialog.BUTTON_POSITIVE);
+                testStart();
             }
         }, new Response.ErrorListener() {
             @Override
@@ -155,6 +184,8 @@ public class SignupActivity2 extends AppCompatActivity {
                     Authnumber += Integer.toString(random.nextInt(10));
                 }
                 requestQueue.add(stringRequest_phone);
+
+
             }
         });
 
@@ -169,6 +200,8 @@ public class SignupActivity2 extends AppCompatActivity {
 
                     Intent intent = new Intent(SignupActivity2.this, ResAuthActivity.class);
                     startActivity(intent);
+                    SignupActivity signupActivity = (SignupActivity)SignupActivity._Signup_Activity;
+                    signupActivity.finish();
                     finish();
                 }
             }
@@ -183,5 +216,34 @@ public class SignupActivity2 extends AppCompatActivity {
             }
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    public void testStart(){
+        second = new TimerTask() {
+            @Override
+            public void run() {
+                Update();
+                timer_second--;
+                if(timer_second<0){
+                    timer_second=59;
+                    timer_minute--;
+                }
+            }
+        };
+        Timer timer = new Timer();
+        timer.schedule(second, 0, 1000);
+    }
+
+    protected void Update() {
+        Runnable updater = new Runnable() {
+            public void run() {
+                String second_show=Integer.toString(timer_second);
+                if(second_show.length()==1){
+                    second_show="0"+second_show;
+                }
+                Ttimer.setText(Integer.toString(timer_minute)+":"+second_show);
+            }
+        };
+        handler.post(updater);
     }
 }

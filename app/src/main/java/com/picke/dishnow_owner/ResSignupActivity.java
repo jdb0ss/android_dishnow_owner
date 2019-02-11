@@ -3,6 +3,7 @@ package com.picke.dishnow_owner;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.database.Cursor;
+import android.graphics.PorterDuff;
 import android.location.Address;
 import android.location.Geocoder;
 import android.net.Uri;
@@ -12,7 +13,9 @@ import android.os.Message;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebChromeClient;
@@ -59,7 +62,6 @@ public class ResSignupActivity extends AppCompatActivity {
     RequestQueue requestQueue;
     String resauth_url_url = "http://claor123.cafe24.com/ResAuthURL.php";
     String imageupload_url = "http://claor123.cafe24.com/upload/res_auth/ImageUpload.php";
-    String resinfo_url = "http://claor123.cafe24.com/ResSignup.php";
     private UserInfoClass userInfoClass;
 
     @Override
@@ -71,6 +73,15 @@ public class ResSignupActivity extends AppCompatActivity {
         textresnum = findViewById(R.id.ressignup_resnum);
         textownername = findViewById(R.id.ressignup_name);
         Eimagelocal = findViewById(R.id.ressignup_imagefile);
+
+        Toolbar toolbar = findViewById(R.id.ressignup_toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
+        textresnum.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder), PorterDuff.Mode.SRC_ATOP);
+        textownername.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder), PorterDuff.Mode.SRC_ATOP);
+        Eimagelocal.getBackground().setColorFilter(getResources().getColor(R.color.color_bolder), PorterDuff.Mode.SRC_ATOP);
 
         requestQueue = VolleySingleton.getmInstance(getApplicationContext()).getRequestQueue();
         userInfoClass = UserInfoClass.getInstance(getApplicationContext());
@@ -186,4 +197,15 @@ public class ResSignupActivity extends AppCompatActivity {
             new ImageUploadTask().execute(imageupload_url,imagepath);
         }
     }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch (item.getItemId()){
+            case android.R.id.home:{
+                finish();
+                return true;
+            }
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
 }
