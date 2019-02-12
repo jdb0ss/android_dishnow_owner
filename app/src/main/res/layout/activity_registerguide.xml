@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    tools:context=".RegisterGuideActivity">
+    <ImageView
+        android:layout_marginTop="64dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="262dp"
+        android:layout_height="59dp"
+        android:background="@drawable/dishnow_logo_purple"
+        android:layout_marginBottom="103dp"
+        android:id="@+id/qres_reg_header"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/qres_reg_header">
+        <TextView
+            android:fontFamily="@font/nanumsquareotfregular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="등록된 매장이 없습니다."
+            android:textColor="@color/color_black"
+            android:textSize="18dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:fontFamily="@font/nanumsquareotfregular"
+            android:layout_gravity="center"
+            android:layout_marginBottom="42dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/color_black"
+            android:text="매장을 등록하세요!"
+            android:id="@+id/qres_reg_shop"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_marginBottom="102dp"
+            android:background="@drawable/ic_icon_shop"
+            android:backgroundTint="#EEEEEE"
+            android:layout_below="@id/qres_reg_shop"
+            />
+    </LinearLayout>
+    <Button
+        android:fontFamily="@font/nanumsquareotfregular"
+        android:layout_alignParentBottom="true"
+        android:layout_width="262dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:id="@+id/res_auth_0_startbutton"
+        android:text="매장 등록하기"
+        android:textColor="@color/color_violet"
+        style="?android:attr/borderlessButtonStyle"
+        android:background="@drawable/auth_phone_button"
+        android:layout_marginBottom="46dp"
+        />
+</RelativeLayout>

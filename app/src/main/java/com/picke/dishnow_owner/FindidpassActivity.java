@@ -1,6 +1,9 @@
 package com.picke.dishnow_owner;
 
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -49,6 +52,7 @@ public class FindidpassActivity extends AppCompatActivity {
         Echecknum = findViewById(R.id.checknum);
         Bsendchecknum = findViewById(R.id.sendchecknumbutton);
         Bfindemail = findViewById(R.id.findemailbutton);
+        final Context context = this;
 
         // 뒤로가기 버튼
         android.support.v7.widget.Toolbar toolbar = findViewById(R.id.findemail_toolbar);
@@ -71,22 +75,28 @@ public class FindidpassActivity extends AppCompatActivity {
         tabHost1.addTab(ts2) ;
 
         requestQueue = VolleySingleton.getmInstance(getApplicationContext()).getRequestQueue();
-
-        final StringRequest stringRequest = new StringRequest(Request.Method.POST, feed_url, new Response.Listener<String>() {
+        final StringRequest stringRequest_phone = new StringRequest(Request.Method.POST, feed_url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                uid = response.substring(1,response.length()-1);
-                userAuthClass.setUid(uid);
-                userInfoClass.setuId(uid);
-                Log.d("spark123", "[" + response + "]");
+                AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                builder
+                        .setMessage("인증번호가 전송되었습니다.")
+                        .setPositiveButton("확인",
+                                new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                    }
+                                });
+                AlertDialog alert = builder.create();
+                alert.show();
+                Button btn = alert.getButton(AlertDialog.BUTTON_POSITIVE);
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Log.d("spark123error", "[" + error.getMessage() + "]");
+
             }
         }){
-            protected Map<String,String> getParams() throws AuthFailureError {
+            protected Map<String,String> getParams() throws AuthFailureError{
                 Map<String,String> params = new HashMap<>();
                 params.put("m_phone",Eownerphonenum.getText().toString());
                 params.put("m_number",Authnumber);
@@ -102,7 +112,7 @@ public class FindidpassActivity extends AppCompatActivity {
                 for(int i=0;i<4;i++) {
                     Authnumber += Integer.toString(random.nextInt(10));
                 }
-                requestQueue.add(stringRequest);
+                requestQueue.add(stringRequest_phone);
             }
         });
 

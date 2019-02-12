@@ -1,6 +1,5 @@
 package com.picke.dishnow_owner;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -15,11 +14,9 @@ import android.text.TextWatcher;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewDebug;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 import android.support.v7.widget.Toolbar;
 
 
@@ -33,15 +30,13 @@ import com.picke.dishnow_owner.Owner_User.UserAuthClass;
 import com.picke.dishnow_owner.Owner_User.UserInfoClass;
 import com.picke.dishnow_owner.Utility.VolleySingleton;
 
-import org.w3c.dom.Text;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class SignupActivity2 extends AppCompatActivity {
+public class VerificationActivity extends AppCompatActivity {
 
     private EditText Eonwername;
     private EditText Eownerphone;
@@ -68,7 +63,7 @@ public class SignupActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signup2);
+        setContentView(R.layout.activity_verification);
 
         Eonwername = findViewById(R.id.signup2_ownername);
         Eownerphone = findViewById(R.id.signup2_ownerphone);
@@ -198,10 +193,10 @@ public class SignupActivity2 extends AppCompatActivity {
                     userAuthClass.setOwnerphone(Eownerphone.getText().toString());
                     requestQueue.add(StringRequest_signup);
 
-                    Intent intent = new Intent(SignupActivity2.this, ResAuthActivity.class);
+                    Intent intent = new Intent(VerificationActivity.this, JoinedActivity.class);
                     startActivity(intent);
-                    SignupActivity signupActivity = (SignupActivity)SignupActivity._Signup_Activity;
-                    signupActivity.finish();
+                    JoinActivity joinActivity = (JoinActivity)JoinActivity._Signup_Activity;
+                    joinActivity.finish();
                     finish();
                 }
             }

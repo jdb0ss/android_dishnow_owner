@@ -18,8 +18,8 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
-import com.kakao.usermgmt.response.model.User;
 import com.picke.dishnow_owner.Owner_User.UserInfoClass;
+import com.picke.dishnow_owner.Utility.JusoActivity;
 import com.picke.dishnow_owner.Utility.VolleySingleton;
 
 import java.io.IOException;
@@ -27,7 +27,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class ResInfoActivity extends AppCompatActivity {
+public class Registration_RestaurantActivity extends AppCompatActivity {
 
     private EditText Eresname;
     private EditText Eresphone;
@@ -45,7 +45,7 @@ public class ResInfoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_res_info);
+        setContentView(R.layout.activity_registration_restuarant);
 
         Eresname = findViewById(R.id.res_info_res_name);
         Eresphone = findViewById(R.id.res_info_resphone);
@@ -73,7 +73,7 @@ public class ResInfoActivity extends AppCompatActivity {
         Btfindaddress.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ResInfoActivity.this,JusoActivity.class));
+                startActivity(new Intent(Registration_RestaurantActivity.this,JusoActivity.class));
                 finish();
             }
         });
@@ -81,6 +81,9 @@ public class ResInfoActivity extends AppCompatActivity {
         Btressignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                userInfoClass.setResphone(Eresphone.getText().toString());
+                userInfoClass.setResname(Eresname.getText().toString());
+                userInfoClass.setResadd_detail(Eresadd_detail.getText().toString());
                 List<Address> list = null;
                 try {
                     list = geocoder.getFromLocationName(userInfoClass.getResaddress(),10);
@@ -88,18 +91,17 @@ public class ResInfoActivity extends AppCompatActivity {
                     e.printStackTrace();
                     Toast.makeText(getApplicationContext(),"인터넷 상태를 확인해 주세요.",Toast.LENGTH_LONG).show();
                 }
-                if(list!=null){
-                    if(list.size()==0){
-                        Toast.makeText(getApplicationContext(),"정확한 주소를 입력해 주세요",Toast.LENGTH_LONG).show();
-                    }else {
+                if(list!=null) {
+                    if (list.size() == 0) {
+                        Toast.makeText(getApplicationContext(), "정확한 주소를 입력해 주세요", Toast.LENGTH_LONG).show();
+                    } else {
                         lat = Double.toString(list.get(0).getLatitude());
                         lon = Double.toString(list.get(0).getLongitude());
                         userInfoClass.setLat(lat);
                         userInfoClass.setLon(lon);
                     }
                 }
-                userInfoClass.setResphone(Eresphone.getText().toString());
-                userInfoClass.setResname(Eresname.getText().toString());
+
                 requestQueue.add(stringRequest2);
             }
         });

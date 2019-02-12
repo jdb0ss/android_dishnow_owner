@@ -7,7 +7,7 @@
     android:layout_centerHorizontal="true"
     android:layout_centerVertical="true"
 
-    tools:context=".ResAuthActivity">
+    tools:context=".JoinedActivity">
 
     <ImageView
         android:layout_marginTop="64dp"
@@ -75,7 +75,6 @@
         android:layout_marginTop="371dp"
         android:background="@drawable/ic_iconmonstr_eat_5_thin"
         android:backgroundTint="#E4E4E4"
-
         />
 
     <Button
@@ -92,5 +91,4 @@
         android:background="@drawable/auth_phone_button"
         android:layout_marginBottom="44dp"
         />
-
 </RelativeLayout>

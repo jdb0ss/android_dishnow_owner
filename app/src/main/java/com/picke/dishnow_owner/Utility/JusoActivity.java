@@ -1,20 +1,17 @@
-package com.picke.dishnow_owner;
+package com.picke.dishnow_owner.Utility;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
-import android.widget.Toast;
 
 import com.picke.dishnow_owner.Owner_User.UserInfoClass;
+import com.picke.dishnow_owner.R;
+import com.picke.dishnow_owner.Registration_RestaurantActivity;
 
 
 public class JusoActivity extends AppCompatActivity {
@@ -54,7 +51,7 @@ public class JusoActivity extends AppCompatActivity {
                     userInfoClass.setResadd_num(arg1);
                     userInfoClass.setResaddress(arg2);
                     userInfoClass.setResadd_detail(arg3);
-                    startActivity(new Intent(JusoActivity.this,ResInfoActivity.class));
+                    startActivity(new Intent(JusoActivity.this,Registration_RestaurantActivity.class));
                     finish();
                     init_webview();
                 }

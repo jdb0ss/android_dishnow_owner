@@ -4,12 +4,9 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.PorterDuff;
-import android.location.Address;
 import android.location.Geocoder;
 import android.net.Uri;
 import android.os.AsyncTask;
-import android.os.Handler;
-import android.os.Message;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -17,14 +14,8 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
-import android.webkit.JavascriptInterface;
-import android.webkit.WebChromeClient;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -33,8 +24,6 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
-import com.google.gson.JsonParser;
 import com.picke.dishnow_owner.Owner_User.UserInfoClass;
 import com.picke.dishnow_owner.Utility.JSONParser;
 import com.picke.dishnow_owner.Utility.VolleySingleton;
@@ -42,12 +31,10 @@ import com.picke.dishnow_owner.Utility.VolleySingleton;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.IOException;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
-public class ResSignupActivity extends AppCompatActivity {
+public class Registration_BusinessActivity extends AppCompatActivity {
 
     private Button imageuploadbutton;
     private Button nextbutton;
@@ -67,7 +54,7 @@ public class ResSignupActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_res_signup);
+        setContentView(R.layout.activity_registration_business);
         nextbutton = findViewById(R.id.ressignup_signupbutton);
         imageuploadbutton = findViewById(R.id.ressignup_imagebutton);
         textresnum = findViewById(R.id.ressignup_resnum);
@@ -113,7 +100,7 @@ public class ResSignupActivity extends AppCompatActivity {
                     requestQueue.add(stringRequest);
                     userInfoClass.setOwnername(textownername.getText().toString());
                     userInfoClass.setResid(textresnum.getText().toString());
-                    Intent intent = new Intent(ResSignupActivity.this, ResInfoActivity.class);
+                    Intent intent = new Intent(Registration_BusinessActivity.this, Registration_RestaurantActivity.class);
                     startActivity(intent);
                     finish();
                 }
@@ -139,7 +126,6 @@ public class ResSignupActivity extends AppCompatActivity {
             return params;
         }
     };
-
 
     private class ImageUploadTask extends AsyncTask<String, Integer, Boolean>{
         ProgressDialog progressDialog;
@@ -207,5 +193,4 @@ public class ResSignupActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-
 }

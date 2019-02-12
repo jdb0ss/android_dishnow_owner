@@ -35,24 +35,26 @@
         </activity>
         <activity android:name=".MainActivity" />
         <activity
-            android:name=".SignupActivity"
+            android:name=".JoinActivity"
             android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ResAuthActivity" />
-        <activity android:name=".ResSignupActivity" />
+        <activity android:name=".JoinedActivity" />
+        <activity android:name=".Registration_BusinessActivity" />
         <activity android:name=".PopupActivity" />
-        <activity android:name=".JusoActivity" />
+        <activity android:name=".Utility.JusoActivity" />
         <activity
-            android:name=".SignupActivity2"
+            android:name=".VerificationActivity"
             android:label="" />
-        <activity android:name=".ResInfoActivity" />
+        <activity android:name=".Registration_RestaurantActivity" />
         <activity
             android:name=".FindidpassActivity"
             android:label="" />
         <activity
             android:name=".FindemailActivity"
-            android:label=""></activity>
-        <activity android:name=".ResAuthActivity0"></activity>
+            android:label="" />
+        <activity android:name=".RegisterGuideActivity" />
+        <activity android:name=".JudgingActivity" />
+        <activity android:name=".Additional_InfoActivity"></activity>
     </application>
 
 </manifest>

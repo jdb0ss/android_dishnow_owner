@@ -6,20 +6,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class ResAuthActivity0 extends AppCompatActivity {
+public class RegisterGuideActivity extends AppCompatActivity {
 
     Button Bstart;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_res_auth0);
+        setContentView(R.layout.activity_registerguide);
 
         Bstart = findViewById(R.id.res_auth_0_startbutton);
         Bstart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ResAuthActivity0.this,ResSignupActivity.class));
+                startActivity(new Intent(RegisterGuideActivity.this,Registration_BusinessActivity.class));
                 finish();
             }
         });

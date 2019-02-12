@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import com.picke.dishnow_owner.Owner_User.UserAuthClass;
 
-public class ResAuthActivity extends AppCompatActivity {
+public class JoinedActivity extends AppCompatActivity {
 
         private TextView ownername;
         private Button ressignup;
@@ -18,7 +18,7 @@ public class ResAuthActivity extends AppCompatActivity {
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_res_auth);
+            setContentView(R.layout.activity_joined);
 
             ownername = findViewById(R.id.res_auth_name);
             ressignup = findViewById(R.id.res_auth_signup);
@@ -29,7 +29,7 @@ public class ResAuthActivity extends AppCompatActivity {
             ressignup.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(ResAuthActivity.this,SigninActivity.class);
+                    Intent intent = new Intent(JoinedActivity.this,SigninActivity.class);
                     startActivity(intent);
                     finish();
                 }

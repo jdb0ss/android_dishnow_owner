@@ -27,7 +27,6 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/AppTheme.NoActionBar" >
         <meta-data
             android:name="com.kakao.sdk.AppKey"
@@ -44,24 +43,26 @@
         </activity>
         <activity android:name="com.picke.dishnow_owner.MainActivity" />
         <activity
-            android:name="com.picke.dishnow_owner.SignupActivity"
+            android:name="com.picke.dishnow_owner.JoinActivity"
             android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.picke.dishnow_owner.ResAuthActivity" />
-        <activity android:name="com.picke.dishnow_owner.ResSignupActivity" />
+        <activity android:name="com.picke.dishnow_owner.JoinedActivity" />
+        <activity android:name="com.picke.dishnow_owner.Registration_BusinessActivity" />
         <activity android:name="com.picke.dishnow_owner.PopupActivity" />
-        <activity android:name="com.picke.dishnow_owner.JusoActivity" />
+        <activity android:name="com.picke.dishnow_owner.Utility.JusoActivity" />
         <activity
-            android:name="com.picke.dishnow_owner.SignupActivity2"
+            android:name="com.picke.dishnow_owner.VerificationActivity"
             android:label="" />
-        <activity android:name="com.picke.dishnow_owner.ResInfoActivity" />
+        <activity android:name="com.picke.dishnow_owner.Registration_RestaurantActivity" />
         <activity
             android:name="com.picke.dishnow_owner.FindidpassActivity"
             android:label="" />
         <activity
             android:name="com.picke.dishnow_owner.FindemailActivity"
             android:label="" />
-        <activity android:name="com.picke.dishnow_owner.ResAuthActivity0" />
+        <activity android:name="com.picke.dishnow_owner.RegisterGuideActivity" />
+        <activity android:name="com.picke.dishnow_owner.JudgingActivity" />
+        <activity android:name="com.picke.dishnow_owner.Additional_InfoActivity" />
         <activity
             android:name="com.kakao.auth.authorization.authcode.KakaoWebViewActivity"
             android:configChanges="orientation|screenSize"

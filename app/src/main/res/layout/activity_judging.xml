@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     android:layout_centerHorizontal="true"
     android:layout_centerVertical="true"
-    tools:context=".ResAuthActivity0">
+    android:background="@color/color_white"
+    tools:context=".JudgingActivity">
     <ImageView
         android:layout_marginTop="64dp"
         android:layout_centerHorizontal="true"
@@ -13,19 +14,19 @@
         android:layout_height="59dp"
         android:background="@drawable/dishnow_logo_purple"
         android:layout_marginBottom="103dp"
-        android:id="@+id/qres_reg_header"
+        android:id="@+id/res_auth1_header"
         />
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/qres_reg_header">
+        android:layout_below="@id/res_auth1_header">
         <TextView
             android:fontFamily="@font/nanumsquareotfregular"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="등록된 매장이 없습니다."
+            android:text="디쉬나우 서비스를 이용하실 수 있도록"
             android:textColor="@color/color_black"
             android:textSize="18dp"
             android:layout_gravity="center"/>
@@ -37,16 +38,16 @@
             android:layout_height="wrap_content"
             android:textSize="18dp"
             android:textColor="@color/color_black"
-            android:text="매장을 등록하세요!"
-            android:id="@+id/qres_reg_shop"/>
+            android:text="심사 후 카카오톡으로 안내가 발송됩니다."
+            android:id="@+id/res_auth1_text"/>
         <ImageView
             android:layout_gravity="center"
             android:layout_width="125dp"
             android:layout_height="125dp"
             android:layout_marginBottom="102dp"
-            android:background="@drawable/ic_icon_shop"
+            android:background="@drawable/ic_icon_judge"
             android:backgroundTint="#EEEEEE"
-            android:layout_below="@id/qres_reg_shop"
+            android:layout_below="@id/res_auth1_header"
             />
     </LinearLayout>
     <Button
@@ -56,8 +57,8 @@
         android:layout_centerHorizontal="true"
         android:layout_height="50dp"
         android:textSize="20sp"
-        android:id="@+id/res_auth_0_startbutton"
-        android:text="매장 등록하기"
+        android:id="@+id/res_info_2_button"
+        android:text="확인"
         android:textColor="@color/color_violet"
         style="?android:attr/borderlessButtonStyle"
         android:background="@drawable/auth_phone_button"
