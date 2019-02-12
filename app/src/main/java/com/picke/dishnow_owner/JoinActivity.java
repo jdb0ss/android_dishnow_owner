@@ -45,7 +45,7 @@ public class JoinActivity extends AppCompatActivity {
     private TextView errorpassword;
     private TextView errorpassword2;
 
-    private Boolean flag=false;
+    private Boolean flag1=false,flag2=false,flag3=false;
     private String ownerid;
     private String uid;
 
@@ -88,6 +88,7 @@ public class JoinActivity extends AppCompatActivity {
         Drawable image_ok = getApplicationContext().getResources().getDrawable(R.drawable.ic_iconmonstr_check_mark_15);
         image_ok.setBounds(60,0,0,0);
         Drawable image_no = getApplicationContext().getResources().getDrawable(R.drawable.ic_icon_x);
+        image_no.setColorFilter(getResources().getColor(R.color.color_red),PorterDuff.Mode.SRC_ATOP);
         image_no.setBounds(60,0,0,0);
 
         final StringRequest StringRequest2 = new StringRequest(Request.Method.POST, id_url, new Response.Listener<String>() {
@@ -98,11 +99,11 @@ public class JoinActivity extends AppCompatActivity {
                     boolean success = jsonObject.getBoolean("success");
                     if(success==false) {
                         errorid.setText("이미 사용중인 아이디입니다.");
-                        Eownerid.setCompoundDrawablesWithIntrinsicBounds(null, null, null, null);
+                        Eownerid.setCompoundDrawablesWithIntrinsicBounds(null, null, image_no, null);
                         Eownerid.getBackground().setColorFilter(getResources().getColor(R.color.color_red), PorterDuff.Mode.SRC_ATOP);
-                        flag=false;
+                        flag1=false;
                     }else if(Eownerid.getText().toString().length()!=0){
-                        flag=true;
+                        flag1=true;
                         Eownerid.setCompoundDrawablesWithIntrinsicBounds(null,null,image_ok,null);
                         errorid.setText("");
                         Eownerid.getBackground().setColorFilter(getResources().getColor(R.color.color_violet),PorterDuff.Mode.SRC_ATOP);
@@ -156,12 +157,13 @@ public class JoinActivity extends AppCompatActivity {
                 if(!Pattern.matches("^(?=.*[a-zA-Z]+)(?=.*[!@#$%^*+=-]|.*[0-9]+).{8,20}$", Eownerpassword.getText().toString())){
                     errorpassword.setText("영문, 숫자 8~20자의 비밀번호를 설정하세요.");
                     Eownerpassword.getBackground().setColorFilter(getResources().getColor(R.color.color_red),PorterDuff.Mode.SRC_ATOP);
-                    flag=false;
+                    Eownerpassword.setCompoundDrawablesWithIntrinsicBounds(null,null,image_no,null);
+                    flag2=false;
                 }else if(Eownerpassword.getText().toString().length()!=0){
                     errorpassword.setText("");
                     Eownerpassword.getBackground().setColorFilter(getResources().getColor(R.color.color_violet),PorterDuff.Mode.SRC_ATOP);
-                    Eownerpassword.setCompoundDrawablesWithIntrinsicBounds(null,null,image,null);
-                    flag=true;
+                    Eownerpassword.setCompoundDrawablesWithIntrinsicBounds(null,null,image_ok,null);
+                    flag2=true;
                 }
             }
         });
@@ -177,12 +179,13 @@ public class JoinActivity extends AppCompatActivity {
                 if(Eownerpassword.getText().toString().equals(Eownerpassword2.getText().toString())){
                     errorpassword2.setText("");
                     Eownerpassword2.getBackground().setColorFilter(getResources().getColor(R.color.color_violet),PorterDuff.Mode.SRC_ATOP);
-                    flag=true;
+                    flag3=true;
                     Eownerpassword2.setCompoundDrawablesWithIntrinsicBounds(null,null,image_ok,null);
                 }else if(Eownerpassword2.getText().toString().length()!=0){
                     errorpassword2.setText("비밀번호가 일치하지 않습니다.");
+                    Eownerpassword2.setCompoundDrawablesWithIntrinsicBounds(null,null,image_no,null);
                     Eownerpassword2.getBackground().setColorFilter(getResources().getColor(R.color.color_red),PorterDuff.Mode.SRC_ATOP);
-                    flag=false;
+                    flag3=false;
                 }
             }
 
@@ -195,10 +198,10 @@ public class JoinActivity extends AppCompatActivity {
         buttonsignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(flag==true) {
+                if(flag1==true&&flag2==true&&flag3==true) {
                     userAuthClass.setOwnerid(Eownerid.getText().toString());
                     userAuthClass.setOwnerpassword(Eownerpassword.getText().toString());
-                    Intent intent = new Intent(JoinActivity.this, VerificationActivity.class);
+                    Intent intent = new Intent(JoinActivity.this, Additional_InfoActivity.class);
                     startActivity(intent);
                 }
             }

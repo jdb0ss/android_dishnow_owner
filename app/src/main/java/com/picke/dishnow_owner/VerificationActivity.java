@@ -166,6 +166,8 @@ public class VerificationActivity extends AppCompatActivity {
                 params.put("m_name",userAuthClass.getOwnername());
                 params.put("m_phone",userAuthClass.getOwnerphone());
                 params.put("m_email",userAuthClass.getOwnerid());
+                params.put("m_sex",userAuthClass.getOwnersex());
+                params.put("m_birth",userAuthClass.getOwnerbirth());
                 return params;
             }
         };

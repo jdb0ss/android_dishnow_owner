@@ -103,6 +103,9 @@ public class Registration_RestaurantActivity extends AppCompatActivity {
                 }
 
                 requestQueue.add(stringRequest2);
+                startActivity(new Intent(Registration_RestaurantActivity.this,JudgingActivity.class));
+                finish();
+                //TODO ALL PAGE MUST BE FINISHED
             }
         });
     }

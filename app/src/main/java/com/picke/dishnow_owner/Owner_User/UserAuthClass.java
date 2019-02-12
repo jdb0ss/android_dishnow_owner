@@ -19,10 +19,23 @@ public class UserAuthClass {
     private String owneremail;
     private String ownername;
     private String ownerphone;
+    private String ownersex;
+    private String ownerbirth;
 
     public String getUid() {
         return uid;
     }
+
+    public void setOwnersex(String ownersex){ this.ownersex = ownersex;}
+
+    public void setOwnerbirth(String ownerbirth){
+        this.ownerbirth = ownerbirth.substring(0,4)+
+                "-"+ownerbirth.substring(4,6)+"-"+ownerbirth.substring(6,8);
+    }
+
+    public String getOwnersex(){return ownersex;}
+
+    public String getOwnerbirth() {return ownerbirth;}
 
     public void setUid(String uid) {
         this.uid = uid;

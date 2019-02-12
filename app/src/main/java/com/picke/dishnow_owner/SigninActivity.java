@@ -240,10 +240,10 @@ public class SigninActivity extends AppCompatActivity {
         signupbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SigninActivity.this,JoinActivity.class);
-                startActivity(intent);
                 userAuthClass.setOwnerid(Eidinput.getText().toString());
                 userAuthClass.setOwnerpassword(Epasswordinput.getText().toString());
+                Intent intent = new Intent(SigninActivity.this,JoinActivity.class);
+                startActivity(intent);
                 //finish();
             }
         });

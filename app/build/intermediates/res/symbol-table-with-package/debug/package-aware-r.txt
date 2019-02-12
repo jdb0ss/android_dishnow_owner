@@ -1023,6 +1023,7 @@ drawable design_snackbar_background
 drawable dishnow_logo_purple
 drawable dishnow_logo_white
 drawable header_background
+drawable ic_dot
 drawable ic_icon_judge
 drawable ic_icon_shop
 drawable ic_icon_x
@@ -1100,6 +1101,13 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id additional_info__ownerbirth
+id additional_info__toolbar
+id additional_info_first
+id additional_info_next_button
+id additional_info_sex_man_radiobutton
+id additional_info_sex_woman_radiobutton
+id additional_info_textview
 id alertTitle
 id all
 id always
@@ -1168,6 +1176,7 @@ id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
+id join_birtherror_textview
 id juso_webview
 id labeled
 id largeLabel
