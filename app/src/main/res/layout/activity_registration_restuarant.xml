@@ -81,6 +81,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/res_info_res_name"
             android:hint="음식점 이름을 입력하세요."
+            android:textColorHint="@color/color_bolder"
             android:fontFamily="@font/nanumsquareotfregular"
             android:textSize="16sp"
             android:layout_marginBottom="27dp"
@@ -104,6 +105,7 @@
                 android:id="@+id/res_info_resphone"
                 android:fontFamily="@font/nanumsquareotfregular"
                 android:hint="음식점 대표 전화번호를 입력하세요."
+                android:textColorHint="@color/color_bolder"
                 android:textSize="16sp"
                 android:layout_marginBottom="27dp"
                 />
@@ -125,6 +127,7 @@
                 android:fontFamily="@font/nanumsquareotfregular"
                 android:layout_marginTop="8dp"
                 android:textSize="16sp"
+                android:textColorHint="@color/color_bolder"
                 android:hint="우편번호"/>
             <Button
                 android:layout_marginLeft="5dp"
@@ -146,6 +149,7 @@
                 android:fontFamily="@font/nanumsquareotfregular"
                 android:id="@+id/res_info_address_edt"
                 android:textSize="16sp"
+                android:textColorHint="@color/color_bolder"
                 android:hint="주소"/>
             <EditText
                 android:layout_width="match_parent"
@@ -153,6 +157,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/res_info_detail_address_edt"
                 android:textSize="16sp"
+                android:textColorHint="@color/color_bolder"
                 android:hint="상세주소"/>
         </LinearLayout>
 </RelativeLayout>

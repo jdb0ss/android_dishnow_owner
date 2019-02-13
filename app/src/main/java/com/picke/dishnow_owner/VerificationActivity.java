@@ -12,10 +12,13 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.support.v7.widget.Toolbar;
 
@@ -120,14 +123,21 @@ public class VerificationActivity extends AppCompatActivity {
                 AlertDialog.Builder builder = new AlertDialog.Builder(context);
                 builder
                         .setMessage("인증번호가 전송되었습니다.")
-                        .setPositiveButton("확인",
-                                new DialogInterface.OnClickListener() {
-                                    public void onClick(DialogInterface dialog, int which) {
-                                    }
-                                });
+                        .setPositiveButton("확인",null)
+                        .setCancelable(false);
                 AlertDialog alert = builder.create();
+                //alert.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
                 alert.show();
-                Button btn = alert.getButton(AlertDialog.BUTTON_POSITIVE);
+
+                Button positiveButton = alert.getButton(AlertDialog.BUTTON_POSITIVE);
+                LinearLayout parent = (LinearLayout) positiveButton.getParent();
+                parent.setGravity(Gravity.CENTER_HORIZONTAL);
+                View leftSpacer = parent.getChildAt(1);
+                leftSpacer.setVisibility(View.GONE);
+
+                TextView message = (TextView)alert.findViewById(android.R.id.message);
+                message.setGravity(Gravity.CENTER);
+
                 testStart();
             }
         }, new Response.ErrorListener() {

@@ -87,31 +87,41 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="41dp"
             android:orientation="horizontal">
-            <RadioButton
-                android:layout_width="22dp"
-                android:layout_height="22dp"
-                android:id="@+id/additional_info_sex_man_radiobutton"
-                android:layout_marginRight="10dp"
-                android:gravity="center" />
-            <TextView
+            <RadioGroup
+                android:orientation="horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="41dp"
-                android:fontFamily="@font/nanumsquareotfregular"
-                android:text="남자"/>
+                android:id="@+id/additional_info__radiogroup">
             <RadioButton
-                android:id="@+id/additional_info_sex_woman_radiobutton"
-                android:layout_width="22dp"
-                android:layout_height="22dp"
-                android:layout_marginRight="10dp"
-                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/additional_info_sex_man_radiobutton"
+                android:layout_marginRight="3dp"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="41dp"
+                android:textSize="16sp"
+                android:textColor="@color/color_bolder"
+                android:id="@+id/additional_info__sex_man_text"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/nanumsquareotfregular"
+                android:text="남자"/>
+            <RadioButton
+                android:id="@+id/additional_info_sex_woman_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                />
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/color_bolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/additional_info__sex_woman_text"
                 android:fontFamily="@font/nanumsquareotfregular"
                 android:text="여자"/>
+            </RadioGroup>
         </LinearLayout>
         <TextView
             android:layout_marginTop="34dp"
@@ -120,10 +130,13 @@
             android:textSize="14sp"
             android:textColor="#555555"
             android:fontFamily="@font/nanumsquareotfregular"
-            android:text="생년월일"/>
+            android:text="생년월일"
+            android:layout_marginBottom="12dp"/>
         <android.support.v7.widget.AppCompatEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColorHint="@color/color_bolder"
+            android:paddingTop="1dp"
             android:id="@+id/additional_info__ownerbirth"
             android:hint="생년월일을 입력하세요.ex)19901231"
             android:fontFamily="@font/nanumsquareotfregular"

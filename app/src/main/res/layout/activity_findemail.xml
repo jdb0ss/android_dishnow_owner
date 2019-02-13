@@ -1,9 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FindemailActivity">
+    tools:context=".FindemailActivity"
+    >
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@drawable/tabbar_baground"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:id="@+id/ressignup_toolbar"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="이메일 찾기"
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/nanumsquareotfregular"
+            />
+    </android.support.v7.widget.Toolbar>
 
-</android.support.constraint.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical" />
+
+    <RelativeLayout
+        android:layout_marginBottom="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom">
+        <Button
+            android:layout_centerHorizontal="true"
+            android:id="@+id/findemail_gobackbutton"
+            android:layout_width="262dp"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/nanumsquareotfregular"
+            android:textColor="@color/color_violet"
+            android:background="@drawable/auth_phone_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="돌아가기" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="220dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/res_auth_welcome"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:fontFamily="@font/nanumsquareotfregular"
+                android:id="@+id/findemail_auth_name"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:text="홍길동"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:fontFamily="@font/nanumsquareotfregular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 회원님의 이메일은"
+                android:textColor="#000000"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:fontFamily="@font/nanumsquareotfregular"
+                android:id="@+id/findemail_auth_email"
+                android:textSize="18sp"
+                android:textColor="@color/color_violet"
+                android:text="smhong1995@naver.com"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 입니다."
+                android:textColor="#000000"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

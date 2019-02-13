@@ -45,8 +45,7 @@
         <activity android:name="com.picke.dishnow_owner.MainActivity" />
         <activity
             android:name="com.picke.dishnow_owner.JoinActivity"
-            android:label=""
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:label="" />
         <activity android:name="com.picke.dishnow_owner.JoinedActivity" />
         <activity android:name="com.picke.dishnow_owner.Registration_BusinessActivity" />
         <activity android:name="com.picke.dishnow_owner.PopupActivity" />
@@ -54,7 +53,9 @@
         <activity
             android:name="com.picke.dishnow_owner.VerificationActivity"
             android:label="" />
-        <activity android:name="com.picke.dishnow_owner.Registration_RestaurantActivity" />
+        <activity
+            android:name="com.picke.dishnow_owner.Registration_RestaurantActivity"
+            android:label="" />
         <activity
             android:name="com.picke.dishnow_owner.FindidpassActivity"
             android:label="" />
@@ -63,7 +64,10 @@
             android:label="" />
         <activity android:name="com.picke.dishnow_owner.RegisterGuideActivity" />
         <activity android:name="com.picke.dishnow_owner.JudgingActivity" />
-        <activity android:name="com.picke.dishnow_owner.Additional_InfoActivity" />
+        <activity
+            android:name="com.picke.dishnow_owner.Additional_InfoActivity"
+            android:label="" >
+        </activity>
         <activity
             android:name="com.kakao.auth.authorization.authcode.KakaoWebViewActivity"
             android:configChanges="orientation|screenSize"

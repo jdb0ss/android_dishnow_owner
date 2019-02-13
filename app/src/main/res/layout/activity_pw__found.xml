@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PW_FoundActivity"
+    android:orientation="vertical"
+    >
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@drawable/tabbar_baground"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:id="@+id/ressignup_toolbar"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="비밀번호 재설정"
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/nanumsquareotfregular"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <TextView
+            android:gravity="center"
+            android:fontFamily="@font/nanumsquareotfbold"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="비밀번호가 변경되었습니다."
+            />
+        <TextView
+            android:gravity="center"
+            android:fontFamily="@font/nanumsquareotfbold"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="다시 로그인하세요."
+            />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginBottom="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom"
+        >
+        <Button
+            android:fontFamily="@font/nanumsquareotfregular"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/repass2_gobackbutton"
+            android:layout_width="262dp"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:textColor="@color/color_violet"
+            android:background="@drawable/auth_phone_button"
+            android:text="돌아가기"
+            />
+    </RelativeLayout>
+</RelativeLayout>

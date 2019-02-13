@@ -12,6 +12,7 @@
         <item name="colorPrimary">@color/color_violet</item>
         <item name="colorPrimaryDark">#000000</item>
         <item name="colorAccent">@color/color_violet</item>
+        <item name="editTextColor"></item>
     </style>
 
     <style name="SignupActionBar" parent="Theme.AppCompat.Light.NoActionBar">

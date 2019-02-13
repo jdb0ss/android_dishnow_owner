@@ -34,6 +34,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="250dp"
         android:textColor="#FFFFFF"
+        android:paddingTop="1dp"
         android:hint="아이디" />
 
     <EditText
@@ -45,6 +46,7 @@
         android:layout_below="@+id/signin_idinput"
         android:layout_centerHorizontal="true"
         android:hint="비밀번호"
+        android:paddingTop="1dp"
         android:inputType="textPassword"
         android:layout_marginTop="10dp"
         android:textColor="#FFFFFF"

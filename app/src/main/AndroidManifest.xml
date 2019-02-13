@@ -36,8 +36,7 @@
         <activity android:name=".MainActivity" />
         <activity
             android:name=".JoinActivity"
-            android:label=""
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:label="" />
         <activity android:name=".JoinedActivity" />
         <activity android:name=".Registration_BusinessActivity" />
         <activity android:name=".PopupActivity" />
@@ -45,7 +44,9 @@
         <activity
             android:name=".VerificationActivity"
             android:label="" />
-        <activity android:name=".Registration_RestaurantActivity" />
+        <activity
+            android:name=".Registration_RestaurantActivity"
+            android:label="" />
         <activity
             android:name=".FindidpassActivity"
             android:label="" />
@@ -54,7 +55,11 @@
             android:label="" />
         <activity android:name=".RegisterGuideActivity" />
         <activity android:name=".JudgingActivity" />
-        <activity android:name=".Additional_InfoActivity"></activity>
+        <activity
+            android:name=".Additional_InfoActivity"
+            android:label="" />
+        <activity android:name=".Change_PWActivity" />
+        <activity android:name=".PW_FoundActivity"></activity>
     </application>
 
 </manifest>

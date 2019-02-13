@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Change_PWActivity"
+    android:orientation="vertical"
+    >
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@drawable/tabbar_baground"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:id="@+id/ressignup_toolbar"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="비밀번호 재설정"
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/nanumsquareotfregular"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:fontFamily="@font/nanumsquareotfbold"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="157dp"
+            android:text="새로운 비밀번호를 설정하세요"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="신규 비밀번호"
+            android:textSize="14sp"
+            />
+        <EditText
+            android:id="@+id/repass_pass1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumsquareotfregular"
+            android:textSize="16sp"
+            android:layout_marginTop="9dp"
+            android:hint="영문, 숫자 6~15자의 비밀번호를 설정하세요."
+            android:singleLine="true"
+            android:lines="1"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumsquareotfbold"
+            android:textSize="14sp"
+            android:text="신규 비밀번호 확인"
+            android:layout_marginTop="28dp"
+            />
+        <EditText
+            android:fontFamily="@font/nanumsquareotfregular"
+            android:id="@+id/repass_pass2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:hint="비밀번호를 다시 한 번 입력하세요"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:lines="1"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginBottom="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom"
+        >
+        <Button
+            android:fontFamily="@font/nanumsquareotfregular"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/repass_button"
+            android:layout_width="262dp"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/next_button"
+            android:text="비밀번호 재설정"
+            />
+    </RelativeLayout>
+</RelativeLayout>
+
+
+

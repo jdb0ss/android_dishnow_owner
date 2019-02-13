@@ -1064,6 +1064,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable radiobutton_style
 drawable selector_login_button
 drawable signin_button
 drawable story
@@ -1102,6 +1103,9 @@ id actions
 id activity_chooser_view_content
 id add
 id additional_info__ownerbirth
+id additional_info__radiogroup
+id additional_info__sex_man_text
+id additional_info__sex_woman_text
 id additional_info__toolbar
 id additional_info_first
 id additional_info_next_button
@@ -1411,6 +1415,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_additional__info
+layout activity_change__pw
 layout activity_findemail
 layout activity_findidpass
 layout activity_join
@@ -1420,6 +1425,7 @@ layout activity_juso
 layout activity_kakao_webview
 layout activity_main
 layout activity_popup
+layout activity_pw__found
 layout activity_registerguide
 layout activity_registration_business
 layout activity_registration_restuarant

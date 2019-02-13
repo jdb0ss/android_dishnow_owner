@@ -80,6 +80,7 @@
         <android.support.v7.widget.AppCompatEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColorHint="@color/color_bolder"
             android:fontFamily="@font/nanumsquareotfregular"
             android:id="@+id/ressignup_resnum"
             android:hint="'-'를 뺀 11자리 사업자번호를 입력하세요."
@@ -102,6 +103,7 @@
             <EditText
                 android:layout_width="219dp"
                 android:layout_height="wrap_content"
+                android:textColorHint="@color/color_bolder"
                 android:id="@+id/ressignup_imagefile"
                 android:fontFamily="@font/nanumsquareotfregular"
                 android:hint="사본 파일을 등록하세요."
@@ -136,6 +138,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColorHint="@color/color_bolder"
             android:id="@+id/ressignup_name"
             android:fontFamily="@font/nanumsquareotfregular"
             android:hint="사업주명을 입력하세요."
